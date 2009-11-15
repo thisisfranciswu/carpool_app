@@ -1,0 +1,29 @@
+<div id="masthead">
+  <div id="utilities">
+    <% if logged_in? %>
+      <%#= link_to "Account", account_path, :title => "Account" %> &middot;
+      <%#= link_to "Help",    account_path, :title => "Help" %> &middot;
+      <%= link_to "Logout",  logout_path,  :title => "Logout" %>
+    <% else %>
+      <%= link_to "Login", login_path, :title => "Login" %>
+    <% end %>
+  </div>
+  <h1>
+    <% if logged_in? %>
+      <%= link_to "Carpool App: Dashboard", dashboard_path, :title => "Dashboard" %>
+    <% else %>
+      <%= link_to "Carpool App: Home", root_path, :title => "Home" %>
+    <% end %>
+  </h1>
+  <div id="nav">
+    <% if logged_in? %>
+      <li><%= "Dashboard",            dashboard_path, :title => "Dashboard" %></li>
+      <li><%= "Commutes",             commutes_path,  :title => "Commutes" %></li>
+      <li><%= "Users",                users_path,     :title => "Users" %></li>
+    <% else %>
+      <li><%= "Home",                 home_path,      :title => "Home" %></li>
+      <li><%= "Tour",                 tour_path,      :title => "Home" %></li>
+      <li><%= "Pricing &amp; Signup", signup_path,    :title => "Pricing &amp; Signup" %></li>
+    <% end %>
+  </div>
+</div>
