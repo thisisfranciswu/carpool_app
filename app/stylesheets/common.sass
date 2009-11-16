@@ -1,0 +1,60 @@
+@import lib.sass
+
+// Typography
+body
+  position: relative
+  font-family: helvetica, arial, sans-serif
+  +font_size("medium")
+  color = !dark_grey
+  padding: 20px
+*
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 0
+a
+  color = !main_colour
+  outline: none
+  &.negative
+    color = !colour_negative
+  &.disabled
+    color: !grey
+    text-decoration: none
+    cursor: default
+  &:hover
+    text-decoration: none
+h1, h2, h3, h4
+  color = !black
+h1
+  +font_size("huge")
+  font-weight: bold
+h2
+  +font_size("xxxlarge")
+  margin: 0 0 1em
+h3
+  +font_size("xxlarge")
+  margin: 0 0 0.75em
+h4
+  +font_size("xlarge")
+  margin: 0 0 0.5em
+
+// Clearfix
+.clearfix
+  display: inline-block
+  &:after
+    content: "."
+    display: block
+    clear: both
+    visibility: hidden
+    line-height: 0
+    height: 0
+html[xmlns] .clearfix
+  display: block
+* html .clearfix
+  height: 1%
+
+div.pane
+  div.header
+    h2
+      margin: 0
+    span.options
+      float: right
+  div.content
+  div.footer

@@ -10,40 +10,55 @@ body {
   background-color: #f2f2f2; }
   /* line 11, ../../../app/stylesheets/layout.sass */
   body #masthead {
-    display: inline-block; }
-    /* line 38, ../../../app/stylesheets/lib.sass */
-    body #masthead:after {
-      content: ".";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden; }
-    /* line 44, ../../../app/stylesheets/lib.sass */
-    * html body #masthead {
-      height: 1px; }
-  /* line 13, ../../../app/stylesheets/layout.sass */
-  body #content {
-    display: inline-block; }
-    /* line 38, ../../../app/stylesheets/lib.sass */
-    body #content:after {
-      content: ".";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden; }
-    /* line 44, ../../../app/stylesheets/lib.sass */
-    * html body #content {
-      height: 1px; }
-  /* line 15, ../../../app/stylesheets/layout.sass */
-  body #footer {
-    display: inline-block; }
-    /* line 38, ../../../app/stylesheets/lib.sass */
-    body #footer:after {
-      content: ".";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden; }
-    /* line 44, ../../../app/stylesheets/lib.sass */
-    * html body #footer {
-      height: 1px; }
+    margin: 0 0 20px; }
+    /* line 13, ../../../app/stylesheets/layout.sass */
+    body #masthead h1 {
+      float: left;
+      margin: 0 20px 0 0;
+      line-height: 26px; }
+      /* line 17, ../../../app/stylesheets/layout.sass */
+      body #masthead h1 a {
+        color: black;
+        text-decoration: none; }
+    /* line 20, ../../../app/stylesheets/layout.sass */
+    body #masthead #nav {
+      display: inline-block; }
+      /* line 22, ../../../app/stylesheets/layout.sass */
+      body #masthead #nav li {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0 5px 0 0;
+        padding: 0; }
+        /* line 28, ../../../app/stylesheets/layout.sass */
+        body #masthead #nav li a {
+          display: block;
+          background: white;
+          line-height: 26px;
+          padding: 0 10px;
+          height: 26px;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          text-decoration: none; }
+    /* line 36, ../../../app/stylesheets/layout.sass */
+    body #masthead #utilities {
+      float: right;
+      overflow: hidden; }
+      /* line 39, ../../../app/stylesheets/layout.sass */
+      body #masthead #utilities a.account, body #masthead #utilities a.session, body #masthead #utilities a.help {
+        display: block;
+        float: left;
+        margin: 0 0 0 5px;
+        background: white;
+        line-height: 26px;
+        padding: 0 10px;
+        height: 26px;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        text-decoration: none;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: gray; }

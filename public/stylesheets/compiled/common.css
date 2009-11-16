@@ -1,0 +1,78 @@
+/* line 4, ../../../app/stylesheets/common.sass */
+body {
+  position: relative;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 14px;
+  color: #404040;
+  padding: 20px; }
+
+/* line 10, ../../../app/stylesheets/common.sass */
+* {
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 0; }
+
+/* line 12, ../../../app/stylesheets/common.sass */
+a {
+  color: #6ba41e;
+  outline: none; }
+  /* line 15, ../../../app/stylesheets/common.sass */
+  a.negative {
+    color: #b4520f; }
+  /* line 17, ../../../app/stylesheets/common.sass */
+  a.disabled {
+    color: !grey;
+    text-decoration: none;
+    cursor: default; }
+  /* line 21, ../../../app/stylesheets/common.sass */
+  a:hover {
+    text-decoration: none; }
+
+/* line 23, ../../../app/stylesheets/common.sass */
+h1, h2, h3, h4 {
+  color: black; }
+
+/* line 25, ../../../app/stylesheets/common.sass */
+h1 {
+  font-size: 24px;
+  font-weight: bold; }
+
+/* line 28, ../../../app/stylesheets/common.sass */
+h2 {
+  font-size: 22px;
+  margin: 0 0 1em; }
+
+/* line 31, ../../../app/stylesheets/common.sass */
+h3 {
+  font-size: 20px;
+  margin: 0 0 0.75em; }
+
+/* line 34, ../../../app/stylesheets/common.sass */
+h4 {
+  font-size: 18px;
+  margin: 0 0 0.5em; }
+
+/* line 39, ../../../app/stylesheets/common.sass */
+.clearfix {
+  display: inline-block; }
+  /* line 41, ../../../app/stylesheets/common.sass */
+  .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+
+/* line 48, ../../../app/stylesheets/common.sass */
+html[xmlns] .clearfix {
+  display: block; }
+
+/* line 50, ../../../app/stylesheets/common.sass */
+* html .clearfix {
+  height: 1%; }
+
+/* line 55, ../../../app/stylesheets/common.sass */
+div.pane div.header h2 {
+  margin: 0; }
+/* line 57, ../../../app/stylesheets/common.sass */
+div.pane div.header span.options {
+  float: right; }

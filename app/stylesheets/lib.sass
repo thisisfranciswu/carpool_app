@@ -4,6 +4,9 @@
 
 // Basic Colours
 !white = #FFFFFF
+!light_grey = #C0C0C0
+!grey = #808080
+!dark_grey = #404040
 !black = #000000
 !yellow = #FFFF00
 !red = #FF0000
@@ -31,18 +34,6 @@
 // Blend Colours
 =blend_colours(!colour_1, !colour_1_percentage, !colour_2, !colour_2_percentage)
   blend_colours - !colour_1 * !colour_1_percentage + !colour_2 * !colour_2_percentage
-
-// Clearfix
-=clearfix
-  display: inline-block
-  &:after
-    content: "."
-    display: block
-    height: 0
-    clear: both
-    visibility: hidden
-  * html &
-    height: 1px
 
 // Opacity
 =opacity(!opacity)
