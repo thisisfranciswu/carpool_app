@@ -1,0 +1,49 @@
+/* line 3, ../../../app/stylesheets/layout.sass */
+div.page_width {
+  margin-left: auto;
+  margin-right: auto;
+  width: 950px; }
+
+/* line 8, ../../../app/stylesheets/layout.sass */
+body {
+  padding: 20px;
+  background-color: #f2f2f2; }
+  /* line 11, ../../../app/stylesheets/layout.sass */
+  body #masthead {
+    display: inline-block; }
+    /* line 38, ../../../app/stylesheets/lib.sass */
+    body #masthead:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    /* line 44, ../../../app/stylesheets/lib.sass */
+    * html body #masthead {
+      height: 1px; }
+  /* line 13, ../../../app/stylesheets/layout.sass */
+  body #content {
+    display: inline-block; }
+    /* line 38, ../../../app/stylesheets/lib.sass */
+    body #content:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    /* line 44, ../../../app/stylesheets/lib.sass */
+    * html body #content {
+      height: 1px; }
+  /* line 15, ../../../app/stylesheets/layout.sass */
+  body #footer {
+    display: inline-block; }
+    /* line 38, ../../../app/stylesheets/lib.sass */
+    body #footer:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    /* line 44, ../../../app/stylesheets/lib.sass */
+    * html body #footer {
+      height: 1px; }

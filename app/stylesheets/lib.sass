@@ -1,0 +1,130 @@
+// Theme Colours
+!main_colour = #6BA41E
+!main_colour_alt = #A1D55B
+
+// Basic Colours
+!white = #FFFFFF
+!black = #000000
+!yellow = #FFFF00
+!red = #FF0000
+!green = #00FF00
+!blue = #0000FF
+
+// Other Colours
+!colour_negative = !main_colour * 0.5 + !red * 0.5
+!colour_positive = !main_colour * 0.5 + !green * 0.5
+
+// Greyness
+=color_greyness(!color, !percentage)
+  !percentage = !percentage / 100
+  @if !color == "black"
+    color = !black * !percentage + !white * (1 - !percentage)
+  @if !color == "white"
+    color = !white * !percentage + !black * (1 - !percentage)
+=background_greyness(!color, !percentage)
+  !percentage = !percentage / 100
+  @if !color == "black"
+    background-color = !black * !percentage + !white * (1 - !percentage)
+  @if !color == "white"
+    background-color = !white * !percentage + !black * (1 - !percentage)
+
+// Blend Colours
+=blend_colours(!colour_1, !colour_1_percentage, !colour_2, !colour_2_percentage)
+  blend_colours - !colour_1 * !colour_1_percentage + !colour_2 * !colour_2_percentage
+
+// Clearfix
+=clearfix
+  display: inline-block
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+  * html &
+    height: 1px
+
+// Opacity
+=opacity(!opacity)
+  filter = "alpha(opacity=" + !opacity + ")"
+  opacity = !opacity / 100
+  -moz-opacity = !opacity / 100
+
+// Rounded Corners
+=rounded_corners(!corner, !radius)
+  @if !corner == "all"
+    border-radius = !radius + "px"
+    -moz-border-radius = !radius + "px"
+    -webkit-border-radius = !radius + "px"
+  @if !corner == "top_right"
+    border-top-right-radius = !radius + "px"
+    -moz-border-radius-topright = !radius + "px"
+    -webkit-border-top-right-radius = !radius + "px"
+  @if !corner == "bottom_right"
+    border-bottom-right-radius = !radius + "px"
+    -moz-border-radius-bottomright = !radius + "px"
+    -webkit-border-bottom-right-radius = !radius + "px"
+  @if !corner == "bottom_left"
+    border-bottom-left-radius = !radius + "px"
+    -moz-border-radius-bottomleft = !radius + "px"
+    -webkit-border-bottom-left-radius = !radius + "px"
+  @if !corner == "top_left"
+    border-top-left-radius = !radius + "px"
+    -moz-border-radius-topleft = !radius + "px"
+    -webkit-border-top-left-radius = !radius + "px"
+  @if !corner == "top"
+    +rounded_corners("top_left", !radius)
+    +rounded_corners("top_right", !radius)
+  @if !corner == "right"
+    +rounded_corners("top_right", !radius)
+    +rounded_corners("bottom_right", !radius)
+  @if !corner == "bottom"
+    +rounded_corners("bottom_right", !radius)
+    +rounded_corners("bottom_left", !radius)
+  @if !corner == "left"
+    +rounded_corners("bottom_left", !radius)
+    +rounded_corners("top_left", !radius)
+
+// Box Shadows
+=box_shadow(!distance_x, !distance_y, !size, !colour)
+  box-shadow = !distance_x + "px" !distance_y + "px" !size + "px" !colour
+  -webkit-box-shadow = !distance_x + "px" !distance_y + "px" !size + "px" !colour
+  -moz-box-shadow = !distance_x + "px" !distance_y + "px" !size + "px" !colour
+
+// Text Shadows
+=text_shadow(!distance_x, !distance_y, !size, !colour)
+  text-shadow = !distance_x + "px" !distance_y + "px" !size + "px" !colour
+
+// Font Sizes
+=font_size(!size)
+  !font_size_medium = 14px
+  @if !size == "medium"
+    font-size = !font_size_medium
+  @if !size == "tiny"
+    font-size = !font_size_medium - 4px
+  @if !size == "small"
+    font-size = !font_size_medium - 2px
+  @if !size == "large"
+    font-size = !font_size_medium + 2px
+  @if !size == "xlarge"
+    font-size = !font_size_medium + 4px
+  @if !size == "xxlarge"
+    font-size = !font_size_medium + 6px
+  @if !size == "xxxlarge"
+    font-size = !font_size_medium + 8px
+  @if !size == "huge"
+    font-size = !font_size_medium + 10px
+  @if !size == "xhuge"
+    font-size = !font_size_medium + 12px
+  @if !size == "xxhuge"
+    font-size = !font_size_medium + 14px
+  @if !size == "xxxhuge"
+    font-size = !font_size_medium + 16px
+  @if !size == "humongous"
+    font-size = !font_size_medium + 18px
+  @if !size == "xhumongous"
+    font-size = !font_size_medium + 20px
+  @if !size == "xxhumongous"
+    font-size = !font_size_medium + 22px
+  @if !size == "xxxhumongous"
+    font-size = !font_size_medium + 24px

@@ -1,1 +1,296 @@
 # Logfile created on Sun Nov 15 23:01:52 -0500 2009
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 23:06:15) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (2.3ms)
+Rendered shared/_footer (0.8ms)
+Completed in 183ms (View: 181, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 23:07:14) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 23:17:33) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (0.3ms)
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 23:48:15) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-15 23:48:22) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (0.6ms)
+Rendered shared/_footer (0.3ms)
+Completed in 439ms (View: 437, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 23:48:24) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 23:48:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-15 23:48:28) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (0.6ms)
+Rendered shared/_footer (0.3ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-15 23:48:32) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:01:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.3ms)
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:29:21) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (2.2ms)
+Rendered shared/_footer (0.8ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:32:00) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:33:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (2.1ms)
+Rendered shared/_footer (0.9ms)
+Completed in 96ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:33:44) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:33:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.4ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:34:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.4ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:49:28) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:51:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (1.4ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:51:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:51:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:51:28) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:52:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:52:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:52:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:52:28) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:52:57) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.3ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:53:01) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:54:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (1.6ms)
+Rendered shared/_footer (0.3ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:54:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:54:47) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.4ms)
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:54:56) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:58:03) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:59:37) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 00:59:45) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.4ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 01:00:08) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 01:00:28) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (0.8ms)
+Rendered shared/_footer (0.3ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 01:08:27) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_masthead (2.1ms)
+Rendered shared/_footer (0.8ms)
+Completed in 18ms (View: 17, DB: 0) | 200 OK [http://localhost/]
