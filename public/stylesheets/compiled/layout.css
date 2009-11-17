@@ -7,7 +7,7 @@ div.page_width {
 /* line 8, ../../../app/stylesheets/layout.sass */
 body {
   padding: 20px;
-  background-color: #f2f2f2; }
+  background-color: #e5e5e5; }
   /* line 11, ../../../app/stylesheets/layout.sass */
   body #masthead {
     margin: 0 0 20px; }
@@ -37,15 +37,21 @@ body {
           line-height: 26px;
           padding: 0 10px;
           height: 26px;
+          font-size: 12px;
+          font-weight: bold;
           border-radius: 5px;
           -moz-border-radius: 5px;
           -webkit-border-radius: 5px;
-          text-decoration: none; }
-    /* line 36, ../../../app/stylesheets/layout.sass */
+          text-decoration: none;
+          color: #6ba41e; }
+          /* line 39, ../../../app/stylesheets/layout.sass */
+          body #masthead #nav li a:hover {
+            color: #a1d55b; }
+    /* line 41, ../../../app/stylesheets/layout.sass */
     body #masthead #utilities {
       float: right;
       overflow: hidden; }
-      /* line 39, ../../../app/stylesheets/layout.sass */
+      /* line 44, ../../../app/stylesheets/layout.sass */
       body #masthead #utilities a.account, body #masthead #utilities a.session, body #masthead #utilities a.help {
         display: block;
         float: left;
@@ -62,3 +68,27 @@ body {
         text-transform: uppercase;
         font-weight: bold;
         color: gray; }
+        /* line 58, ../../../app/stylesheets/layout.sass */
+        body #masthead #utilities a.account:hover, body #masthead #utilities a.session:hover, body #masthead #utilities a.help:hover {
+          color: silver; }
+  /* line 60, ../../../app/stylesheets/layout.sass */
+  body #content {
+    background-color: white;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    margin: 0 0 20px; }
+  /* line 64, ../../../app/stylesheets/layout.sass */
+  body #footer {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    font-size: 12px; }
+    /* line 67, ../../../app/stylesheets/layout.sass */
+    body #footer:hover {
+      filter: alpha(opacity=100);
+      opacity: 1;
+      -moz-opacity: 1; }

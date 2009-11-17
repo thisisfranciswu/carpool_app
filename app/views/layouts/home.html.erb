@@ -15,20 +15,7 @@
 
     <%= render :partial => "shared/masthead" %>
 
-    <div id="page_title">
-      <% if @content_for_page_options %>
-        <span class="page_options"><%= yield :page_options %></span>
-      <% end %>
-      <% if @title %>
-        <h2><%= @title %></h2>
-      <% end %>
-    </div>
-    <div id="content" class="clearfix">
-      <%- flash.each do |name, message| -%>
-        <%= content_tag :p, message, :class => "flash #{name}" %>
-      <%- end -%>
-      <%= yield %>
-    </div>
+    <%= yield %>
 
     <%= render :partial => "shared/footer" %>
 

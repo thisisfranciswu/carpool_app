@@ -50,7 +50,7 @@ html[xmlns] .clearfix
 * html .clearfix
   height: 1%
 
-div.pane
+div.panel
   div.header
     h2
       margin: 0
@@ -58,3 +58,82 @@ div.pane
       float: right
   div.content
   div.footer
+
+#page_title
+  +rounded_corners("top", 5)
+  background-color = !main_colour
+  padding: 10px 20px
+  border-bottom = 1px "solid" (!main_colour * 0.85 + black * 0.15)
+  h2
+    color = !white
+    +text_shadow(2, 2, 0, !main_colour * 0.85 + !black * 0.15)
+    +font_size("xxhuge")
+    font-weight: bold
+    margin: 0
+
+ul.nav
+  width: 200px
+  padding: 10px 0 10px 10px
+  float: left
+  border-right = 1px "solid" !light_grey * 0.33 + !white * 0.66
+  li
+    display: block
+    list-style: none
+    border-bottom = 1px "solid" !light_grey * 0.25 + !white * 0.75
+    border-right = 3px "solid" !light_grey * 0.15 + !white * 0.85
+    b.arrow
+      display: none
+    a
+      display: block
+      padding: 0 10px
+      height: 26px
+      line-height: 26px
+      text-decoration: none
+      color = !grey
+      font-weight: bold
+      &:hover
+        color = !main_colour
+    &:last-child
+      border-bottom: none
+    &.current
+      border-right: none
+      b.arrow
+        border: 13px solid transparent
+        border-right: none
+        border-left = 10px "solid" !main_colour
+        float: right
+        display: block
+        height: 0
+        width: 0
+      a
+        +rounded_corners("left", 5)
+        background-color = !main_colour
+        color = !white
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
