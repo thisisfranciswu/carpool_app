@@ -31,8 +31,13 @@ body
           line-height: 26px
           padding: 0 10px
           height: 26px
+          +font_size("small")
+          font-weight: bold
           +rounded_corners("all", 5)
           text-decoration: none
+          color = !main_colour
+          &:hover
+            color = !main_colour_alt
     #utilities
       float: right
       overflow: hidden
@@ -50,8 +55,14 @@ body
         text-transform: uppercase
         font-weight: bold
         color = !grey
-        
-      
-    
+        &:hover
+          color = !light_grey
   #content
+    background-color = !white
+    +rounded_corners("bottom", 5)
+    margin: 0 0 20px
   #footer
+    +opacity(50)
+    +font_size("small")
+    &:hover
+      +opacity(100)
