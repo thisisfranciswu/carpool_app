@@ -1,0 +1,25 @@
+/* line 3, ../../../app/stylesheets/screen.sass */
+#pitch {
+  margin: 0 0 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: #6ba41e;
+  height: 280px; }
+  /* line 8, ../../../app/stylesheets/screen.sass */
+  #pitch>div {
+    width: 415px;
+    background: red;
+    padding: 40px; }
+  /* line 12, ../../../app/stylesheets/screen.sass */
+  #pitch div.text {
+    float: left;
+    padding-right: 20px; }
+    /* line 15, ../../../app/stylesheets/screen.sass */
+    #pitch div.text>* {
+      color: white;
+      text-shadow: 2pxpx 2pxpx 0px #5a8b19; }
+  /* line 18, ../../../app/stylesheets/screen.sass */
+  #pitch div.image {
+    float: right;
+    padding-left: 20px; }

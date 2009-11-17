@@ -1,0 +1,19 @@
+@import lib.sass
+
+#pitch
+  margin: 0 0 20px
+  +rounded_corners("all", 5)
+  background-color = !main_colour
+  height: 280px
+  &>div
+    width: 415px
+    padding: 40px
+  div.text
+    float: left
+    padding-right: 20px
+    &>*
+      color = !white
+      +text_shadow(2px, 2px, 0, !main_colour * 0.85 + !black * 0.15)
+  div.image
+    float: right
+    padding-left: 20px
