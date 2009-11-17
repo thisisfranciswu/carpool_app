@@ -9,17 +9,45 @@
   /* line 8, ../../../app/stylesheets/screen.sass */
   #pitch>div {
     width: 415px;
-    background: red;
     padding: 40px; }
-  /* line 12, ../../../app/stylesheets/screen.sass */
+  /* line 11, ../../../app/stylesheets/screen.sass */
   #pitch div.text {
     float: left;
     padding-right: 20px; }
-    /* line 15, ../../../app/stylesheets/screen.sass */
+    /* line 14, ../../../app/stylesheets/screen.sass */
     #pitch div.text>* {
       color: white;
-      text-shadow: 2pxpx 2pxpx 0px #5a8b19; }
-  /* line 18, ../../../app/stylesheets/screen.sass */
+      text-shadow: 2px 2px 0px #5a8b19; }
+    /* line 17, ../../../app/stylesheets/screen.sass */
+    #pitch div.text h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0 0 20px; }
+    /* line 21, ../../../app/stylesheets/screen.sass */
+    #pitch div.text h3 {
+      margin: 0; }
+  /* line 23, ../../../app/stylesheets/screen.sass */
   #pitch div.image {
     float: right;
     padding-left: 20px; }
+
+/* line 26, ../../../app/stylesheets/screen.sass */
+#features {
+  margin: 0 0 20px;
+  background-color: white;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+  /* line 30, ../../../app/stylesheets/screen.sass */
+  #features ul {
+    overflow: hidden;
+    padding: 20px; }
+    /* line 33, ../../../app/stylesheets/screen.sass */
+    #features ul li {
+      display: block;
+      float: left;
+      width: 290px;
+      margin: 0 20px 0 0; }
+    /* line 39, ../../../app/stylesheets/screen.sass */
+    #features ul li:last-child {
+      margin: 0; }
