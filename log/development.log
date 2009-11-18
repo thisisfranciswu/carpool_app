@@ -1781,3 +1781,189 @@ Rendered home/_tour_nav (0.4ms)
 Rendered shared/_masthead (1.1ms)
 Rendered shared/_footer (0.6ms)
 Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:27:13) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-18 01:28:53) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.6ms)
+Completed in 228ms (View: 133, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:28:56) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-18 01:28:57) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (0.6ms)
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-18 01:35:33) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (0.6ms)
+Completed in 23ms (View: 15, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-18 01:36:05) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-18 01:37:04) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.6ms)
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-18 01:37:15) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:37:17) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:37:33) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:37:54) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.7ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-18 01:38:07) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (0.6ms)
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:38:08) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-11-18 01:38:09) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.8ms)
+Completed in 84ms (View: 76, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-18 01:38:11) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (0.7ms)
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-18 01:39:37) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (0.6ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-11-18 01:39:45) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (0.6ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-18 01:39:50) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-18 01:39:50) [GET]
+  Parameters: {"1258422308"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
