@@ -1,5 +1,9 @@
 @import lib.sass
 
+// Show Grid
+.with_grid
+  background: transparent url('/images/grid.png')
+
 // Typography
 body
   position: relative
@@ -72,41 +76,47 @@ div.panel
     margin: 0
 
 ul.nav
-  width: 200px
+  width: 189px
   padding: 10px 0 10px 10px
   float: left
   border-right = 1px "solid" !light_grey * 0.33 + !white * 0.66
+  background = !light_grey * 0.1 + !white * 0.9
   li
     display: block
     list-style: none
-    border-bottom = 1px "solid" !light_grey * 0.25 + !white * 0.75
-    border-right = 3px "solid" !light_grey * 0.15 + !white * 0.85
+    margin: 0 0 3px 0
     b.arrow
       display: none
     a
       display: block
       padding: 0 10px
-      height: 26px
-      line-height: 26px
+      height: 30px
+      line-height: 30px
       text-decoration: none
+      +rounded_corners("left", 3)
       color = !grey
       font-weight: bold
+      background = !white
+      +box_shadow(0, 0, 1, !light_grey * 0.33 + !white * 0.66)
       &:hover
         color = !main_colour
     &:last-child
       border-bottom: none
+      margin-bottom: 0
     &.current
-      border-right: none
+      border: none
+      margin-right: -1px
       b.arrow
-        border: 13px solid transparent
+        border: 15px solid transparent
         border-right: none
         border-left = 10px "solid" !main_colour
         float: right
         display: block
         height: 0
         width: 0
+        position: relative
+        right: -10px
       a
-        +rounded_corners("left", 5)
         background-color = !main_colour
         color = !white
 

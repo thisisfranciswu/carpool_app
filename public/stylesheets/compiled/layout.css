@@ -10,27 +10,29 @@ body {
   background-color: #e5e5e5; }
   /* line 11, ../../../app/stylesheets/layout.sass */
   body #masthead {
-    margin: 0 0 20px; }
-    /* line 13, ../../../app/stylesheets/layout.sass */
+    margin: 0 0 20px;
+    overflow: hidden; }
+    /* line 14, ../../../app/stylesheets/layout.sass */
     body #masthead h1 {
       float: left;
-      margin: 0 20px 0 0;
+      margin: 0;
       line-height: 26px; }
-      /* line 17, ../../../app/stylesheets/layout.sass */
+      /* line 18, ../../../app/stylesheets/layout.sass */
       body #masthead h1 a {
         color: black;
         text-decoration: none; }
-    /* line 20, ../../../app/stylesheets/layout.sass */
+    /* line 21, ../../../app/stylesheets/layout.sass */
     body #masthead #nav {
-      display: inline-block; }
-      /* line 22, ../../../app/stylesheets/layout.sass */
+      display: block;
+      margin: 0 0 0 200px; }
+      /* line 24, ../../../app/stylesheets/layout.sass */
       body #masthead #nav li {
         display: block;
         float: left;
         list-style: none;
         margin: 0 5px 0 0;
         padding: 0; }
-        /* line 28, ../../../app/stylesheets/layout.sass */
+        /* line 30, ../../../app/stylesheets/layout.sass */
         body #masthead #nav li a {
           display: block;
           background: white;
@@ -44,14 +46,14 @@ body {
           -webkit-border-radius: 5px;
           text-decoration: none;
           color: #6ba41e; }
-          /* line 39, ../../../app/stylesheets/layout.sass */
+          /* line 41, ../../../app/stylesheets/layout.sass */
           body #masthead #nav li a:hover {
             color: #a1d55b; }
-    /* line 41, ../../../app/stylesheets/layout.sass */
+    /* line 43, ../../../app/stylesheets/layout.sass */
     body #masthead #utilities {
       float: right;
       overflow: hidden; }
-      /* line 44, ../../../app/stylesheets/layout.sass */
+      /* line 46, ../../../app/stylesheets/layout.sass */
       body #masthead #utilities a.account, body #masthead #utilities a.session, body #masthead #utilities a.help {
         display: block;
         float: left;
@@ -68,10 +70,10 @@ body {
         text-transform: uppercase;
         font-weight: bold;
         color: gray; }
-        /* line 58, ../../../app/stylesheets/layout.sass */
+        /* line 60, ../../../app/stylesheets/layout.sass */
         body #masthead #utilities a.account:hover, body #masthead #utilities a.session:hover, body #masthead #utilities a.help:hover {
           color: silver; }
-  /* line 60, ../../../app/stylesheets/layout.sass */
+  /* line 62, ../../../app/stylesheets/layout.sass */
   body #content {
     background-color: white;
     border-bottom-right-radius: 5px;
@@ -80,14 +82,22 @@ body {
     border-bottom-left-radius: 5px;
     -moz-border-radius-bottomleft: 5px;
     -webkit-border-bottom-left-radius: 5px;
-    margin: 0 0 20px; }
-  /* line 64, ../../../app/stylesheets/layout.sass */
+    margin: 0 0 20px;
+    min-height: 480px; }
+    /* line 67, ../../../app/stylesheets/layout.sass */
+    body #content #main {
+      margin: 0 230px 0 0;
+      padding: 30px 0 60px; }
+      /* line 70, ../../../app/stylesheets/layout.sass */
+      body #content #main.with_nav {
+        margin-left: 230px; }
+  /* line 72, ../../../app/stylesheets/layout.sass */
   body #footer {
     filter: alpha(opacity=50);
     opacity: 0.5;
     -moz-opacity: 0.5;
     font-size: 12px; }
-    /* line 67, ../../../app/stylesheets/layout.sass */
+    /* line 75, ../../../app/stylesheets/layout.sass */
     body #footer:hover {
       filter: alpha(opacity=100);
       opacity: 1;

@@ -1089,3 +1089,695 @@ ActionController::RoutingError (No route matches "/images/" with {:method=>:get}
   /usr/bin/thin:19
 
 Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-17 22:22:24) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Rendered shared/_masthead (2.9ms)
+Rendered shared/_footer (1.2ms)
+Completed in 216ms (View: 213, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 22:22:24) [GET]
+  Parameters: {"1258422308"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-17 22:22:26) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (1.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-17 22:32:55) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.3ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-17 22:34:14) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-17 22:36:27) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-17 22:36:32) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.6ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:15:49) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:16:28) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.9ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:16:52) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:22:25) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:24:13) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:24:23) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:25:45) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (2.8ms)
+Rendered shared/_footer (0.6ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:26:18) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:27:09) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:28:29) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.3ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:28:36) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:28:45) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.5ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:28:51) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:31:05) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:31:13) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.5ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:32:37) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.4ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:34:06) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:34:33) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:34:58) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:35:05) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:35:13) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:35:33) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.9ms)
+Rendered shared/_masthead (1.3ms)
+Rendered shared/_footer (0.6ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:35:48) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (1.2ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:36:34) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:37:34) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:37:40) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:37:53) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:38:12) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.5ms)
+Rendered shared/_masthead (1.3ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:38:22) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (74.7ms)
+Rendered shared/_footer (0.9ms)
+Completed in 82ms (View: 80, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:41:31) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.8ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:42:36) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.5ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:43:06) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.4ms)
+Rendered shared/_footer (0.7ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:43:18) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:43:45) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.7ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:43:59) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:45:15) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (2.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:45:23) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:45:31) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:45:44) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:46:09) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.7ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:47:01) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:47:12) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.3ms)
+Rendered shared/_footer (0.6ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:47:27) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:47:39) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:47:50) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:47:56) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:48:17) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:48:53) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.5ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.8ms)
+Completed in 91ms (View: 89, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:52:42) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:54:44) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.9ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:55:00) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:55:17) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 00:55:41) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:00:42) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.3ms)
+Rendered shared/_footer (1.9ms)
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:03:29) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:03:41) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.3ms)
+Rendered shared/_footer (0.7ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:03:58) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (1.0ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.7ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:05:10) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.6ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:05:29) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.6ms)
+Rendered shared/_footer (0.7ms)
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:06:06) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (1.0ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:06:13) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.4ms)
+Rendered shared/_footer (2.0ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:08:53) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.8ms)
+Rendered shared/_footer (0.6ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:09:25) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:10:25) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:17:08) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:18:38) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]
+
+
+Processing HomeController#tour (for 127.0.0.1 at 2009-11-18 01:19:17) [GET]
+Rendering template within layouts/application
+Rendering home/tour
+Rendered home/_tour_nav (0.4ms)
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.6ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/tour]

@@ -10,15 +10,17 @@ body
   +background_greyness("white", 90)
   #masthead
     margin: 0 0 20px
+    overflow: hidden
     h1
       float: left
-      margin: 0 20px 0 0
+      margin: 0
       line-height: 26px
       a
         color = !black
         text-decoration: none
     #nav
-      display: inline-block
+      display: block
+      margin: 0 0 0 200px
       li
         display: block
         float: left
@@ -61,6 +63,12 @@ body
     background-color = !white
     +rounded_corners("bottom", 5)
     margin: 0 0 20px
+    min-height: 480px
+    #main
+      margin: 0 230px 0 0
+      padding: 30px 0 60px
+      &.with_nav
+        margin-left: 230px
   #footer
     +opacity(50)
     +font_size("small")
