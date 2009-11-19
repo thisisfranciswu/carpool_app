@@ -9,7 +9,7 @@
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   background-color: #6ba41e;
-  height: 280px; }
+  height: 240px; }
   /* line 10, ../../../app/stylesheets/screen.sass */
   #pitch>div {
     width: 415px;
@@ -26,7 +26,7 @@
     #pitch div.text h2 {
       font-size: 32px;
       font-weight: bold;
-      margin: 0 0 20px; }
+      margin: 0 0 10px; }
     /* line 23, ../../../app/stylesheets/screen.sass */
     #pitch div.text h3 {
       margin: 0; }

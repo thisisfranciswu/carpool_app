@@ -1,0 +1,80 @@
+@import lib.sass
+
+form
+  p
+    line-height: 28px
+    margin: 0 0 10px
+    &.submit
+      margin-bottom: 0
+      margin-top: 20px
+  div.complex_field
+    line-height: 28px
+    margin: 0 0 10px
+  label
+    display: block
+    float: left
+    text-align: right
+    margin-right: 10px
+    +font_size("medium")
+    &.description
+      line-height: 1
+      margin-top: 5px
+      +font_size("small")
+      float: none
+      text-align: left
+    &.choice
+      float: none
+      text-align: left
+      width: auto
+      margin: 0
+      display: inline
+  input[type=text], input[type=password]
+    font-family: helvetica, arial, sans-serif
+    background = !white
+    +font_size("medium")
+    padding: 5px 3px 0
+    height: 21px
+    border = 1px "solid" !white * 0.9 + !black * 0.1
+    border-top = 1px "solid" !white * 0.75 + !black * 0.25
+    border-left = 1px "solid" !white * 0.75 + !black * 0.25
+    &.is_blank
+      color = !light_grey
+  textarea
+    padding: 5px 3px
+    +font_size("medium")
+    border = 1px "solid" !white * 0.9 + !black * 0.1
+    border-top = 1px "solid" !white * 0.75 + !black * 0.25
+    border-left = 1px "solid" !white * 0.75 + !black * 0.25
+    margin: 0
+  &.lw40
+    label
+      width: 40px
+      &.description
+        width: auto
+        margin-left: 50px
+    p.indent
+      margin-left: 50px
+  &.lw80
+    label
+      width: 80px
+      &.description
+        width: auto
+        margin-left: 90px
+    p.indent
+      margin-left: 90px
+  &.lw120
+    label
+      width: 120px
+      &.description
+        width: auto
+        margin-left: 130px
+    p.indent
+      margin-left: 130px
+  &.lw160
+    label
+      width: 160px
+      &.description
+        width: auto
+        margin-left: 170px
+    p.indent
+      margin-left: 170px
