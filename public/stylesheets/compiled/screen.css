@@ -63,3 +63,21 @@
     /* line 46, ../../../app/stylesheets/screen.sass */
     #features ul li:last-child {
       margin: 0; }
+
+/* Tour Page */
+/* line 52, ../../../app/stylesheets/screen.sass */
+#features_controller ul.features li {
+  list-style: none;
+  margin: 0 0 30px; }
+  /* line 55, ../../../app/stylesheets/screen.sass */
+  #features_controller ul.features li img {
+    float: left;
+    width: 50px; }
+  /* line 58, ../../../app/stylesheets/screen.sass */
+  #features_controller ul.features li h4 {
+    color: #6ba41e;
+    font-size: 16px;
+    margin: 0 0 0 65px; }
+  /* line 62, ../../../app/stylesheets/screen.sass */
+  #features_controller ul.features li p {
+    margin: 0 0 0 65px; }
