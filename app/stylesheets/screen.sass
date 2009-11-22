@@ -12,7 +12,7 @@
     left: 0
     right: 0
     z-index: 100
-    background: url('/images/transparent_backgrounds/main_colour_85.png')
+    background: url('/images/transparent_backgrounds/main_colour_90.png')
     &>div
       width: 414px
       padding: 40px
@@ -21,7 +21,7 @@
       padding-right: 20px
       &>*
         color = !white
-        +text_shadow(2, 2, 0, !main_colour * 0.85 + !black * 0.15)
+        +text_shadow(2, 2, 0, !main_colour * 0.66 + !black * 0.33)
       h2
         +font_size("humongous")
         font-weight: bold
@@ -29,9 +29,29 @@
       h3
         +font_size("xxxlarge")
         margin: 0
-    div.image
+    div.try
       float: right
       padding-left: 20px
+      div.leader
+        padding: 10px
+        +rounded_corners("all", 5)
+        background = !yellow * 0.85 + !black * 0.15
+        text-align: center
+        &>*
+          color = !black
+          line-height: 1
+        h2
+          +font_size("large")
+          margin: 0
+      b.tail
+        display: block
+        height: 0
+        width: 0
+        border-top = 10px "solid" !yellow * 0.85 + !black * 0.15
+        border-right: 20px solid transparent
+        border-bottom: none
+        border-left: 10px solid transparent
+        margin: 0 0 20px 20px
 #map
   height: 400px
 #features
