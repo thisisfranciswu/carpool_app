@@ -3,29 +3,37 @@
 #home_controller.index #page_title
   display: none
 #pitch
+  border = 1px "solid" !light_grey
   margin: 0 0 20px
-  +rounded_corners("all", 5)
-  background-color = !main_colour
-  height: 240px
-  &>div
-    width: 415px
-    padding: 40px
-  div.text
-    float: left
-    padding-right: 20px
-    &>*
-      color = !white
-      +text_shadow(2, 2, 0, !main_colour * 0.85 + !black * 0.15)
-    h2
-      +font_size("humongous")
-      font-weight: bold
-      margin: 0 0 10px
-    h3
-      +font_size("xxxlarge")
-      margin: 0
-  div.image
-    float: right
-    padding-left: 20px
+  position: relative
+  #pitch_container
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 100
+    background: url('/images/transparent_backgrounds/main_colour_85.png')
+    &>div
+      width: 414px
+      padding: 40px
+    div.text
+      float: left
+      padding-right: 20px
+      &>*
+        color = !white
+        +text_shadow(2, 2, 0, !main_colour * 0.85 + !black * 0.15)
+      h2
+        +font_size("humongous")
+        font-weight: bold
+        margin: 0 0 10px
+      h3
+        +font_size("xxxlarge")
+        margin: 0
+    div.image
+      float: right
+      padding-left: 20px
+#map
+  height: 400px
 #features
   margin: 0 0 20px
   background-color = !white

@@ -9,7 +9,7 @@
   <%= yield :head %>
 </head>
 
-<body id="<%= @controller.controller_name %>_controller" class="<%= @template.instance_variable_get(:@_first_render).name %>">
+<body id="<%= @controller.controller_name %>_controller" class="<%= @template.instance_variable_get(:@_first_render).name %>" <%= yield :body_tag %>>
 
   <div class="page_width">
 
