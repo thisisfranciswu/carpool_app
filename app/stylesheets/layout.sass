@@ -59,6 +59,17 @@ body
         color = !grey
         &:hover
           color = !light_grey
+  #page_title
+    +rounded_corners("top", 5)
+    background-color = !main_colour
+    padding: 20px 40px
+    border-bottom = 1px "solid" (!main_colour * 0.85 + black * 0.15)
+    h2
+      color = !white
+      +text_shadow(2, 2, 0, !main_colour * 0.85 + !black * 0.15)
+      +font_size("xxhuge")
+      font-weight: bold
+      margin: 0
   #content
     background-color = !white
     +rounded_corners("bottom", 5)

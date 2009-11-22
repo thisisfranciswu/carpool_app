@@ -6,9 +6,6 @@ class HomeController < ApplicationController
     render :layout => "home"
   end
 
-  def tour
-  end
-
   def usage
   end
 

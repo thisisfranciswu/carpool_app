@@ -46,8 +46,8 @@ h2 {
 
 /* line 35, ../../../app/stylesheets/common.sass */
 h3 {
-  font-size: 20px;
-  margin: 0 0 0.75em; }
+  font-size: 26px;
+  margin: 0 0 0.25em; }
 
 /* line 38, ../../../app/stylesheets/common.sass */
 h4 {
@@ -82,45 +82,27 @@ div.panel div.header span.options {
   float: right; }
 
 /* line 66, ../../../app/stylesheets/common.sass */
-#page_title {
-  border-top-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -webkit-border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-right-radius: 5px;
-  background-color: #6ba41e;
-  padding: 10px 20px;
-  border-bottom: 1px solid #5a8b19; }
-  /* line 71, ../../../app/stylesheets/common.sass */
-  #page_title h2 {
-    color: white;
-    text-shadow: 2px 2px 0px #5a8b19;
-    font-size: 28px;
-    font-weight: bold;
-    margin: 0; }
-
-/* line 78, ../../../app/stylesheets/common.sass */
 ul.nav {
   width: 189px;
-  padding: 10px 0 10px 10px;
+  padding: 40px 0 10px 10px;
   float: left;
   border-right: 1px solid #e7e7e7;
   background: #f8f8f8; }
-  /* line 84, ../../../app/stylesheets/common.sass */
+  /* line 72, ../../../app/stylesheets/common.sass */
   ul.nav li {
     display: block;
     list-style: none;
     margin: 0 0 3px 0; }
-    /* line 88, ../../../app/stylesheets/common.sass */
+    /* line 76, ../../../app/stylesheets/common.sass */
     ul.nav li b.arrow {
       display: none; }
-    /* line 90, ../../../app/stylesheets/common.sass */
+    /* line 78, ../../../app/stylesheets/common.sass */
     ul.nav li a {
       display: block;
       padding: 0 10px;
-      height: 30px;
-      line-height: 30px;
+      height: 36px;
+      line-height: 36px;
+      text-align: right;
       text-decoration: none;
       border-bottom-left-radius: 3px;
       -moz-border-radius-bottomleft: 3px;
@@ -134,20 +116,20 @@ ul.nav {
       box-shadow: 0px 0px 1px #e7e7e7;
       -webkit-box-shadow: 0px 0px 1px #e7e7e7;
       -moz-box-shadow: 0px 0px 1px #e7e7e7; }
-      /* line 101, ../../../app/stylesheets/common.sass */
+      /* line 90, ../../../app/stylesheets/common.sass */
       ul.nav li a:hover {
         color: #6ba41e; }
-    /* line 103, ../../../app/stylesheets/common.sass */
+    /* line 92, ../../../app/stylesheets/common.sass */
     ul.nav li:last-child {
       border-bottom: none;
       margin-bottom: 0; }
-    /* line 106, ../../../app/stylesheets/common.sass */
+    /* line 95, ../../../app/stylesheets/common.sass */
     ul.nav li.current {
       border: none;
       margin-right: -1px; }
-      /* line 109, ../../../app/stylesheets/common.sass */
+      /* line 98, ../../../app/stylesheets/common.sass */
       ul.nav li.current b.arrow {
-        border: 15px solid transparent;
+        border: 18px solid transparent;
         border-right: none;
         border-left: 10px solid #6ba41e;
         float: right;
@@ -156,7 +138,21 @@ ul.nav {
         width: 0;
         position: relative;
         right: -10px; }
-      /* line 119, ../../../app/stylesheets/common.sass */
+      /* line 108, ../../../app/stylesheets/common.sass */
       ul.nav li.current a {
         background-color: #6ba41e;
         color: white; }
+
+/* line 112, ../../../app/stylesheets/common.sass */
+p.leader {
+  font-size: 18px;
+  margin: 0 0 30px;
+  color: gray; }
+
+/* line 116, ../../../app/stylesheets/common.sass */
+p.breadcrumbs {
+  font-size: 12px;
+  color: gray;
+  padding: 0 0 5px;
+  margin: 0 0 20px;
+  border-bottom: 1px solid #efefef; }

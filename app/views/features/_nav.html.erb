@@ -1,0 +1,11 @@
+<ul class="nav">
+  <li class="<%= 'current' if @controller.action_name == 'everyday_carpooling' %>">
+    <b class="arrow"><!----></b><%= link_to "Everyday Carpooling", features_everyday_carpooling_path, :title => "Everyday Carpooling" %>
+  </li>
+  <li class="<%= 'current' if @controller.action_name == 'smart_matching' %>">
+    <b class="arrow"><!----></b><%= link_to "Smart Matching", features_smart_matching_path, :title => "Smart Matching" %>
+  </li>
+  <li class="<%= 'current' if @controller.action_name == 'savings_everywhere' %>">
+    <b class="arrow"><!----></b><%= link_to "Savings Everywhere", features_savings_everywhere_path, :title => "Savings Everywhere" %>
+  </li>
+</ul>

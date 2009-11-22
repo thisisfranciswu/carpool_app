@@ -33,8 +33,8 @@ h2
   +font_size("xxxlarge")
   margin: 0 0 1em
 h3
-  +font_size("xxlarge")
-  margin: 0 0 0.75em
+  +font_size("xhuge")
+  margin: 0 0 0.25em
 h4
   +font_size("xlarge")
   margin: 0 0 0.5em
@@ -63,21 +63,9 @@ div.panel
   div.content
   div.footer
 
-#page_title
-  +rounded_corners("top", 5)
-  background-color = !main_colour
-  padding: 10px 20px
-  border-bottom = 1px "solid" (!main_colour * 0.85 + black * 0.15)
-  h2
-    color = !white
-    +text_shadow(2, 2, 0, !main_colour * 0.85 + !black * 0.15)
-    +font_size("xxhuge")
-    font-weight: bold
-    margin: 0
-
 ul.nav
   width: 189px
-  padding: 10px 0 10px 10px
+  padding: 40px 0 10px 10px
   float: left
   border-right = 1px "solid" !light_grey * 0.33 + !white * 0.66
   background = !light_grey * 0.1 + !white * 0.9
@@ -90,8 +78,9 @@ ul.nav
     a
       display: block
       padding: 0 10px
-      height: 30px
-      line-height: 30px
+      height: 36px
+      line-height: 36px
+      text-align: right
       text-decoration: none
       +rounded_corners("left", 3)
       color = !grey
@@ -107,7 +96,7 @@ ul.nav
       border: none
       margin-right: -1px
       b.arrow
-        border: 15px solid transparent
+        border: 18px solid transparent
         border-right: none
         border-left = 10px "solid" !main_colour
         float: right
@@ -120,6 +109,16 @@ ul.nav
         background-color = !main_colour
         color = !white
 
+p.leader
+  +font_size("xlarge")
+  margin: 0 0 30px
+  color = !grey
+p.breadcrumbs
+  +font_size("small")
+  color = !grey
+  padding: 0 0 5px
+  margin: 0 0 20px
+  border-bottom = 1px "solid" !light_grey * 0.25 + !white * 0.75
 
 
 

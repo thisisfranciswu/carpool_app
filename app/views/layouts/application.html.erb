@@ -3,8 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title><%= @title + " &#171;" if @title %> <%= app_name %></title>
-  <%= stylesheet_link_tag "reset", "compiled/layout.css", "compiled/common.css", "compiled/screen.css", :cache => true %>
+  <title><%= @page_title + " &#171;" if @page_title %> <%= app_name %></title>
+  <%= stylesheet_link_tag "reset", "compiled/layout.css", "compiled/common.css", "compiled/forms.css", "compiled/screen.css", :cache => true %>
   <%= javascript_include_tag "jquery", "application", :cache => true %>
   <%= yield :head %>
 </head>
@@ -19,8 +19,8 @@
       <% if @content_for_page_options %>
         <span class="page_options"><%= yield :page_options %></span>
       <% end %>
-      <% if @title %>
-        <h2><%= @title %></h2>
+      <% if @page_title %>
+        <h2><%= @page_title %></h2>
       <% end %>
     </div>
     <div id="content" class="clearfix">

@@ -9,7 +9,7 @@
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   background-color: #6ba41e;
-  height: 280px; }
+  height: 240px; }
   /* line 10, ../../../app/stylesheets/screen.sass */
   #pitch>div {
     width: 415px;
@@ -26,40 +26,59 @@
     #pitch div.text h2 {
       font-size: 32px;
       font-weight: bold;
-      margin: 0 0 20px; }
+      margin: 0 0 10px; }
     /* line 23, ../../../app/stylesheets/screen.sass */
     #pitch div.text h3 {
+      font-size: 22px;
       margin: 0; }
-  /* line 25, ../../../app/stylesheets/screen.sass */
+  /* line 26, ../../../app/stylesheets/screen.sass */
   #pitch div.image {
     float: right;
     padding-left: 20px; }
 
-/* line 28, ../../../app/stylesheets/screen.sass */
+/* line 29, ../../../app/stylesheets/screen.sass */
 #features {
   margin: 0 0 20px;
   background-color: white;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
-  /* line 32, ../../../app/stylesheets/screen.sass */
+  /* line 33, ../../../app/stylesheets/screen.sass */
   #features ul {
     overflow: hidden;
     padding: 20px; }
-    /* line 35, ../../../app/stylesheets/screen.sass */
+    /* line 36, ../../../app/stylesheets/screen.sass */
     #features ul li {
       display: block;
       float: left;
       width: 290px;
       margin: 0 20px 0 0; }
-      /* line 40, ../../../app/stylesheets/screen.sass */
+      /* line 41, ../../../app/stylesheets/screen.sass */
       #features ul li h2 {
         font-size: 16px;
         font-weight: bold;
         margin: 0; }
-      /* line 44, ../../../app/stylesheets/screen.sass */
+      /* line 45, ../../../app/stylesheets/screen.sass */
       #features ul li p {
         color: gray; }
-    /* line 46, ../../../app/stylesheets/screen.sass */
+    /* line 47, ../../../app/stylesheets/screen.sass */
     #features ul li:last-child {
       margin: 0; }
+
+/* Tour Page */
+/* line 53, ../../../app/stylesheets/screen.sass */
+#features_controller ul.features li {
+  list-style: none;
+  margin: 0 0 30px; }
+  /* line 56, ../../../app/stylesheets/screen.sass */
+  #features_controller ul.features li img {
+    float: left;
+    width: 50px; }
+  /* line 59, ../../../app/stylesheets/screen.sass */
+  #features_controller ul.features li h4 {
+    color: #6ba41e;
+    font-size: 16px;
+    margin: 0 0 0 65px; }
+  /* line 63, ../../../app/stylesheets/screen.sass */
+  #features_controller ul.features li p {
+    margin: 0 0 0 65px; }
