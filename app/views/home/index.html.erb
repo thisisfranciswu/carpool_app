@@ -26,22 +26,40 @@
   onload="initialize()" onunload="GUnload()"
 <% end %>
 
-<div id="pitch" class="clearfix">
-  <div id="pitch_container">
+<div id="top" class="clearfix">
+  <div id="pitch">
     <div class="text">
       <h2>Carpooling for daily life</h2>
       <h3>John and jane live and work in the same neighbourhood and have similar schedules. Shouldn&#39;t they be carpooling?</h3>
     </div>
     <div class="try">
       <div class="leader">
-        <h2><strong>Try it out!</strong> Could you be carpooling tomorrow?</h2>
+        <h2><strong>Try it out!</strong> <span>Could you be carpooling tomorrow?</span></h2>
+        <b class="tail"><!----></b>
       </div>
-      <b class="tail"><!----></b>
       <form>
-        asdf
+        <div class="complex_field">
+          <span>
+            <label class="title depart_from">Depart from</label>
+            <input type="text" size="17px"/>
+          </span>
+          <span>
+            <label class="title arrive_to">Arrive to</label>
+            <input type="text" size="17px"/>
+          </span>
+          <span>
+            <label class="title arrive_by">Arrive by</label>
+            <input type="text" size="8"/>
+          </span>
+        </div>
+        <p class="indent submit">
+          <button>Find a driver</button>
+          <button>Find a passenger</button>
+        </p>
       </form>
     </div>
   </div>
+  <div id="search_results"></div>
   <div id="map"></div>
 </div>
 

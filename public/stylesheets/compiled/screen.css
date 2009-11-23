@@ -3,12 +3,12 @@
   display: none; }
 
 /* line 5, ../../../app/stylesheets/screen.sass */
-#pitch {
+#top {
   border: 1px solid silver;
   margin: 0 0 20px;
   position: relative; }
   /* line 9, ../../../app/stylesheets/screen.sass */
-  #pitch #pitch_container {
+  #top #pitch {
     position: absolute;
     top: 0;
     left: 0;
@@ -16,104 +16,182 @@
     z-index: 100;
     background: url('/images/transparent_backgrounds/main_colour_90.png'); }
     /* line 16, ../../../app/stylesheets/screen.sass */
-    #pitch #pitch_container>div {
-      width: 414px;
-      padding: 40px; }
-    /* line 19, ../../../app/stylesheets/screen.sass */
-    #pitch #pitch_container div.text {
+    #top #pitch div.text {
+      width: 374px;
+      padding: 40px 20px 40px 40px;
       float: left;
       padding-right: 20px; }
-      /* line 22, ../../../app/stylesheets/screen.sass */
-      #pitch #pitch_container div.text>* {
+      /* line 21, ../../../app/stylesheets/screen.sass */
+      #top #pitch div.text>* {
         color: white;
         text-shadow: 2px 2px 0px #466c13; }
-      /* line 25, ../../../app/stylesheets/screen.sass */
-      #pitch #pitch_container div.text h2 {
+      /* line 24, ../../../app/stylesheets/screen.sass */
+      #top #pitch div.text h2 {
         font-size: 32px;
         font-weight: bold;
         margin: 0 0 10px; }
-      /* line 29, ../../../app/stylesheets/screen.sass */
-      #pitch #pitch_container div.text h3 {
-        font-size: 22px;
+      /* line 28, ../../../app/stylesheets/screen.sass */
+      #top #pitch div.text h3 {
+        font-size: 20px;
         margin: 0; }
-    /* line 32, ../../../app/stylesheets/screen.sass */
-    #pitch #pitch_container div.try {
-      float: right;
-      padding-left: 20px; }
+    /* line 31, ../../../app/stylesheets/screen.sass */
+    #top #pitch div.try {
+      width: 454px;
+      padding: 40px 40px 40px 20px;
+      float: right; }
       /* line 35, ../../../app/stylesheets/screen.sass */
-      #pitch #pitch_container div.try div.leader {
-        padding: 10px;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
+      #top #pitch div.try div.leader {
+        padding: 10px 20px;
+        border-top-left-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -webkit-border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-right-radius: 5px;
         background: #d8d800;
-        text-align: center; }
+        position: relative; }
         /* line 40, ../../../app/stylesheets/screen.sass */
-        #pitch #pitch_container div.try div.leader>* {
+        #top #pitch div.try div.leader>* {
           color: black;
           line-height: 1; }
         /* line 43, ../../../app/stylesheets/screen.sass */
-        #pitch #pitch_container div.try div.leader h2 {
+        #top #pitch div.try div.leader h2 {
           font-size: 16px;
           margin: 0; }
-      /* line 46, ../../../app/stylesheets/screen.sass */
-      #pitch #pitch_container div.try b.tail {
+        /* line 46, ../../../app/stylesheets/screen.sass */
+        #top #pitch div.try div.leader b.tail {
+          display: block;
+          position: absolute;
+          top: 100%;
+          left: 20px;
+          height: 0;
+          width: 0;
+          border-top: 10px solid #d8d800;
+          border-right: 20px solid transparent;
+          border-bottom: none;
+          border-left: 10px solid transparent; }
+      /* line 57, ../../../app/stylesheets/screen.sass */
+      #top #pitch div.try form {
+        background: white;
+        border-bottom-right-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        padding: 20px; }
+  /* line 61, ../../../app/stylesheets/screen.sass */
+  #top #search_results {
+    float: right;
+    background: white;
+    position: relative;
+    z-index: 10;
+    width: 0;
+    overflow: hidden;
+    border-left: 0px solid silver;
+    height: 520px;
+    display: none; }
+    /* line 72, ../../../app/stylesheets/screen.sass */
+    #top #search_results div.try div.leader {
+      padding: 10px;
+      background: #d8d800;
+      position: relative; }
+      /* line 76, ../../../app/stylesheets/screen.sass */
+      #top #search_results div.try div.leader>* {
+        color: black;
+        line-height: 1; }
+      /* line 79, ../../../app/stylesheets/screen.sass */
+      #top #search_results div.try div.leader h2 {
+        font-size: 14px;
+        margin: 0; }
+        /* line 82, ../../../app/stylesheets/screen.sass */
+        #top #search_results div.try div.leader h2 span {
+          display: none; }
+      /* line 84, ../../../app/stylesheets/screen.sass */
+      #top #search_results div.try div.leader b.tail {
         display: block;
+        position: absolute;
+        top: 100%;
+        left: 10px;
         height: 0;
         width: 0;
+        margin: -5px 0 0;
         border-top: 10px solid #d8d800;
         border-right: 20px solid transparent;
         border-bottom: none;
-        border-left: 10px solid transparent;
-        margin: 0 0 20px 20px; }
+        border-left: 10px solid transparent; }
+    /* line 96, ../../../app/stylesheets/screen.sass */
+    #top #search_results div.try form {
+      background: white;
+      border-bottom-right-radius: 5px;
+      -moz-border-radius-bottomright: 5px;
+      -webkit-border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      -moz-border-radius-bottomleft: 5px;
+      -webkit-border-bottom-left-radius: 5px;
+      padding: 10px; }
+      /* line 100, ../../../app/stylesheets/screen.sass */
+      #top #search_results div.try form span {
+        float: none;
+        margin: 0 0 5px; }
+        /* line 103, ../../../app/stylesheets/screen.sass */
+        #top #search_results div.try form span label {
+          float: left;
+          display: block;
+          width: 16px;
+          text-indent: -9000px;
+          margin: 0; }
+        /* line 109, ../../../app/stylesheets/screen.sass */
+        #top #search_results div.try form span input[type="text"] {
+          margin: 0 0 0 21px;
+          display: block; }
+  /* line 112, ../../../app/stylesheets/screen.sass */
+  #top #map {
+    height: 440px; }
 
-/* line 55, ../../../app/stylesheets/screen.sass */
-#map {
-  height: 400px; }
-
-/* line 57, ../../../app/stylesheets/screen.sass */
+/* line 115, ../../../app/stylesheets/screen.sass */
 #features {
   margin: 0 0 20px;
   background-color: white;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
-  /* line 61, ../../../app/stylesheets/screen.sass */
+  /* line 119, ../../../app/stylesheets/screen.sass */
   #features ul {
     overflow: hidden;
     padding: 20px; }
-    /* line 64, ../../../app/stylesheets/screen.sass */
+    /* line 122, ../../../app/stylesheets/screen.sass */
     #features ul li {
       display: block;
       float: left;
       width: 290px;
       margin: 0 20px 0 0; }
-      /* line 69, ../../../app/stylesheets/screen.sass */
+      /* line 127, ../../../app/stylesheets/screen.sass */
       #features ul li h2 {
         font-size: 16px;
         font-weight: bold;
         margin: 0; }
-      /* line 73, ../../../app/stylesheets/screen.sass */
+      /* line 131, ../../../app/stylesheets/screen.sass */
       #features ul li p {
         color: gray; }
-    /* line 75, ../../../app/stylesheets/screen.sass */
+    /* line 133, ../../../app/stylesheets/screen.sass */
     #features ul li:last-child {
       margin: 0; }
 
 /* Tour Page */
-/* line 81, ../../../app/stylesheets/screen.sass */
+/* line 139, ../../../app/stylesheets/screen.sass */
 #features_controller ul.features li {
   list-style: none;
   margin: 0 0 30px; }
-  /* line 84, ../../../app/stylesheets/screen.sass */
+  /* line 142, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li img {
     float: left;
     width: 50px; }
-  /* line 87, ../../../app/stylesheets/screen.sass */
+  /* line 145, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li h4 {
     color: #6ba41e;
     font-size: 16px;
     margin: 0 0 0 65px; }
-  /* line 91, ../../../app/stylesheets/screen.sass */
+  /* line 149, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li p {
     margin: 0 0 0 65px; }

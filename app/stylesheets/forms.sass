@@ -6,11 +6,18 @@ form
     margin: 0 0 10px
     &.submit
       margin-bottom: 0
-      margin-top: 20px
   div.complex_field
     line-height: 28px
     margin: 0 0 10px
+    overflow: hidden
+    span
+      float: left
+      display: block
+      margin: 0 10px 0 0
+      &:last-child
+        margin: 0
   label
+    color = !grey
     display: block
     float: left
     text-align: right
@@ -18,7 +25,13 @@ form
     +font_size("medium")
     &.description
       line-height: 1
-      margin-top: 5px
+      margin: 5px 0 0
+      +font_size("small")
+      float: none
+      text-align: left
+    &.title
+      line-height: 1
+      margin: 0 0 5px
       +font_size("small")
       float: none
       text-align: left

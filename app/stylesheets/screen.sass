@@ -2,21 +2,20 @@
 
 #home_controller.index #page_title
   display: none
-#pitch
+#top
   border = 1px "solid" !light_grey
   margin: 0 0 20px
   position: relative
-  #pitch_container
+  #pitch
     position: absolute
     top: 0
     left: 0
     right: 0
     z-index: 100
     background: url('/images/transparent_backgrounds/main_colour_90.png')
-    &>div
-      width: 414px
-      padding: 40px
     div.text
+      width: 374px
+      padding: 40px 20px 40px 40px
       float: left
       padding-right: 20px
       &>*
@@ -27,33 +26,92 @@
         font-weight: bold
         margin: 0 0 10px
       h3
-        +font_size("xxxlarge")
+        +font_size("xxlarge")
         margin: 0
     div.try
+      width: 454px
+      padding: 40px 40px 40px 20px
       float: right
-      padding-left: 20px
       div.leader
-        padding: 10px
-        +rounded_corners("all", 5)
+        padding: 10px 20px
+        +rounded_corners("top", 5)
         background = !yellow * 0.85 + !black * 0.15
-        text-align: center
+        position: relative
         &>*
           color = !black
           line-height: 1
         h2
           +font_size("large")
           margin: 0
-      b.tail
-        display: block
-        height: 0
-        width: 0
-        border-top = 10px "solid" !yellow * 0.85 + !black * 0.15
-        border-right: 20px solid transparent
-        border-bottom: none
-        border-left: 10px solid transparent
-        margin: 0 0 20px 20px
-#map
-  height: 400px
+        b.tail
+          display: block
+          position: absolute
+          top: 100%
+          left: 20px
+          height: 0
+          width: 0
+          border-top = 10px "solid" !yellow * 0.85 + !black * 0.15
+          border-right: 20px solid transparent
+          border-bottom: none
+          border-left: 10px solid transparent
+      form
+        background = !white
+        +rounded_corners("bottom", 5)
+        padding: 20px
+  #search_results
+    float: right
+    background = !white
+    position: relative
+    z-index: 10
+    width: 0
+    overflow: hidden
+    border-left = 0px "solid" !light_grey
+    height: 520px
+    display: none
+    div.try
+      div.leader
+        padding: 10px
+        background = !yellow * 0.85 + !black * 0.15
+        position: relative
+        &>*
+          color = !black
+          line-height: 1
+        h2
+          +font_size("medium")
+          margin: 0
+          span
+            display: none
+        b.tail
+          display: block
+          position: absolute
+          top: 100%
+          left: 10px
+          height: 0
+          width: 0
+          margin: -5px 0 0
+          border-top = 10px "solid" !yellow * 0.85 + !black * 0.15
+          border-right: 20px solid transparent
+          border-bottom: none
+          border-left: 10px solid transparent
+      form
+        background = !white
+        +rounded_corners("bottom", 5)
+        padding: 10px
+        span
+          float: none
+          margin: 0 0 5px
+          label
+            float: left
+            display: block
+            width: 16px
+            text-indent: -9000px
+            margin: 0
+          input[type="text"]
+            margin: 0 0 0 21px
+            display: block
+  #map
+    height: 440px
+
 #features
   margin: 0 0 20px
   background-color = !white
