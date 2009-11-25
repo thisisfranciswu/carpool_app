@@ -4,8 +4,6 @@ ActionController::Routing::Routes.draw do |map|
   map.login    '/login',    :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users',    :action => 'create'
   map.signup   '/signup',   :controller => 'users',    :action => 'new'
-  map.usage    '/usage',    :controller => 'home',     :action => 'usage'
-  map.privacy  '/privacy',  :controller => 'home',     :action => 'privacy'
 
   map.resources :users
 
@@ -14,10 +12,17 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :features
   map.with_options :controller => "features" do |features|
     features.features_everyday_carpooling "features/everyday_carpooling", :action => "everyday_carpooling"
-    features.features_smart_matching "features/smart_matching", :action => "smart_matching"
-    features.features_savings_everywhere "features/savings_everywhere", :action => "savings_everywhere"
+    features.features_smart_matching      "features/smart_matching",      :action => "smart_matching"
+    features.features_savings_everywhere  "features/savings_everywhere",  :action => "savings_everywhere"
   end
-
+  map.resource :account, :controller => "account", :member => { :profile => :get, :access => :get }
+  map.with_options :controller => "pages" do |pages|
+    pages.pages_about   "/about",   :action => "about"
+    pages.pages_privacy "/privacy", :action => "privacy"
+    pages.pages_usage   "/usage",   :action => "usage"
+    pages.pages_help    "/help",    :action => "help"
+    pages.pages_contact "/contact", :action => "contact"
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
 

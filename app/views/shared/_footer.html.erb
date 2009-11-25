@@ -1,7 +1,9 @@
 <div id="footer">
   <p class="legal">
-    <%= link_to app_name, root_url, :title => app_name %> &copy; 2009 &middot;
-    <%= link_to "Terms of Use", usage_path, :title => "Terms of Use" %> &middot;
-    <%= link_to "Privacy Policy", privacy_path, :title => "Privacy Policy" %>
+    <%= link_to app_name,         root_url,           :title => app_name %> &copy; 2009  &middot;
+    <%= link_to "About",          pages_about_path,   :title => "About #{app_name}" %>   &middot;
+    <%= link_to "Contact",        pages_contact_path, :title => "Contact #{app_name}" %> &middot;
+    <%= link_to "Terms of Use",   pages_usage_path,   :title => "Terms of Use" %>        &middot;
+    <%= link_to "Privacy Policy", pages_privacy_path, :title => "Privacy Policy" %>
   </p>
 </div>

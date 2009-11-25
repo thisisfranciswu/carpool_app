@@ -3,13 +3,14 @@ class HomeController < ApplicationController
   layout "application"
 
   def index
-    render :layout => "home"
+    if logged_in?
+      render :action => "dashboard"
+    else
+      render :layout => "home"
+    end
   end
 
-  def usage
-  end
-
-  def privacy
+  def dashboard
   end
 
 end
