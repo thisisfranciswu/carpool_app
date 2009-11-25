@@ -23,11 +23,19 @@
         <h2><%= @page_title %></h2>
       <% end %>
     </div>
-    <div id="content" class="clearfix">
-      <%- flash.each do |name, message| -%>
-        <%= content_tag :p, message, :class => "flash #{name}" %>
-      <%- end -%>
-      <%= yield %>
+    <div id="content" class="clearfix <%= @layout %>">
+      <% if @content_for_sidebar_left %>
+        <div id="sidebar_left"><%= yield :sidebar_left %></div>
+      <% end %>
+      <div id="main">
+        <%- flash.each do |name, message| -%>
+          <%= content_tag :p, message, :class => "flash #{name}" %>
+        <%- end -%>
+        <%= yield %>
+      </div>
+      <% if @content_for_sidebar_right %>
+        <div id="sidebar_right"><%= yield :sidebar_right %></div>
+      <% end %>
     </div>
 
     <%= render :partial => "shared/footer" %>

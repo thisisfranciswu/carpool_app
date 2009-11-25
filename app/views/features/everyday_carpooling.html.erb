@@ -1,37 +1,38 @@
 <% @page_title = "Feature Tour" %>
+<% @layout = "with_sidebar_left" %>
 
-<%= render :partial => "nav" %>
+<% content_for :sidebar_left do %>
+  <%= render :partial => "nav" %>
+<% end %>
 
-<div id="main" class="with_nav">
-  <p class="breadcrumbs">
-    <%= link_to "Features", features_path, :title => "Feature Tour" %> /
-    Everyday Carpooling
-  </p>
-  <h3>Built Around Daily Life</h3>
-  <p class="leader">
-    Arrange carpools based on your daily routines.<br/>
-    It makes carpooling like clockwork.
-  </p>
-  <ul class="features">
-    <li>
-      <%= image_tag "asdf", :alt => "asdf" %>
-      <h4>Reliable</h4>
-      <p>asdf</p>
-    </li>
-    <li>
-      <%= image_tag "asdf", :alt => "asdf" %>
-      <h4>Secure</h4>
-      <p>asdf</p>
-    </li>
-    <li>
-      <%= image_tag "asdf", :alt => "asdf" %>
-      <h4>Flexible</h4>
-      <p>asdf</p>
-    </li>
-    <li>
-      <%= image_tag "asdf", :alt => "asdf" %>
-      <h4>Smart</h4>
-      <p>asdf</p>
-    </li>
-  </ul>
-</div>
+<p class="breadcrumbs">
+  <%= link_to "Features", features_path, :title => "Feature Tour" %> /
+  Everyday Carpooling
+</p>
+<h3>Built Around Daily Life</h3>
+<p class="leader">
+  Arrange carpools based on your daily routines.<br/>
+  It makes carpooling like clockwork.
+</p>
+<ul class="features">
+  <li>
+    <%= image_tag "asdf", :alt => "asdf" %>
+    <h4>Reliable</h4>
+    <p>asdf</p>
+  </li>
+  <li>
+    <%= image_tag "asdf", :alt => "asdf" %>
+    <h4>Secure</h4>
+    <p>asdf</p>
+  </li>
+  <li>
+    <%= image_tag "asdf", :alt => "asdf" %>
+    <h4>Flexible</h4>
+    <p>asdf</p>
+  </li>
+  <li>
+    <%= image_tag "asdf", :alt => "asdf" %>
+    <h4>Smart</h4>
+    <p>asdf</p>
+  </li>
+</ul>

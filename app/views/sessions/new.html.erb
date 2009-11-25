@@ -1,21 +1,19 @@
 <% @page_title = "Log In" %>
 
-<div id="main">
-  <% form_tag session_path, :class => "lw80" do -%>
-    <p>
-      <%= label_tag 'login' %>
-      <%= text_field_tag 'login', @login %>
-    </p>
-    <p>
-      <%= label_tag 'password' %>
-      <%= password_field_tag 'password', nil %>
-    </p>
-    <p class="indent">
-      <%= check_box_tag 'remember_me', '1', @remember_me %>
-      <%= label_tag 'remember_me', 'Remember me', :class => "choice" %>
-    </p>
-    <p class="indent submit">
-      <%= submit_tag 'Log in' %>
-    </p>
-  <% end -%>
-</div>
+<% form_tag session_path, :class => "lw80" do -%>
+  <p>
+    <%= label_tag 'login' %>
+    <%= text_field_tag 'login', @login %>
+  </p>
+  <p>
+    <%= label_tag 'password' %>
+    <%= password_field_tag 'password', nil %>
+  </p>
+  <p class="indent">
+    <%= check_box_tag 'remember_me', '1', @remember_me %>
+    <%= label_tag 'remember_me', 'Remember me', :class => "choice" %>
+  </p>
+  <p class="indent submit">
+    <%= submit_tag 'Log in' %>
+  </p>
+<% end -%>

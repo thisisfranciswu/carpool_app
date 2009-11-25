@@ -106,16 +106,19 @@ body {
     body #content #main {
       margin: 0 200px 0 0;
       padding: 40px 40px 80px; }
-      /* line 81, ../../../app/stylesheets/layout.sass */
-      body #content #main.with_nav {
-        margin-left: 200px; }
-  /* line 83, ../../../app/stylesheets/layout.sass */
+    /* line 82, ../../../app/stylesheets/layout.sass */
+    body #content.with_sidebar_left #main {
+      margin-left: 200px; }
+    /* line 85, ../../../app/stylesheets/layout.sass */
+    body #content.with_sidebar_right #main {
+      margin-right: 200px; }
+  /* line 88, ../../../app/stylesheets/layout.sass */
   body #footer {
     filter: alpha(opacity=50);
     opacity: 0.5;
     -moz-opacity: 0.5;
     font-size: 12px; }
-    /* line 86, ../../../app/stylesheets/layout.sass */
+    /* line 91, ../../../app/stylesheets/layout.sass */
     body #footer:hover {
       filter: alpha(opacity=100);
       opacity: 1;

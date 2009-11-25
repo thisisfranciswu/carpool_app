@@ -84,7 +84,7 @@ div.panel div.header span.options {
 /* line 66, ../../../app/stylesheets/common.sass */
 ul.nav {
   width: 189px;
-  padding: 40px 0 10px 10px;
+  padding: 40px 0 40px 10px;
   float: left;
   border-right: 1px solid #e7e7e7;
   background: #f8f8f8; }

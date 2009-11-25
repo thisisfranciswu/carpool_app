@@ -78,8 +78,13 @@ body
     #main
       margin: 0 200px 0 0
       padding: 40px 40px 80px
-      &.with_nav
+    &.with_sidebar_left
+      #main
         margin-left: 200px
+    &.with_sidebar_right
+      #main
+        margin-right: 200px
+
   #footer
     +opacity(50)
     +font_size("small")
