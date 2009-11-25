@@ -120,7 +120,20 @@ p.breadcrumbs
   margin: 0 0 20px
   border-bottom = 1px "solid" !light_grey * 0.25 + !white * 0.75
 
-
+p.flash
+  margin: 0 0 20px
+  +rounded_corners("all", 3)
+  +font_size("small")
+  font-weight: bold
+  padding: 0 0 0 21px
+  background-repeat: no-repeat
+  background-position: left top
+  &.error
+    color = !colour_negative * 0.66 + !black * 0.33
+    background-image: url('/images/icons/exclamation-red.png')
+  &.notice
+    color = !colour_positive * 0.66 + !black * 0.33
+    background-image: url('/images/icons/information.png')
 
 
 

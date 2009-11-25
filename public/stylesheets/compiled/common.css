@@ -20,7 +20,7 @@ a {
   outline: none; }
   /* line 19, ../../../app/stylesheets/common.sass */
   a.negative {
-    color: #b4520f; }
+    color: #cc0000; }
   /* line 21, ../../../app/stylesheets/common.sass */
   a.disabled {
     color: !grey;
@@ -156,3 +156,23 @@ p.breadcrumbs {
   padding: 0 0 5px;
   margin: 0 0 20px;
   border-bottom: 1px solid #efefef; }
+
+/* line 123, ../../../app/stylesheets/common.sass */
+p.flash {
+  margin: 0 0 20px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 0 0 21px;
+  background-repeat: no-repeat;
+  background-position: left top; }
+  /* line 131, ../../../app/stylesheets/common.sass */
+  p.flash.error {
+    color: #860000;
+    background-image: url('/images/icons/exclamation-red.png'); }
+  /* line 134, ../../../app/stylesheets/common.sass */
+  p.flash.notice {
+    color: #008600;
+    background-image: url('/images/icons/information.png'); }
