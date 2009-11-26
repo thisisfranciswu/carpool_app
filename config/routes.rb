@@ -15,7 +15,12 @@ ActionController::Routing::Routes.draw do |map|
     features.features_smart_matching      "features/smart_matching",      :action => "smart_matching"
     features.features_savings_everywhere  "features/savings_everywhere",  :action => "savings_everywhere"
   end
-  map.resource :account, :controller => "account", :member => { :profile => :get, :access => :get }
+  map.with_options :controller => "account" do |account|
+    account.account                    "account/",                   :action => "index"
+    account.account_profile            "account/profile",            :action => "profile"
+    account.account_preferences        "account/preferences",        :action => "preferences"
+    account.account_email_and_password "account/email_and_password", :action => "change_password"
+  end
   map.with_options :controller => "pages" do |pages|
     pages.pages_about   "/about",   :action => "about"
     pages.pages_privacy "/privacy", :action => "privacy"
@@ -23,6 +28,7 @@ ActionController::Routing::Routes.draw do |map|
     pages.pages_help    "/help",    :action => "help"
     pages.pages_contact "/contact", :action => "contact"
   end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
 

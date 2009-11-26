@@ -1,0 +1,11 @@
+<ul class="nav">
+  <li class="<%= 'current' if @controller.action_name == 'profile' %>">
+    <b class="arrow"><!----></b><%= link_to "My Profile",           account_profile_path,            :title => "My Profile" %>
+  </li>
+  <li class="<%= 'current' if @controller.action_name == 'preferences' %>">
+    <b class="arrow"><!----></b><%= link_to "Preferences",          account_preferences_path,        :title => "My Preferences" %>
+  </li>
+  <li class="<%= 'current' if @controller.action_name == 'change_password' %>">
+    <b class="arrow"><!----></b><%= link_to "Email &amp; Password", account_email_and_password_path, :title => "Email &amp; Password" %>
+  </li>
+</ul>

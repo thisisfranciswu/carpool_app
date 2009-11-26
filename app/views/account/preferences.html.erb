@@ -1,0 +1,11 @@
+<% @page_title = "My Preferences" %>
+<% @layout = "with_sidebar_left" %>
+
+<% content_for :sidebar_left do %>
+  <%= render :partial => "nav" %>
+<% end %>
+
+<p class="breadcrumbs">
+  <%= link_to "My Account", account_path, :title => "My Account" %> /
+  My Preferences
+</p>
