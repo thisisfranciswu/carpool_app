@@ -80,7 +80,11 @@
         -moz-border-radius-bottomleft: 5px;
         -webkit-border-bottom-left-radius: 5px;
         padding: 20px; }
-  /* line 61, ../../../app/stylesheets/screen.sass */
+        /* line 63, ../../../app/stylesheets/screen.sass */
+        #top #pitch div.try form div.complex_field span span.marker_way_point, #top #pitch div.try form div.complex_field span span.marker_time {
+          float: left;
+          margin: -2px 3px 0 0; }
+  /* line 66, ../../../app/stylesheets/screen.sass */
   #top #search_results {
     float: right;
     background: white;
@@ -91,23 +95,23 @@
     border-left: 0px solid silver;
     height: 520px;
     display: none; }
-    /* line 72, ../../../app/stylesheets/screen.sass */
+    /* line 77, ../../../app/stylesheets/screen.sass */
     #top #search_results div.try div.leader {
       padding: 10px;
       background: #d8d800;
       position: relative; }
-      /* line 76, ../../../app/stylesheets/screen.sass */
+      /* line 81, ../../../app/stylesheets/screen.sass */
       #top #search_results div.try div.leader>* {
         color: black;
         line-height: 1; }
-      /* line 79, ../../../app/stylesheets/screen.sass */
+      /* line 84, ../../../app/stylesheets/screen.sass */
       #top #search_results div.try div.leader h2 {
         font-size: 14px;
         margin: 0; }
-        /* line 82, ../../../app/stylesheets/screen.sass */
+        /* line 87, ../../../app/stylesheets/screen.sass */
         #top #search_results div.try div.leader h2 span {
           display: none; }
-      /* line 84, ../../../app/stylesheets/screen.sass */
+      /* line 89, ../../../app/stylesheets/screen.sass */
       #top #search_results div.try div.leader b.tail {
         display: block;
         position: absolute;
@@ -120,7 +124,7 @@
         border-right: 20px solid transparent;
         border-bottom: none;
         border-left: 10px solid transparent; }
-    /* line 96, ../../../app/stylesheets/screen.sass */
+    /* line 101, ../../../app/stylesheets/screen.sass */
     #top #search_results div.try form {
       background: white;
       border-bottom-right-radius: 5px;
@@ -130,68 +134,68 @@
       -moz-border-radius-bottomleft: 5px;
       -webkit-border-bottom-left-radius: 5px;
       padding: 10px; }
-      /* line 100, ../../../app/stylesheets/screen.sass */
+      /* line 105, ../../../app/stylesheets/screen.sass */
       #top #search_results div.try form span {
         float: none;
         margin: 0 0 5px; }
-        /* line 103, ../../../app/stylesheets/screen.sass */
+        /* line 108, ../../../app/stylesheets/screen.sass */
         #top #search_results div.try form span label {
           float: left;
           display: block;
           width: 16px;
           text-indent: -9000px;
           margin: 0; }
-        /* line 109, ../../../app/stylesheets/screen.sass */
+        /* line 114, ../../../app/stylesheets/screen.sass */
         #top #search_results div.try form span input[type="text"] {
           margin: 0 0 0 21px;
           display: block; }
-  /* line 112, ../../../app/stylesheets/screen.sass */
+  /* line 117, ../../../app/stylesheets/screen.sass */
   #top #map {
     height: 440px; }
 
-/* line 115, ../../../app/stylesheets/screen.sass */
+/* line 120, ../../../app/stylesheets/screen.sass */
 #features {
   margin: 0 0 20px;
   background-color: white;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
-  /* line 119, ../../../app/stylesheets/screen.sass */
+  /* line 124, ../../../app/stylesheets/screen.sass */
   #features ul {
     overflow: hidden;
     padding: 20px; }
-    /* line 122, ../../../app/stylesheets/screen.sass */
+    /* line 127, ../../../app/stylesheets/screen.sass */
     #features ul li {
       display: block;
       float: left;
       width: 290px;
       margin: 0 20px 0 0; }
-      /* line 127, ../../../app/stylesheets/screen.sass */
+      /* line 132, ../../../app/stylesheets/screen.sass */
       #features ul li h2 {
         font-size: 16px;
         font-weight: bold;
         margin: 0; }
-      /* line 131, ../../../app/stylesheets/screen.sass */
+      /* line 136, ../../../app/stylesheets/screen.sass */
       #features ul li p {
         color: gray; }
-    /* line 133, ../../../app/stylesheets/screen.sass */
+    /* line 138, ../../../app/stylesheets/screen.sass */
     #features ul li:last-child {
       margin: 0; }
 
 /* Tour Page */
-/* line 139, ../../../app/stylesheets/screen.sass */
+/* line 144, ../../../app/stylesheets/screen.sass */
 #features_controller ul.features li {
   list-style: none;
   margin: 0 0 30px; }
-  /* line 142, ../../../app/stylesheets/screen.sass */
+  /* line 147, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li img {
     float: left;
     width: 50px; }
-  /* line 145, ../../../app/stylesheets/screen.sass */
+  /* line 150, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li h4 {
     color: #6ba41e;
     font-size: 16px;
     margin: 0 0 0 65px; }
-  /* line 149, ../../../app/stylesheets/screen.sass */
+  /* line 154, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li p {
     margin: 0 0 0 65px; }

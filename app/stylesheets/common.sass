@@ -135,8 +135,31 @@ p.flash
     color = !colour_positive * 0.66 + !black * 0.33
     background-image: url('/images/icons/information.png')
 
-
-
+span.marker_way_point
+  display: inline-block
+  background = !white
+  border = 1px "solid" !light_grey
+  +rounded_corners("all", 8)
+  padding: 1px
+  height: 12px
+  width: 12px
+  b
+    color = !white
+    background = !main_colour
+    font-weight: bold
+    text-transform: uppercase
+    +font_size("tiny")
+    display: block
+    width: 12px
+    height: 12px
+    line-height: 12px
+    text-align: center
+    +rounded_corners("all", 6)
+span.marker_time
+  display: inline-block
+  background: url('/images/icons/clock.png')
+  height: 16px
+  width: 16px
 
 
 

@@ -176,3 +176,37 @@ p.flash {
   p.flash.notice {
     color: #008600;
     background-image: url('/images/icons/information.png'); }
+
+/* line 138, ../../../app/stylesheets/common.sass */
+span.marker_way_point {
+  display: inline-block;
+  background: white;
+  border: 1px solid silver;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 1px;
+  height: 12px;
+  width: 12px; }
+  /* line 146, ../../../app/stylesheets/common.sass */
+  span.marker_way_point b {
+    color: white;
+    background: #6ba41e;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px; }
+
+/* line 158, ../../../app/stylesheets/common.sass */
+span.marker_time {
+  display: inline-block;
+  background: url('/images/icons/clock.png');
+  height: 16px;
+  width: 16px; }
