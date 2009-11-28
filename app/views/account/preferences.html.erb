@@ -9,3 +9,38 @@
   <%= link_to "My Account", account_path, :title => "My Account" %> /
   My Preferences
 </p>
+
+<form class="lw80">
+  <p>
+    <label>I am a</label>
+    <input type="radio"/><label class="choice">Driver</label>
+    <input type="radio"/><label class="choice">Passenger</label>
+    <input type="radio"/><label class="choice">Both</label>
+  </p>
+  <p>
+    <label>Max. Walking Distance</label>
+    <select>
+      <option>15 minutes (0.3 km)</option>
+    </select>
+  </p>
+  <p>
+    <label>Gender</label>
+    <input type="radio"/><label class="choice">Male</label>
+    <input type="radio"/><label class="choice">Female</label>
+  </p>
+  <p>
+    <label>Born</label>
+    <select>
+      <option>15</option>
+    </select>
+    <select>
+      <option>November</option>
+    </select>
+    <select>
+      <option>2000</option>
+    </select>
+  </p>
+  <p class="submit indent">
+    <button>Save</button>
+  </p>
+</form>
