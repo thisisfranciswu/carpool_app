@@ -5,11 +5,6 @@
   <%= render :partial => "nav" %>
 <% end %>
 
-<p class="breadcrumbs">
-  <%= link_to "My Account", account_path, :title => "My Account" %> /
-  Carpooling Preferences
-</p>
-
 <form class="lw120">
   <p>
     <label>I am a</label>
@@ -23,7 +18,6 @@
       <option>15</option>
     </select>
     <label class="inline">minutes</label>
-    <label class="description">What&#39;s the total distance you&#39;d walk during a commute?</label>
   </p>
   <p class="for_driver">
     <label>I drive a</label>
@@ -36,7 +30,6 @@
     <select>
       <option>Echo</option>
     </select>
-    <label class="description">Which vehicle do you drive?</label>
   </p>
   <p class="for_driver">
     <label>It&#39;s a</label>
@@ -46,7 +39,6 @@
     <select>
       <option>Sedan</option>
     </select>
-    <label class="description">What does your vehicle look like?</label>
   </p>
   <p class="for_driver">
     <label>I can carry up to</label>

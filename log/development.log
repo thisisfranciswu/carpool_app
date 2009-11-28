@@ -13440,3 +13440,498 @@ Rendered account/_nav (1.1ms)
 Rendered shared/_masthead (9.3ms)
 Rendered shared/_footer (0.9ms)
 Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/account]
+
+
+Processing AccountController#index (for 127.0.0.1 at 2009-11-28 00:58:48) [GET]
+
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  app/controllers/account_controller.rb:6:in `index'
+  haml (2.2.6) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendered rescues/_trace (111.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AccountController#index (for 127.0.0.1 at 2009-11-28 00:59:06) [GET]
+Redirected to http://localhost:3000/account/profile
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/account]
+
+
+Processing AccountController#profile (for 127.0.0.1 at 2009-11-28 00:59:06) [GET]
+Rendering template within layouts/application
+Rendering account/profile
+Rendered account/_nav (1.1ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (59.7ms)
+Rendered shared/_footer (0.9ms)
+Completed in 68ms (View: 65, DB: 0) | 200 OK [http://localhost/account/profile]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 00:59:06) [GET]
+  Parameters: {"1258422308"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountController#email_and_password (for 127.0.0.1 at 2009-11-28 00:59:08) [GET]
+Rendering template within layouts/application
+Rendering account/email_and_password
+Rendered account/_nav (1.1ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.7ms)
+Rendered shared/_footer (0.9ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/account/email_and_password]
+
+
+Processing AccountController#carpooling_preferences (for 127.0.0.1 at 2009-11-28 00:59:09) [GET]
+Rendering template within layouts/application
+Rendering account/carpooling_preferences
+Rendered account/_nav (1.1ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.9ms)
+Rendered shared/_footer (1.0ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/account/carpooling_preferences]
+
+
+Processing AccountController#system_preferences (for 127.0.0.1 at 2009-11-28 00:59:10) [GET]
+Rendering template within layouts/application
+Rendering account/system_preferences
+Rendered account/_nav (1.1ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.8ms)
+Rendered shared/_footer (1.2ms)
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/account/system_preferences]
+
+
+Processing AccountController#carpooling_preferences (for 127.0.0.1 at 2009-11-28 00:59:11) [GET]
+Rendering template within layouts/application
+Rendering account/carpooling_preferences
+Rendered account/_nav (1.0ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.2ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/account/carpooling_preferences]
+
+
+Processing AccountController#email_and_password (for 127.0.0.1 at 2009-11-28 00:59:11) [GET]
+Rendering template within layouts/application
+Rendering account/email_and_password
+Rendered account/_nav (1.2ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/account/email_and_password]
+
+
+Processing AccountController#system_preferences (for 127.0.0.1 at 2009-11-28 00:59:12) [GET]
+Rendering template within layouts/application
+Rendering account/system_preferences
+Rendered account/_nav (1.1ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.7ms)
+Rendered shared/_footer (1.0ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/account/system_preferences]
+
+
+Processing AccountController#carpooling_preferences (for 127.0.0.1 at 2009-11-28 01:03:02) [GET]
+Rendering template within layouts/application
+Rendering account/carpooling_preferences
+Rendered account/_nav (1.1ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.1ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/account/carpooling_preferences]
+
+
+Processing AccountController#system_preferences (for 127.0.0.1 at 2009-11-28 01:03:08) [GET]
+Rendering template within layouts/application
+Rendering account/system_preferences
+Rendered account/_nav (1.1ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/account/system_preferences]
+
+
+Processing AccountController#carpooling_preferences (for 127.0.0.1 at 2009-11-28 01:03:09) [GET]
+Rendering template within layouts/application
+Rendering account/carpooling_preferences
+Rendered account/_nav (1.0ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (78.3ms)
+Rendered shared/_footer (0.9ms)
+Completed in 85ms (View: 83, DB: 0) | 200 OK [http://localhost/account/carpooling_preferences]
+
+
+Processing AccountController#carpooling_preferences (for 127.0.0.1 at 2009-11-28 01:03:30) [GET]
+Rendering template within layouts/application
+Rendering account/carpooling_preferences
+Rendered account/_nav (1.2ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.6ms)
+Rendered shared/_footer (1.0ms)
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://localhost/account/carpooling_preferences]
+
+
+Processing AccountController#system_preferences (for 127.0.0.1 at 2009-11-28 01:03:32) [GET]
+Rendering template within layouts/application
+Rendering account/system_preferences
+Rendered account/_nav (1.4ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.3ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/account/system_preferences]
+
+
+Processing AccountController#index (for 127.0.0.1 at 2009-11-28 01:07:40) [GET]
+Redirected to http://localhost:3000/account/profile
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/account]
+
+
+Processing AccountController#profile (for 127.0.0.1 at 2009-11-28 01:07:40) [GET]
+Rendering template within layouts/application
+Rendering account/profile
+Rendered account/_nav (1.0ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.6ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/account/profile]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 01:07:40) [GET]
+  Parameters: {"1258422308"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountController#profile (for 127.0.0.1 at 2009-11-28 01:08:20) [GET]
+Rendering template within layouts/application
+Rendering account/profile
+Rendered account/_nav (1.1ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (43.6ms)
+Rendered shared/_footer (1.0ms)
+Completed in 66ms (View: 64, DB: 0) | 200 OK [http://localhost/account/profile]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 01:08:21) [GET]
+  Parameters: {"1258422308"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountController#email_and_password (for 127.0.0.1 at 2009-11-28 01:08:23) [GET]
+Rendering template within layouts/application
+Rendering account/email_and_password
+Rendered account/_nav (1.0ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.5ms)
+Rendered shared/_footer (0.9ms)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/account/email_and_password]
+
+
+Processing AccountController#carpooling_preferences (for 127.0.0.1 at 2009-11-28 01:08:23) [GET]
+Rendering template within layouts/application
+Rendering account/carpooling_preferences
+Rendered account/_nav (1.1ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.3ms)
+Rendered shared/_footer (1.0ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/account/carpooling_preferences]
+
+
+Processing AccountController#index (for 127.0.0.1 at 2009-11-28 01:08:25) [GET]
+Redirected to http://localhost:3000/account/profile
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/account]
+
+
+Processing AccountController#profile (for 127.0.0.1 at 2009-11-28 01:08:25) [GET]
+Rendering template within layouts/application
+Rendering account/profile
+Rendered account/_nav (1.1ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.1ms)
+Rendered shared/_footer (1.0ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/account/profile]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 01:08:25) [GET]
+  Parameters: {"1258422308"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountController#email_and_password (for 127.0.0.1 at 2009-11-28 01:08:26) [GET]
+Rendering template within layouts/application
+Rendering account/email_and_password
+Rendered account/_nav (1.1ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (87.1ms)
+Rendered shared/_footer (1.2ms)
+Completed in 95ms (View: 93, DB: 0) | 200 OK [http://localhost/account/email_and_password]
+
+
+Processing AccountController#carpooling_preferences (for 127.0.0.1 at 2009-11-28 01:08:27) [GET]
+Rendering template within layouts/application
+Rendering account/carpooling_preferences
+Rendered account/_nav (1.2ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.6ms)
+Rendered shared/_footer (1.0ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/account/carpooling_preferences]
+
+
+Processing AccountController#system_preferences (for 127.0.0.1 at 2009-11-28 01:08:28) [GET]
+Rendering template within layouts/application
+Rendering account/system_preferences
+Rendered account/_nav (1.0ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.4ms)
+Rendered shared/_footer (1.1ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/account/system_preferences]
+
+
+Processing AccountController#system_preferences (for 127.0.0.1 at 2009-11-28 01:08:28) [GET]
+Rendering template within layouts/application
+Rendering account/system_preferences
+Rendered account/_nav (1.1ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.8ms)
+Rendered shared/_footer (1.2ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/account/system_preferences]
+
+
+Processing AccountController#profile (for 127.0.0.1 at 2009-11-28 01:08:29) [GET]
+Rendering template within layouts/application
+Rendering account/profile
+Rendered account/_nav (1.0ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.3ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/account/profile]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-28 01:08:29) [GET]
+  Parameters: {"1258422308"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing AccountController#carpooling_preferences (for 127.0.0.1 at 2009-11-28 01:08:29) [GET]
+Rendering template within layouts/application
+Rendering account/carpooling_preferences
+Rendered account/_nav (1.1ms)
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.7ms)
+Rendered shared/_footer (1.0ms)
+Completed in 19ms (View: 16, DB: 1) | 200 OK [http://localhost/account/carpooling_preferences]
+
+
+Processing AccountController#system_preferences (for 127.0.0.1 at 2009-11-28 01:08:30) [GET]
+Rendering template within layouts/application
+Rendering account/system_preferences
+Rendered account/_nav (1.1ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.4ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/account/system_preferences]
+
+
+Processing AccountController#system_preferences (for 127.0.0.1 at 2009-11-28 01:08:39) [GET]
+Rendering template within layouts/application
+Rendering account/system_preferences
+Rendered account/_nav (1.1ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.3ms)
+Rendered shared/_footer (1.6ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/account/system_preferences]
+
+
+Processing AccountController#system_preferences (for 127.0.0.1 at 2009-11-28 01:08:42) [GET]
+Rendering template within layouts/application
+Rendering account/system_preferences
+Rendered account/_nav (1.4ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.5ms)
+Rendered shared/_footer (0.9ms)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/account/system_preferences]
