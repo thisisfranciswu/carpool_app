@@ -5,7 +5,7 @@ class AccountController < ApplicationController
   def profile
   end
 
-  def change_password
+  def email_and_password
   end
 
   def access

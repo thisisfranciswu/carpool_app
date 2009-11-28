@@ -19,7 +19,7 @@ ActionController::Routing::Routes.draw do |map|
     account.account                    "account/",                   :action => "index"
     account.account_profile            "account/profile",            :action => "profile"
     account.account_preferences        "account/preferences",        :action => "preferences"
-    account.account_email_and_password "account/email_and_password", :action => "change_password"
+    account.account_email_and_password "account/email_and_password", :action => "email_and_password"
   end
   map.with_options :controller => "pages" do |pages|
     pages.pages_about   "/about",   :action => "about"
