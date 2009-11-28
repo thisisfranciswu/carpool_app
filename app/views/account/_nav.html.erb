@@ -1,11 +1,14 @@
 <ul class="nav">
   <li class="<%= 'current' if @controller.action_name == 'profile' %>">
-    <b class="arrow"><!----></b><%= link_to "My Profile",           account_profile_path,            :title => "My Profile" %>
-  </li>
-  <li class="<%= 'current' if @controller.action_name == 'preferences' %>">
-    <b class="arrow"><!----></b><%= link_to "Preferences",          account_preferences_path,        :title => "My Preferences" %>
+    <b class="arrow"><!----></b><%= link_to "My Profile",             account_profile_path,                :title => "My Profile" %>
   </li>
   <li class="<%= 'current' if @controller.action_name == 'email_and_password' %>">
-    <b class="arrow"><!----></b><%= link_to "Email &amp; Password", account_email_and_password_path, :title => "Email &amp; Password" %>
+    <b class="arrow"><!----></b><%= link_to "Email &amp; Password",   account_email_and_password_path,     :title => "Email &amp; Password" %>
+  </li>
+  <li class="<%= 'current' if @controller.action_name == 'carpooling_preferences' %>">
+    <b class="arrow"><!----></b><%= link_to "Carpooling Preferences", account_carpooling_preferences_path, :title => "Carpooling Preferences" %>
+  </li>
+  <li class="<%= 'current' if @controller.action_name == 'system_preferences' %>">
+    <b class="arrow"><!----></b><%= link_to "System Preferences",     account_system_preferences_path,     :title => "System Preferences" %>
   </li>
 </ul>

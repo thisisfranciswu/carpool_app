@@ -8,7 +8,7 @@ class AccountController < ApplicationController
   def email_and_password
   end
 
-  def access
+  def carpooling_preferences
   end
 
 end

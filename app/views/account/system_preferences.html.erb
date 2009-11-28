@@ -1,0 +1,25 @@
+<% @page_title = "System Preferences" %>
+<% @layout = "with_sidebar_left" %>
+
+<% content_for :sidebar_left do %>
+  <%= render :partial => "nav" %>
+<% end %>
+
+<p class="breadcrumbs">
+  <%= link_to "My Account", account_path, :title => "My Account" %> /
+  System Preferences
+</p>
+
+<form class="lw120">
+  <p>
+    <label>Distance Unit</label>
+    <input type="radio"/><label class="inline">Kilometres</label>
+    <input type="radio"/><label class="inline">Miles</label>
+  </p>
+  <p class="indent">
+    <input type="checkbox"/><label class="inline">24-Hour Time</label>
+  </p>
+  <p class="submit indent">
+    <button>Save</button>
+  </p>
+</form>

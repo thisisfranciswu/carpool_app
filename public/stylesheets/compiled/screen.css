@@ -199,3 +199,33 @@
   /* line 154, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li p {
     margin: 0 0 0 65px; }
+
+/* My Account */
+/* line 160, ../../../app/stylesheets/screen.sass */
+#account_controller #main a.picture {
+  display: block;
+  float: right;
+  width: 78px;
+  height: 78px;
+  border: 1px solid #efefef;
+  position: relative; }
+  /* line 167, ../../../app/stylesheets/screen.sass */
+  #account_controller #main a.picture span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 3px 0 2px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #6ba41e;
+    text-align: center;
+    display: none; }
+  /* line 180, ../../../app/stylesheets/screen.sass */
+  #account_controller #main a.picture:hover {
+    border-color: #6ba41e; }
+    /* line 182, ../../../app/stylesheets/screen.sass */
+    #account_controller #main a.picture:hover span {
+      display: block; }

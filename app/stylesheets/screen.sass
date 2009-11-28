@@ -154,7 +154,33 @@
       p
         margin: 0 0 0 65px
 
-
+/* My Account */
+#account_controller
+  #main
+    a.picture
+      display: block
+      float: right
+      width: 78px
+      height: 78px
+      border = 1px "solid" !light_grey * 0.25 + !white * 0.75
+      position: relative
+      span
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        padding: 3px 0 2px
+        color = !white
+        +font_size("tiny")
+        font-weight: bold
+        text-decoration: none
+        background = !main_colour
+        text-align: center
+        display: none
+      &:hover
+        border-color = !main_colour
+        span
+          display: block
 
 
 

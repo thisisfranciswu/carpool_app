@@ -10,6 +10,8 @@
   My Profile
 </p>
 
+<%= link_to_function image_tag("", :alt => "asdf") + content_tag(:span, "Change Picture"), "asdf", :title => "Change Picture", :class => "picture" %>
+
 <form class="lw80">
   <p>
     <label>First Name</label>
@@ -21,8 +23,8 @@
   </p>
   <p>
     <label>Gender</label>
-    <input type="radio"/><label class="choice">Male</label>
-    <input type="radio"/><label class="choice">Female</label>
+    <input type="radio"/><label class="inline">Male</label>
+    <input type="radio"/><label class="inline">Female</label>
   </p>
   <p>
     <label>Born</label>
