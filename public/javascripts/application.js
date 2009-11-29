@@ -29,3 +29,7 @@ $(function(){
   });
 
 });
+
+$().ready(function() {
+  $("div.modal_window").jqm();
+});

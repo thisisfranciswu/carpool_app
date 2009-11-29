@@ -1,0 +1,40 @@
+@import lib.sass
+
+.modal_overlay
+  background-color = !black
+
+.modal_window
+  display: none
+  position: fixed
+  top: 17%
+  left: 50%
+  margin-left: -300px
+  width: 600px
+  background: url('/images/transparent_backgrounds/black_30.png')
+  color: #333
+  padding: 10px
+  +rounded_corners("all", 10)
+  &>.container
+    padding: 20px
+    background = !white
+    position: relative
+    &>a.modal_close
+      display: block
+      height: 22px
+      width: 22px
+      position: absolute
+      top: -5px
+      right: -5px
+      background = !white
+      +rounded_corners("all", 11)
+      img
+        margin: 3px 0 0 3px
+  
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+* iframe.modal
+  position:absolute
+  top:0
+  left:0
+  z-index:-1
+  width: expression(this.parentNode.offsetWidth+'px')
+  height: expression(this.parentNode.offsetHeight+'px')

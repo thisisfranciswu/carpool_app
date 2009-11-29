@@ -19088,3 +19088,523 @@ Rendered shared/_init_map (0.6ms)
 Rendered shared/_masthead (9.5ms)
 Rendered shared/_footer (0.9ms)
 Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 09:01:55) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.5ms)
+Rendered shared/_footer (1.1ms)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 09:01:57) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.4ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 15, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 09:01:59) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.6ms)
+Rendered shared/_footer (1.0ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 09:02:07) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.0ms)
+Rendered shared/_footer (0.9ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 09:03:05) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (83.4ms)
+Rendered shared/_footer (1.0ms)
+Completed in 94ms (View: 91, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 09:03:09) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 12:24:21) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (79.2ms)
+Rendered shared/_footer (0.9ms)
+Completed in 92ms (View: 89, DB: 1) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 12:24:21) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (1.1ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.2ms)
+Rendered shared/_footer (0.9ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 12:24:30) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (1.1ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.0ms)
+Rendered shared/_footer (1.9ms)
+Completed in 22ms (View: 19, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 12:24:57) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (15.1ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (25.5ms)
+Rendered shared/_footer (1.0ms)
+Completed in 35ms (View: 16, DB: 15) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:26:33) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (22.9ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (69.8ms)
+Rendered shared/_footer (1.0ms)
+Completed in 115ms (View: 89, DB: 23) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:28:57) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.6ms)
+Rendered shared/_footer (1.0ms)
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:36:08) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.7ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.8ms)
+Rendered shared/_footer (1.1ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:36:56) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.7ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.9ms)
+Rendered shared/_footer (1.0ms)
+Completed in 25ms (View: 22, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:40:07) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.7ms)
+Rendered shared/_footer (1.0ms)
+Completed in 26ms (View: 23, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#new (for 127.0.0.1 at 2009-11-29 12:40:09) [GET]
+Rendering template within layouts/application
+Rendering locations/new
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.0ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/locations/new]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:40:12) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.7ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:40:23) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.7ms)
+Rendered shared/_footer (0.9ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:40:25) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.4ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:40:57) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:42:29) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.7ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (12.3ms)
+Rendered shared/_footer (1.0ms)
+Completed in 26ms (View: 23, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:42:39) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:43:22) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (25.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (59.1ms)
+Rendered shared/_footer (1.4ms)
+Completed in 90ms (View: 62, DB: 25) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:44:25) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (13.9ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (23.3ms)
+Rendered shared/_footer (0.9ms)
+Completed in 35ms (View: 20, DB: 14) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:46:50) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 19ms (View: 15, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:47:03) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (94.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (184.7ms)
+Rendered shared/_footer (1.7ms)
+Completed in 204ms (View: 107, DB: 94) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:47:58) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (1.0ms)
+  [4;36;1mUser Load (12.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (22.4ms)
+Rendered shared/_footer (1.1ms)
+Completed in 35ms (View: 21, DB: 13) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:49:01) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.5ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (84.4ms)
+Rendered shared/_footer (0.9ms)
+Completed in 92ms (View: 90, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:49:27) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.3ms)
+Rendered shared/_footer (0.9ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:50:02) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (12.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (22.5ms)
+Rendered shared/_footer (1.0ms)
+Completed in 102ms (View: 88, DB: 12) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:50:33) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (18.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (27.6ms)
+Rendered shared/_footer (0.9ms)
+Completed in 35ms (View: 15, DB: 18) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:57:20) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.8ms)
+  [4;35;1mUser Load (70.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (111.1ms)
+Rendered shared/_footer (1.2ms)
+Completed in 170ms (View: 98, DB: 70) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:58:33) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (16.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (124.9ms)
+Rendered shared/_footer (1.0ms)
+Completed in 169ms (View: 151, DB: 16) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 12:58:33) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.7ms)
+Rendered shared/_footer (1.0ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:00:17) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.7ms)
+  [4;36;1mUser Load (15.8ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (137.4ms)
+Rendered shared/_footer (1.1ms)
+Completed in 213ms (View: 196, DB: 16) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:00:17) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:00:38) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (82.6ms)
+Rendered shared/_footer (0.9ms)
+Completed in 91ms (View: 89, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:00:38) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.3ms)
+Rendered shared/_footer (1.0ms)
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:00:46) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (17.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (26.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 35ms (View: 16, DB: 17) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:00:46) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (1.1ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:01:02) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (14.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (25.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 35ms (View: 18, DB: 15) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:01:02) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.2ms)
+Rendered shared/_footer (1.0ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:01:24) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.4ms)
+Rendered shared/_footer (0.9ms)
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:03:32) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (20.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (31.7ms)
+Rendered shared/_footer (1.8ms)
+Completed in 82ms (View: 60, DB: 21) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:03:32) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.7ms)
+Rendered shared/_footer (0.9ms)
+Completed in 19ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:03:52) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (13.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (23.4ms)
+Rendered shared/_footer (1.4ms)
+Completed in 33ms (View: 17, DB: 14) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:03:52) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:04:08) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.7ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.6ms)
+Rendered shared/_footer (1.0ms)
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:04:09) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (1.2ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.7ms)
+Rendered shared/_footer (1.1ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:04:31) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.7ms)
+  [4;35;1mUser Load (15.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (25.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 35ms (View: 18, DB: 15) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:04:36) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.1ms)
+Rendered shared/_footer (0.9ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-11-29 13:04:36) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.7ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/locations]

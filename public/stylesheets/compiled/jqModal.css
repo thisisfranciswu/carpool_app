@@ -1,0 +1,44 @@
+/* line 3, ../../../app/stylesheets/jqModal.sass */
+.modal_overlay {
+  background-color: black; }
+
+/* line 6, ../../../app/stylesheets/jqModal.sass */
+.modal_window {
+  display: none;
+  position: fixed;
+  top: 17%;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  background: url('/images/transparent_backgrounds/black_30.png');
+  color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+  /* line 17, ../../../app/stylesheets/jqModal.sass */
+  .modal_window>.container {
+    padding: 20px;
+    background: white;
+    position: relative; }
+    /* line 21, ../../../app/stylesheets/jqModal.sass */
+    .modal_window>.container>a.modal_close {
+      display: block;
+      height: 22px;
+      width: 22px;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: white;
+      border-radius: 11px;
+      -moz-border-radius: 11px;
+      -webkit-border-radius: 11px; }
+      /* line 30, ../../../app/stylesheets/jqModal.sass */
+      .modal_window>.container>a.modal_close img {
+        margin: 3px 0 0 3px; }
+
+/* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
+/* line 34, ../../../app/stylesheets/jqModal.sass */
+* iframe.modal {
+  width: expression(this.parentNode.offsetWidth+'px');
+  height: expression(this.parentNode.offsetHeight+'px'); }
