@@ -60,6 +60,11 @@
           <button>Find a passenger</button>
         </p>
       </form>
+      <ul class="users">
+        <% 5.times do %>
+          <%= render :partial => "users/user_search_results" %>
+        <% end %>
+      </ul>
     </div>
   </div>
   <div id="search_results"></div>

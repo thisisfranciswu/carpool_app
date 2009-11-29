@@ -84,34 +84,36 @@
         #top #pitch div.try form div.complex_field span span.marker_way_point, #top #pitch div.try form div.complex_field span span.marker_time {
           float: left;
           margin: -2px 3px 0 0; }
-  /* line 66, ../../../app/stylesheets/screen.sass */
+      /* line 66, ../../../app/stylesheets/screen.sass */
+      #top #pitch div.try ul.users {
+        display: none; }
+  /* line 68, ../../../app/stylesheets/screen.sass */
   #top #search_results {
     float: right;
     background: white;
     position: relative;
     z-index: 10;
     width: 0;
-    overflow: hidden;
     border-left: 0px solid silver;
     height: 520px;
     display: none; }
-    /* line 77, ../../../app/stylesheets/screen.sass */
+    /* line 78, ../../../app/stylesheets/screen.sass */
     #top #search_results div.try div.leader {
       padding: 10px;
       background: #d8d800;
       position: relative; }
-      /* line 81, ../../../app/stylesheets/screen.sass */
+      /* line 82, ../../../app/stylesheets/screen.sass */
       #top #search_results div.try div.leader>* {
         color: black;
         line-height: 1; }
-      /* line 84, ../../../app/stylesheets/screen.sass */
+      /* line 85, ../../../app/stylesheets/screen.sass */
       #top #search_results div.try div.leader h2 {
         font-size: 14px;
         margin: 0; }
-        /* line 87, ../../../app/stylesheets/screen.sass */
+        /* line 88, ../../../app/stylesheets/screen.sass */
         #top #search_results div.try div.leader h2 span {
           display: none; }
-      /* line 89, ../../../app/stylesheets/screen.sass */
+      /* line 90, ../../../app/stylesheets/screen.sass */
       #top #search_results div.try div.leader b.tail {
         display: block;
         position: absolute;
@@ -124,7 +126,7 @@
         border-right: 20px solid transparent;
         border-bottom: none;
         border-left: 10px solid transparent; }
-    /* line 101, ../../../app/stylesheets/screen.sass */
+    /* line 102, ../../../app/stylesheets/screen.sass */
     #top #search_results div.try form {
       background: white;
       border-bottom-right-radius: 5px;
@@ -134,74 +136,77 @@
       -moz-border-radius-bottomleft: 5px;
       -webkit-border-bottom-left-radius: 5px;
       padding: 10px; }
-      /* line 105, ../../../app/stylesheets/screen.sass */
-      #top #search_results div.try form span {
+      /* line 106, ../../../app/stylesheets/screen.sass */
+      #top #search_results div.try form>*>span {
         float: none;
         margin: 0 0 5px; }
-        /* line 108, ../../../app/stylesheets/screen.sass */
-        #top #search_results div.try form span label {
+        /* line 109, ../../../app/stylesheets/screen.sass */
+        #top #search_results div.try form>*>span span.marker_way_point, #top #search_results div.try form>*>span span.marker_time {
           float: left;
-          display: block;
-          width: 16px;
-          text-indent: -9000px;
-          margin: 0; }
+          margin-top: 6px; }
+        /* line 112, ../../../app/stylesheets/screen.sass */
+        #top #search_results div.try form>*>span label {
+          display: none; }
         /* line 114, ../../../app/stylesheets/screen.sass */
-        #top #search_results div.try form span input[type="text"] {
+        #top #search_results div.try form>*>span input[type="text"] {
           margin: 0 0 0 21px;
           display: block; }
-  /* line 117, ../../../app/stylesheets/screen.sass */
+        /* line 117, ../../../app/stylesheets/screen.sass */
+        #top #search_results div.try form>*>span:last-child {
+          margin-bottom: 0; }
+  /* line 119, ../../../app/stylesheets/screen.sass */
   #top #map {
     height: 440px; }
 
-/* line 120, ../../../app/stylesheets/screen.sass */
+/* line 122, ../../../app/stylesheets/screen.sass */
 #features {
   margin: 0 0 20px;
   background-color: white;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px; }
-  /* line 124, ../../../app/stylesheets/screen.sass */
+  /* line 126, ../../../app/stylesheets/screen.sass */
   #features ul {
     overflow: hidden;
     padding: 20px; }
-    /* line 127, ../../../app/stylesheets/screen.sass */
+    /* line 129, ../../../app/stylesheets/screen.sass */
     #features ul li {
       display: block;
       float: left;
       width: 290px;
       margin: 0 20px 0 0; }
-      /* line 132, ../../../app/stylesheets/screen.sass */
+      /* line 134, ../../../app/stylesheets/screen.sass */
       #features ul li h2 {
         font-size: 16px;
         font-weight: bold;
         margin: 0; }
-      /* line 136, ../../../app/stylesheets/screen.sass */
+      /* line 138, ../../../app/stylesheets/screen.sass */
       #features ul li p {
         color: gray; }
-    /* line 138, ../../../app/stylesheets/screen.sass */
+    /* line 140, ../../../app/stylesheets/screen.sass */
     #features ul li:last-child {
       margin: 0; }
 
 /* Tour Page */
-/* line 144, ../../../app/stylesheets/screen.sass */
+/* line 146, ../../../app/stylesheets/screen.sass */
 #features_controller ul.features li {
   list-style: none;
   margin: 0 0 30px; }
-  /* line 147, ../../../app/stylesheets/screen.sass */
+  /* line 149, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li img {
     float: left;
     width: 50px; }
-  /* line 150, ../../../app/stylesheets/screen.sass */
+  /* line 152, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li h4 {
     color: #6ba41e;
     font-size: 16px;
     margin: 0 0 0 65px; }
-  /* line 154, ../../../app/stylesheets/screen.sass */
+  /* line 156, ../../../app/stylesheets/screen.sass */
   #features_controller ul.features li p {
     margin: 0 0 0 65px; }
 
 /* My Account */
-/* line 160, ../../../app/stylesheets/screen.sass */
+/* line 162, ../../../app/stylesheets/screen.sass */
 #account_controller #main a.picture {
   display: block;
   float: right;
@@ -209,7 +214,7 @@
   height: 78px;
   border: 1px solid #efefef;
   position: relative; }
-  /* line 167, ../../../app/stylesheets/screen.sass */
+  /* line 169, ../../../app/stylesheets/screen.sass */
   #account_controller #main a.picture span {
     position: absolute;
     bottom: 0;
@@ -223,9 +228,67 @@
     background: #6ba41e;
     text-align: center;
     display: none; }
-  /* line 180, ../../../app/stylesheets/screen.sass */
+  /* line 182, ../../../app/stylesheets/screen.sass */
   #account_controller #main a.picture:hover {
     border-color: #6ba41e; }
-    /* line 182, ../../../app/stylesheets/screen.sass */
+    /* line 184, ../../../app/stylesheets/screen.sass */
     #account_controller #main a.picture:hover span {
       display: block; }
+
+/* Users List */
+/* line 189, ../../../app/stylesheets/screen.sass */
+ul.users > li {
+  position: relative;
+  display: block;
+  margin: 1px 0 0 0;
+  padding: 5px 10px;
+  border-top: 1px solid #efefef; }
+  /* line 195, ../../../app/stylesheets/screen.sass */
+  ul.users > li b.pointer {
+    display: none;
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    height: 0;
+    weight: 0;
+    border: 10px solid transparent;
+    border-right: 10px solid white;
+    border-left: none;
+    z-index: 11; }
+  /* line 206, ../../../app/stylesheets/screen.sass */
+  ul.users > li img.picture {
+    width: 38px;
+    height: 38px;
+    display: block;
+    border: 1px solid #efefef;
+    float: left; }
+  /* line 212, ../../../app/stylesheets/screen.sass */
+  ul.users > li a.name {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    margin: 0 0 0 45px;
+    text-decoration: none; }
+  /* line 218, ../../../app/stylesheets/screen.sass */
+  ul.users > li span.stars_rating {
+    margin: 0 0 3px 45px;
+    display: block; }
+  /* line 221, ../../../app/stylesheets/screen.sass */
+  ul.users > li small {
+    display: block;
+    font-size: 10px;
+    color: gray;
+    margin-left: 45px; }
+/* line 227, ../../../app/stylesheets/screen.sass */
+ul.users > li:first-child b.pointer {
+  display: block; }
+
+/* Stars Rating (Small) */
+/* line 231, ../../../app/stylesheets/screen.sass */
+span.stars_rating {
+  display: inline-block; }
+  /* line 233, ../../../app/stylesheets/screen.sass */
+  span.stars_rating.small {
+    height: 9px;
+    width: 49px;
+    background: url('/images/stars_rating_small.png') no-repeat; }
