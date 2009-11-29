@@ -9,7 +9,7 @@
 
 <% content_for :modal_title, "Add a location" %>
 <% content_for :modal_content do %>
-  <form class="lw80">
+  <form class="lw120">
     <p>
       <label>Name</label>
       <input type="text"/>
@@ -19,6 +19,20 @@
       <input type="text"/>
       <button>Find it!</button>
     </p>
+    <div class="complex_field">
+      <label>Did you mean</label>
+      <ul class="did_you_mean">
+        <li>
+          <input type="radio"/><label class="inline">123 Something Street, Montreal, QC, Canada</label>
+        </li>
+        <li>
+          <input type="radio"/><label class="inline">123 Something Street, Montreal, QC, Canada</label>
+        </li>
+        <li>
+          <input type="radio"/><label class="inline">123 Something Street, Montreal, QC, Canada</label>
+        </li>
+      </ul>
+    </div>
     <p class="indent submit">
       <button>Save</button>
       or <%= link_to_function "Cancel", "", :title => "Cancel", :class => "negative modal_close" %>
