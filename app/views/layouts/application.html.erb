@@ -11,11 +11,14 @@
 
 <body id="<%= @controller.controller_name %>_controller" class="<%= @template.instance_variable_get(:@_first_render).name %>" <%= yield :body_tag %>>
 
-  <% if @content_for_modal %>
+  <% if @content_for_modal_content %>
     <div class="modal_window">
-      <div class="container">
+      <div class="header">
         <%= link_to image_tag("icons/cross.png", :alt => "Close"), "#", :title => "Close", :class => "modal_close" %>
-        <%= yield :modal %>
+        <h3><%= yield :modal_title %></h3>
+      </div>
+      <div class="content">
+        <%= yield :modal_content %>
       </div>
     </div>
   <% end %>

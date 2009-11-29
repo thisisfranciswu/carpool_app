@@ -14,10 +14,17 @@
   color: #333
   padding: 10px
   +rounded_corners("all", 10)
-  &>.container
-    padding: 20px
-    background = !white
+  > div.header
     position: relative
+    background = !main_colour
+    padding: 10px 20px 9px
+    +rounded_corners("top", 3)
+    border-bottom = 1px "solid" !main_colour * 0.75 + !black * 0.25
+    h3
+      margin: 0
+      font-weight: bold
+      +font_size("xlarge")
+      color = !white
     &>a.modal_close
       display: block
       height: 22px
@@ -25,10 +32,15 @@
       position: absolute
       top: -5px
       right: -5px
-      background = !white
+      background = !main_colour
       +rounded_corners("all", 11)
       img
         margin: 3px 0 0 3px
+  > div.content
+    padding: 17px 20px 20px
+    background = !white
+    +rounded_corners("bottom", 3)
+    border-top = 3px "solid" !white * 0.66 + !light_grey * 0.33
   
 /* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
 * iframe.modal

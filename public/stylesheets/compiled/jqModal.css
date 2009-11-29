@@ -17,28 +17,52 @@
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
   /* line 17, ../../../app/stylesheets/jqModal.sass */
-  .modal_window>.container {
-    padding: 20px;
-    background: white;
-    position: relative; }
-    /* line 21, ../../../app/stylesheets/jqModal.sass */
-    .modal_window>.container>a.modal_close {
+  .modal_window > div.header {
+    position: relative;
+    background: #6ba41e;
+    padding: 10px 20px 9px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-bottom: 1px solid #507b16; }
+    /* line 23, ../../../app/stylesheets/jqModal.sass */
+    .modal_window > div.header h3 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 18px;
+      color: white; }
+    /* line 28, ../../../app/stylesheets/jqModal.sass */
+    .modal_window > div.header>a.modal_close {
       display: block;
       height: 22px;
       width: 22px;
       position: absolute;
       top: -5px;
       right: -5px;
-      background: white;
+      background: #6ba41e;
       border-radius: 11px;
       -moz-border-radius: 11px;
       -webkit-border-radius: 11px; }
-      /* line 30, ../../../app/stylesheets/jqModal.sass */
-      .modal_window>.container>a.modal_close img {
+      /* line 37, ../../../app/stylesheets/jqModal.sass */
+      .modal_window > div.header>a.modal_close img {
         margin: 3px 0 0 3px; }
+  /* line 39, ../../../app/stylesheets/jqModal.sass */
+  .modal_window > div.content {
+    padding: 17px 20px 20px;
+    background: white;
+    border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-top: 3px solid #e7e7e7; }
 
 /* Background iframe styling for IE6. Prevents ActiveX bleed-through (<select> form elements, etc.) */
-/* line 34, ../../../app/stylesheets/jqModal.sass */
+/* line 46, ../../../app/stylesheets/jqModal.sass */
 * iframe.modal {
   width: expression(this.parentNode.offsetWidth+'px');
   height: expression(this.parentNode.offsetHeight+'px'); }
