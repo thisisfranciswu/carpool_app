@@ -107,3 +107,23 @@ form.lw160 label {
 /* line 91, ../../../app/stylesheets/forms.sass */
 form.lw160 p.indent {
   margin-left: 170px; }
+
+/* Buttons */
+/* line 96, ../../../app/stylesheets/forms.sass */
+a.button {
+  display: inline-block;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #efefef;
+  color: white;
+  text-shadow: -1px -1px 0px #507b16;
+  border: 1px solid #e7e7e7;
+  text-decoration: none;
+  padding: 0 10px;
+  line-height: 27px;
+  font-size: 16px;
+  height: 26px;
+  box-shadow: 2px 2px 4px silver;
+  -webkit-box-shadow: 2px 2px 4px silver;
+  -moz-box-shadow: 2px 2px 4px silver; }

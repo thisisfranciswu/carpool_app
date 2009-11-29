@@ -1,3 +1,9 @@
-<% @page_title = "My Locations" %>
-<% @layout = "with_sidebar_right" %>
+<% render :partial => "shared/init_map" %>
 
+<% @page_title = "My Locations" %>
+
+<% content_for :page_options do %>
+  <%= link_to image_tag("icons/plus-circle.png", :alt => "Add a location") + "Add a location", "", :title => "Add a location", :class => "add button" %>
+<% end %>
+
+<div id="map"></div>

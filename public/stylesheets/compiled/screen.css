@@ -292,3 +292,7 @@ span.stars_rating {
     height: 9px;
     width: 49px;
     background: url('/images/stars_rating_small.png') no-repeat; }
+
+/* line 238, ../../../app/stylesheets/screen.sass */
+#map {
+  height: 520px; }

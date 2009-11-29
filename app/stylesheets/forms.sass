@@ -90,3 +90,19 @@ form
         margin-left: 170px
     p.indent
       margin-left: 170px
+
+/* Buttons */
+
+a.button
+  display: inline-block
+  +rounded_corners("all", 3)
+  background = !light_grey * 0.25 + !white * 0.75
+  color = !white
+  +text_shadow(-1, -1, 0, !main_colour * 0.75 + !black * 0.25)
+  border = 1px "solid" !light_grey * 0.33 + !white * 0.66
+  text-decoration: none
+  padding: 0 10px
+  line-height: 27px
+  +font_size("large")
+  height: 26px
+  +box_shadow(2, 2, 4, !light_grey)

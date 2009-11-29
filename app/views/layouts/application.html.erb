@@ -9,7 +9,7 @@
   <%= yield :head %>
 </head>
 
-<body id="<%= @controller.controller_name %>_controller" class="<%= @template.instance_variable_get(:@_first_render).name %>">
+<body id="<%= @controller.controller_name %>_controller" class="<%= @template.instance_variable_get(:@_first_render).name %>" <%= yield :body_tag %>>
 
   <div class="page_width">
 
@@ -17,7 +17,7 @@
 
     <div id="page_title">
       <% if @content_for_page_options %>
-        <span class="page_options"><%= yield :page_options %></span>
+        <span id="page_options"><%= yield :page_options %></span>
       <% end %>
       <% if @page_title %>
         <h2><%= @page_title %></h2>

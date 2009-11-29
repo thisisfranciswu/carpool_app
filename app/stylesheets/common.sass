@@ -161,6 +161,24 @@ span.marker_time
   height: 16px
   width: 16px
 
+#page_title
+  #page_options
+    a.button
+      +font_size("large")
+      margin: 6px 0 0
+      line-height: 30px
+      height: 30px
+      +rounded_corners("all", 5)
+      +box_shadow(2, 2, 2, !main_colour * 0.85 + !black * 0.15)
+      color = !black
+      font-weight: bold
+      background = !white
+      border: none
+      +text_shadow(0, 0, 0, transparent)
+      img
+        margin: 0 3px 0 0
+        position: relative
+        top: 2px
 
 
 
