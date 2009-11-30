@@ -21,11 +21,16 @@ $(function(){
 
   // Homepage: Refine Search for Carpool
   $("#home_controller.index #search_results div.try form button").live("click", function() {
-
-
-
-
     return false;
+  });
+
+  // Add a location
+  $("#add_a_location #find_location").live("click", function() {
+    $("#did_you_mean").show();
+    return false;
+  });
+  $("#add_a_location #save_location").live("click", function() {
+    $("div.modal_window").jqmHide();
   });
 
 });

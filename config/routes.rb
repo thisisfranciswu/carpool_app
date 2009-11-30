@@ -7,6 +7,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :users
   map.resources :locations
+  map.resources :commutes
 
   map.resource :session
 

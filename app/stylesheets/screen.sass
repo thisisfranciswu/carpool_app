@@ -238,14 +238,58 @@ span.stars_rating
 #map
   height: 520px
 
-ul.did_you_mean
+#did_you_mean
   display: inline-block
   li
     display: block
     list-style: none
 
-
-
+ul.week
+  border = 1px "solid" !light_grey * 0.75 + !white * 0.25
+  li
+    display: block
+    float: left
+    width: 14.285714285714286%
+    list-style: none
+    position: relative
+    a
+      display: block
+      border-right = 1px "solid" !light_grey * 0.75 + !white * 0.25
+      padding: 5px
+      text-align: center
+      text-transform: uppercase
+      line-height: 1
+      font-weight: bold
+      +font_size("small")
+      text-decoration: none
+      background = !white * 0.85 + !light_grey * 0.15
+      &:hover
+        background = !white
+      small
+        display: block
+        +font_size("tiny")
+        font-weight: normal
+    b.pointer
+      display: none
+      width: 0
+      height: 0
+      position: absolute
+      bottom: 0
+      left: 50%
+      margin: 0 0 -10px -10px
+      border: 10px solid transparent
+      border-top = 10px "solid" !main_colour
+      border-bottom: none
+      z-index: 10
+    &:last-child
+      a
+        border: none
+    &.active
+      a
+        background = !main_colour
+        color = !white
+      b.pointer
+        display: block
 
 
 
