@@ -296,3 +296,11 @@ span.stars_rating {
 /* line 238, ../../../app/stylesheets/screen.sass */
 #map {
   height: 520px; }
+
+/* line 241, ../../../app/stylesheets/screen.sass */
+ul.did_you_mean {
+  display: inline-block; }
+  /* line 243, ../../../app/stylesheets/screen.sass */
+  ul.did_you_mean li {
+    display: block;
+    list-style: none; }
