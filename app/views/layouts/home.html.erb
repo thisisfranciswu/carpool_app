@@ -11,15 +11,13 @@
 
 <body id="<%= @controller.controller_name %>_controller" class="<%= @template.instance_variable_get(:@_first_render).name %>" <%= yield :body_tag %>>
 
-  <div class="page_width">
+  <%= render :partial => "shared/masthead" %>
 
-    <%= render :partial => "shared/masthead" %>
-
+  <div id="content">
     <%= yield %>
-
-    <%= render :partial => "shared/footer" %>
-
   </div>
+
+  <%= render :partial => "shared/footer" %>
 
 </body>
 </html>

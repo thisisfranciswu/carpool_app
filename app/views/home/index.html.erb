@@ -1,66 +1,76 @@
 <% render :partial => "shared/init_map" %>
 
-<div id="top" class="clearfix">
-  <div id="pitch">
-    <div class="text">
-      <h2>Carpooling for daily life</h2>
-      <h3>John and jane live and work in the same neighbourhood and have similar schedules. Shouldn&#39;t they be carpooling?</h3>
-    </div>
-    <div class="try">
-      <div class="leader">
-        <h2><strong>Try it out!</strong> <span>Could you be carpooling tomorrow?</span></h2>
-        <b class="tail"><!----></b>
-      </div>
-      <form>
-        <div class="complex_field clearfix">
-          <span>
-            <span class="marker_way_point"><b>A</b></span>
-            <label class="title depart_from">Depart from</label>
-            <input type="text" size="17px"/>
-          </span>
-          <span>
-            <span class="marker_way_point"><b>B</b></span>
-            <label class="title arrive_to">Arrive to</label>
-            <input type="text" size="17px"/>
-          </span>
-          <span>
-            <span class="marker_time"><!----></span>
-            <label class="title arrive_by">Arrive by</label>
-            <input type="text" size="8"/>
-          </span>
+<div class="page_width">
+
+  <div id="top" class="panel clearfix">
+    <div class="border">
+      <div id="pitch">
+        <div class="text">
+          <h2>Carpooling for daily life</h2>
+          <h3>John and jane live and work in the same neighbourhood and have similar schedules. Shouldn&#39;t they be carpooling?</h3>
         </div>
-        <p class="indent submit">
-          <button>Find a driver</button>
-          <button>Find a passenger</button>
-        </p>
-      </form>
-      <ul class="users">
-        <% 5.times do %>
-          <%= render :partial => "users/user_search_results" %>
-        <% end %>
-      </ul>
+        <div class="try">
+          <div class="leader">
+            <h2><strong>Try it out!</strong> <span>Could you be carpooling tomorrow?</span></h2>
+            <b class="tail"><!----></b>
+          </div>
+          <form>
+            <div class="complex_field clearfix">
+              <span>
+                <span class="marker_way_point"><b>A</b></span>
+                <label class="title depart_from">Depart from</label>
+                <input type="text" size="17px"/>
+              </span>
+              <span>
+                <span class="marker_way_point"><b>B</b></span>
+                <label class="title arrive_to">Arrive to</label>
+                <input type="text" size="17px"/>
+              </span>
+              <span>
+                <span class="marker_time"><!----></span>
+                <label class="title arrive_by">Arrive by</label>
+                <input type="text" size="8"/>
+              </span>
+            </div>
+            <p class="indent submit">
+              <button>Find a driver</button>
+              <button>Find a passenger</button>
+            </p>
+          </form>
+          <ul class="users">
+            <% 5.times do %>
+              <%= render :partial => "users/user_search_results" %>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+      <div id="search_results"></div>
+      <div id="map"></div>
     </div>
   </div>
-  <div id="search_results"></div>
-  <div id="map"></div>
-</div>
 
-<div id="features">
-  <ul>
-    <li>
-      <%= image_tag "", :alt => "" %>
-      <h2>Everyday Carpooling</h2>
-      <p><%= link_to "Aliquet posuere nisl", "", :title => "Aliquet posuere nisl" %>. Maecenas eros dolor, tempor vitae dignissim ac, iaculis eget arcu.</p>
-    </li>
-    <li>
-      <%= image_tag "", :alt => "" %>
-      <h2>Smart Matching</h2>
-      <p><%= link_to "Aliquet posuere nisl", "", :title => "Aliquet posuere nisl" %>. Maecenas eros dolor, tempor vitae dignissim ac, iaculis eget arcu.</p>
-    </li>
-    <li>
-      <%= image_tag "", :alt => "" %>
-      <h2>Savings Everywhere</h2>
-      <p><%= link_to "Aliquet posuere nisl", "", :title => "Aliquet posuere nisl" %>. Maecenas eros dolor, tempor vitae dignissim ac, iaculis eget arcu.</p>
-    </li>
-  </ul>
+  <div id="features" class="panel">
+    <div class="border">
+      <div class="content">
+        <ul>
+          <li>
+            <%= image_tag "", :alt => "" %>
+            <h2>Everyday Carpooling</h2>
+            <p><%= link_to "Aliquet posuere nisl", "", :title => "Aliquet posuere nisl" %>. Maecenas eros dolor, tempor vitae dignissim ac, iaculis eget arcu.</p>
+          </li>
+          <li>
+            <%= image_tag "", :alt => "" %>
+            <h2>Smart Matching</h2>
+            <p><%= link_to "Aliquet posuere nisl", "", :title => "Aliquet posuere nisl" %>. Maecenas eros dolor, tempor vitae dignissim ac, iaculis eget arcu.</p>
+          </li>
+          <li>
+            <%= image_tag "", :alt => "" %>
+            <h2>Savings Everywhere</h2>
+            <p><%= link_to "Aliquet posuere nisl", "", :title => "Aliquet posuere nisl" %>. Maecenas eros dolor, tempor vitae dignissim ac, iaculis eget arcu.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
 </div>

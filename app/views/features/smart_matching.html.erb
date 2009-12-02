@@ -5,35 +5,41 @@
   <%= render :partial => "nav" %>
 <% end %>
 
-<p class="breadcrumbs">
+<% content_for :breadcrumbs do %>
   <%= link_to "Features", features_path, :title => "Feature Tour" %> /
   Smart Matching
-</p>
+<% end %>
 
-<h3>Matching that Makes Sense</h3>
-<p class="leader">
-  Find carpoolers based on routes, routines and reviews.<br/>
-  Carpooling has never been this comfortable.
-</p>
-<ul class="features">
-  <li>
-    <%= image_tag "asdf", :alt => "asdf" %>
-    <h4>Reliable</h4>
-    <p>asdf</p>
-  </li>
-  <li>
-    <%= image_tag "asdf", :alt => "asdf" %>
-    <h4>Secure</h4>
-    <p>asdf</p>
-  </li>
-  <li>
-    <%= image_tag "asdf", :alt => "asdf" %>
-    <h4>Flexible</h4>
-    <p>asdf</p>
-  </li>
-  <li>
-    <%= image_tag "asdf", :alt => "asdf" %>
-    <h4>Smart</h4>
-    <p>asdf</p>
-  </li>
-</ul>
+<div class="panel">
+  <div class="border">
+    <div class="content">
+      <h3>Matching that Makes Sense</h3>
+      <p class="leader">
+        Find carpoolers based on routes, routines and reviews.<br/>
+        Carpooling has never been this comfortable.
+      </p>
+      <ul class="features">
+        <li>
+          <%= image_tag "asdf", :alt => "asdf" %>
+          <h4>Reliable</h4>
+          <p>asdf</p>
+        </li>
+        <li>
+          <%= image_tag "asdf", :alt => "asdf" %>
+          <h4>Secure</h4>
+          <p>asdf</p>
+        </li>
+        <li>
+          <%= image_tag "asdf", :alt => "asdf" %>
+          <h4>Flexible</h4>
+          <p>asdf</p>
+        </li>
+        <li>
+          <%= image_tag "asdf", :alt => "asdf" %>
+          <h4>Smart</h4>
+          <p>asdf</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

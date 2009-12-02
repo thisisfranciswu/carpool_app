@@ -7,57 +7,56 @@ body {
   position: relative;
   font-family: helvetica, arial, sans-serif;
   font-size: 14px;
-  color: #404040;
-  padding: 20px; }
+  color: #404040; }
 
-/* line 14, ../../../app/stylesheets/common.sass */
+/* line 13, ../../../app/stylesheets/common.sass */
 * {
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 0; }
 
-/* line 16, ../../../app/stylesheets/common.sass */
+/* line 15, ../../../app/stylesheets/common.sass */
 a {
   color: #6ba41e;
   outline: none; }
-  /* line 19, ../../../app/stylesheets/common.sass */
+  /* line 18, ../../../app/stylesheets/common.sass */
   a.negative {
     color: #cc0000; }
-  /* line 21, ../../../app/stylesheets/common.sass */
+  /* line 20, ../../../app/stylesheets/common.sass */
   a.disabled {
     color: !grey;
     text-decoration: none;
     cursor: default; }
-  /* line 25, ../../../app/stylesheets/common.sass */
+  /* line 24, ../../../app/stylesheets/common.sass */
   a:hover {
     text-decoration: none; }
 
-/* line 27, ../../../app/stylesheets/common.sass */
+/* line 26, ../../../app/stylesheets/common.sass */
 h1, h2, h3, h4 {
   color: black; }
 
-/* line 29, ../../../app/stylesheets/common.sass */
+/* line 28, ../../../app/stylesheets/common.sass */
 h1 {
   font-size: 24px;
   font-weight: bold; }
 
-/* line 32, ../../../app/stylesheets/common.sass */
+/* line 31, ../../../app/stylesheets/common.sass */
 h2 {
   font-size: 22px;
   margin: 0 0 1em; }
 
-/* line 35, ../../../app/stylesheets/common.sass */
+/* line 34, ../../../app/stylesheets/common.sass */
 h3 {
   font-size: 26px;
   margin: 0 0 0.25em; }
 
-/* line 38, ../../../app/stylesheets/common.sass */
+/* line 37, ../../../app/stylesheets/common.sass */
 h4 {
   font-size: 18px;
   margin: 0 0 0.5em; }
 
-/* line 43, ../../../app/stylesheets/common.sass */
+/* line 42, ../../../app/stylesheets/common.sass */
 .clearfix {
   display: inline-block; }
-  /* line 45, ../../../app/stylesheets/common.sass */
+  /* line 44, ../../../app/stylesheets/common.sass */
   .clearfix:after {
     content: ".";
     display: block;
@@ -66,98 +65,107 @@ h4 {
     line-height: 0;
     height: 0; }
 
-/* line 52, ../../../app/stylesheets/common.sass */
+/* line 51, ../../../app/stylesheets/common.sass */
 html[xmlns] .clearfix {
   display: block; }
 
-/* line 54, ../../../app/stylesheets/common.sass */
+/* line 53, ../../../app/stylesheets/common.sass */
 * html .clearfix {
   height: 1%; }
 
-/* line 59, ../../../app/stylesheets/common.sass */
-div.panel div.header h2 {
-  margin: 0; }
-/* line 61, ../../../app/stylesheets/common.sass */
-div.panel div.header span.options {
-  float: right; }
-
-/* line 66, ../../../app/stylesheets/common.sass */
-ul.nav {
-  width: 189px;
-  padding: 40px 0 40px 10px;
-  float: left;
-  border-right: 1px solid #e7e7e7;
-  background: #f8f8f8; }
-  /* line 72, ../../../app/stylesheets/common.sass */
-  ul.nav li {
-    display: block;
-    list-style: none;
-    margin: 0 0 3px 0; }
-    /* line 76, ../../../app/stylesheets/common.sass */
-    ul.nav li b.arrow {
-      display: none; }
-    /* line 78, ../../../app/stylesheets/common.sass */
-    ul.nav li a {
-      display: block;
-      padding: 0 10px;
-      height: 36px;
-      line-height: 36px;
-      text-align: right;
-      text-decoration: none;
-      border-bottom-left-radius: 3px;
-      -moz-border-radius-bottomleft: 3px;
-      -webkit-border-bottom-left-radius: 3px;
-      border-top-left-radius: 3px;
-      -moz-border-radius-topleft: 3px;
-      -webkit-border-top-left-radius: 3px;
-      color: gray;
-      font-weight: bold;
+/* line 56, ../../../app/stylesheets/common.sass */
+div.panel {
+  background: url('/images/transparent_backgrounds/black_05.png');
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 4px;
+  margin: 0 0 20px; }
+  /* line 61, ../../../app/stylesheets/common.sass */
+  div.panel div.border {
+    position: relative;
+    border: 1px solid silver; }
+    /* line 65, ../../../app/stylesheets/common.sass */
+    div.panel div.border div.header h2 {
+      margin: 0; }
+    /* line 67, ../../../app/stylesheets/common.sass */
+    div.panel div.border div.header span.options {
+      float: right; }
+    /* line 69, ../../../app/stylesheets/common.sass */
+    div.panel div.border div.content {
       background: white;
-      box-shadow: 0px 0px 1px #e7e7e7;
-      -webkit-box-shadow: 0px 0px 1px #e7e7e7;
-      -moz-box-shadow: 0px 0px 1px #e7e7e7; }
-      /* line 90, ../../../app/stylesheets/common.sass */
-      ul.nav li a:hover {
-        color: #6ba41e; }
-    /* line 92, ../../../app/stylesheets/common.sass */
-    ul.nav li:last-child {
-      border-bottom: none;
-      margin-bottom: 0; }
-    /* line 95, ../../../app/stylesheets/common.sass */
-    ul.nav li.current {
-      border: none;
-      margin-right: -1px; }
-      /* line 98, ../../../app/stylesheets/common.sass */
-      ul.nav li.current b.arrow {
-        border: 18px solid transparent;
-        border-right: none;
-        border-left: 10px solid #6ba41e;
-        float: right;
-        display: block;
-        height: 0;
-        width: 0;
-        position: relative;
-        right: -10px; }
-      /* line 108, ../../../app/stylesheets/common.sass */
-      ul.nav li.current a {
-        background-color: #6ba41e;
-        color: white; }
+      padding: 20px; }
 
-/* line 112, ../../../app/stylesheets/common.sass */
+/* line 76, ../../../app/stylesheets/common.sass */
+div.nav div.border div.content {
+  padding: 0; }
+  /* line 78, ../../../app/stylesheets/common.sass */
+  div.nav div.border div.content ul {
+    background: #dfdfdf; }
+    /* line 80, ../../../app/stylesheets/common.sass */
+    div.nav div.border div.content ul li {
+      display: block;
+      list-style: none;
+      margin: 0 0 1px 0; }
+      /* line 84, ../../../app/stylesheets/common.sass */
+      div.nav div.border div.content ul li b.arrow {
+        display: none; }
+      /* line 86, ../../../app/stylesheets/common.sass */
+      div.nav div.border div.content ul li a {
+        display: block;
+        padding: 0 10px;
+        height: 36px;
+        line-height: 36px;
+        text-align: right;
+        text-decoration: none;
+        color: gray;
+        font-weight: bold;
+        background: white; }
+        /* line 96, ../../../app/stylesheets/common.sass */
+        div.nav div.border div.content ul li a:hover {
+          color: #6ba41e; }
+      /* line 98, ../../../app/stylesheets/common.sass */
+      div.nav div.border div.content ul li:last-child {
+        border-bottom: none;
+        margin-bottom: 0; }
+      /* line 101, ../../../app/stylesheets/common.sass */
+      div.nav div.border div.content ul li.current {
+        border: none;
+        margin-right: -1px; }
+        /* line 104, ../../../app/stylesheets/common.sass */
+        div.nav div.border div.content ul li.current b.arrow {
+          border: 18px solid transparent;
+          border-right: none;
+          border-left: 10px solid #6ba41e;
+          float: right;
+          display: block;
+          height: 0;
+          width: 0;
+          position: relative;
+          right: -10px; }
+        /* line 114, ../../../app/stylesheets/common.sass */
+        div.nav div.border div.content ul li.current a {
+          background-color: #6ba41e;
+          color: white; }
+      /* line 117, ../../../app/stylesheets/common.sass */
+      div.nav div.border div.content ul li:last-child {
+        margin: 0; }
+
+/* line 122, ../../../app/stylesheets/common.sass */
 p.leader {
   font-size: 18px;
   margin: 0 0 30px;
   color: gray; }
 
-/* line 116, ../../../app/stylesheets/common.sass */
+/* line 126, ../../../app/stylesheets/common.sass */
 p.breadcrumbs {
   font-size: 12px;
   color: gray;
   padding: 0 0 5px;
-  margin: 0 0 20px;
-  border-bottom: 1px solid #efefef; }
+  margin: 0 0 10px;
+  border-bottom: 1px solid #dfdfdf; }
 
-/* line 123, ../../../app/stylesheets/common.sass */
+/* line 133, ../../../app/stylesheets/common.sass */
 p.flash {
   margin: 0 0 20px;
   border-radius: 3px;
@@ -168,16 +176,16 @@ p.flash {
   padding: 0 0 0 21px;
   background-repeat: no-repeat;
   background-position: left top; }
-  /* line 131, ../../../app/stylesheets/common.sass */
+  /* line 141, ../../../app/stylesheets/common.sass */
   p.flash.error {
     color: #860000;
     background-image: url('/images/icons/exclamation-red.png'); }
-  /* line 134, ../../../app/stylesheets/common.sass */
+  /* line 144, ../../../app/stylesheets/common.sass */
   p.flash.notice {
     color: #008600;
     background-image: url('/images/icons/information.png'); }
 
-/* line 138, ../../../app/stylesheets/common.sass */
+/* line 148, ../../../app/stylesheets/common.sass */
 span.marker_way_point {
   display: inline-block;
   background: white;
@@ -188,7 +196,7 @@ span.marker_way_point {
   padding: 1px;
   height: 12px;
   width: 12px; }
-  /* line 146, ../../../app/stylesheets/common.sass */
+  /* line 156, ../../../app/stylesheets/common.sass */
   span.marker_way_point b {
     color: white;
     background: #6ba41e;
@@ -204,14 +212,14 @@ span.marker_way_point {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px; }
 
-/* line 158, ../../../app/stylesheets/common.sass */
+/* line 168, ../../../app/stylesheets/common.sass */
 span.marker_time {
   display: inline-block;
   background: url('/images/icons/clock.png');
   height: 16px;
   width: 16px; }
 
-/* line 166, ../../../app/stylesheets/common.sass */
+/* line 176, ../../../app/stylesheets/common.sass */
 #page_title #page_options a.button {
   font-size: 16px;
   margin: 6px 0 0;
@@ -228,10 +236,10 @@ span.marker_time {
   background: white;
   border: none;
   text-shadow: 0px 0px 0px transparent; }
-  /* line 178, ../../../app/stylesheets/common.sass */
+  /* line 188, ../../../app/stylesheets/common.sass */
   #page_title #page_options a.button.cancel {
     color: #cc0000; }
-  /* line 180, ../../../app/stylesheets/common.sass */
+  /* line 190, ../../../app/stylesheets/common.sass */
   #page_title #page_options a.button img {
     margin: 0 3px 0 0;
     position: relative;

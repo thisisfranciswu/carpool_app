@@ -6,89 +6,103 @@ div.page_width
   width: 950px
 
 body
-  padding: 20px
   +background_greyness("white", 90)
   #masthead
-    margin: 0 0 20px
     overflow: hidden
-    h1
-      float: left
-      margin: 0
-      line-height: 26px
-      a
-        color = !black
-        text-decoration: none
-    #nav
-      display: block
-      margin: 0 0 0 200px
-      li
-        display: block
-        float: left
-        list-style: none
-        margin: 0 5px 0 0
-        padding: 0
-        a
-          display: block
-          background = !white
-          line-height: 26px
-          padding: 0 10px
-          height: 26px
-          +font_size("small")
-          font-weight: bold
-          +rounded_corners("all", 5)
-          text-decoration: none
-          color = !main_colour
-          &:hover
-            color = !main_colour_alt
-    #utilities
-      float: right
+    background = !dark_grey
+    border-bottom = 4px "solid" !main_colour
+    div.page_width
+      padding: 10px
       overflow: hidden
-      a.account, a.session, a.help
-        display: block
+      h1
         float: left
-        margin: 0 0 0 5px
-        background = !white
-        line-height: 26px
-        padding: 0 10px
-        height: 26px
-        +rounded_corners("all", 5)
-        text-decoration: none
-        font-size: 10px
-        text-transform: uppercase
-        font-weight: bold
-        color = !grey
-        &:hover
-          color = !light_grey
+        margin: 0
+        line-height: 22px
+        a
+          color = !white
+          text-decoration: none
+      #nav
+        display: block
+        margin: 0 0 0 200px
+        li
+          display: block
+          float: left
+          list-style: none
+          margin: 0 5px 0 0
+          padding: 0
+          a
+            display: block
+            line-height: 22px
+            padding: 0 8px
+            height: 22px
+            background: url('/images/transparent_backgrounds/white_10.png')
+            +font_size("small")
+            font-weight: bold
+            +rounded_corners("all", 2)
+            text-decoration: none
+            color = !white
+            +text_shadow(1, 1, 0, !black)
+            &:hover
+              background = !main_colour
+            +text_shadow(1, 1, 0, !black * 0.5 + !main_colour * 0.5)
+      #utilities
+        float: right
+        overflow: hidden
+        a.account, a.session, a.help
+          display: block
+          float: left
+          margin: 0 0 0 5px
+          background: url('/images/transparent_backgrounds/white_10.png')
+          line-height: 22px
+          padding: 0 8px
+          +text_shadow(1, 1, 0, !black)
+          height: 22px
+          +rounded_corners("all", 2)
+          text-decoration: none
+          font-size: 10px
+          text-transform: uppercase
+          font-weight: bold
+          color = !white
+          &:hover
+            background = !main_colour
+            +text_shadow(1, 1, 0, !black * 0.5 + !main_colour * 0.5)
+
   #page_title
-    +rounded_corners("top", 5)
-    background-color = !main_colour
-    padding: 20px 40px
-    border-bottom = 1px "solid" (!main_colour * 0.85 + black * 0.15)
+    margin: 0 0 20px
     h2
-      color = !white
-      +text_shadow(2, 2, 0, !main_colour * 0.85 + !black * 0.15)
+      color = !black
       +font_size("xxhuge")
       font-weight: bold
       margin: 0
     #page_options
       float: right
   #content
-    background-color = !white
+    border-top = 4px "solid" !light_grey * 0.5 + !white * 0.5
+    background-color = !light_grey * 0.25 + !white * 0.75
     +rounded_corners("bottom", 5)
-    margin: 0 0 20px
+    padding: 20px 0
     min-height: 480px
     #main
       margin: 0
-      padding: 40px 40px 80px
+      padding: 0
     &.with_sidebar_left
       #main
         margin-left: 200px
+        padding-left: 20px
     &.with_sidebar_right
       #main
         margin-right: 200px
+        padding-right: 20px
+    #sidebar_left
+      float: left
+      width: 200px
+    #sidebar_right
+      float: right
+      width: 200px
 
   #footer
     +opacity(50)
     +font_size("small")
+    padding: 20px
     &:hover
       +opacity(100)

@@ -1,30 +1,32 @@
 <div id="masthead">
-  <div id="utilities">
-    <% if logged_in? %>
-      <%= link_to "Account", account_path,    :title => "Account", :class => "account" %>
-      <%= link_to "Help",    pages_help_path, :title => "Help",    :class => "help" %>
-      <%= link_to "Logout",  logout_path,     :title => "Logout",  :class => "account" %>
-    <% else %>
-      <%= link_to "Login", login_path, :title => "Login", :class => "session" %>
-    <% end %>
-  </div>
-  <h1>
-    <% if logged_in? %>
-      <%= link_to app_name, root_path, :title => "Carpool App: Dashboard" %>
-    <% else %>
-      <%= link_to app_name, root_path, :title => "Carpool App: Home" %>
-    <% end %>
-  </h1>
-  <div id="nav">
-    <% if logged_in? %>
-      <li><%= link_to "Dashboard",            root_path, :title => "Dashboard" %></li>
-      <li><%= link_to "My Commutes",             commutes_path,  :title => "My Commutes" %></li>
-      <li><%= link_to "My Locations",         locations_path, :title => "My Locations" %></li>
-      <li><%#= link_to "People",                users_path,     :title => "People" %></li>
-    <% else %>
-      <li><%= link_to "Home",                 root_path,      :title => "Home" %></li>
-      <li><%= link_to "Feature Tour",         features_path,  :title => "Feature Tour" %></li>
-      <li><%= link_to "Pricing &amp; Signup", signup_path,    :title => "Pricing &amp; Signup" %></li>
-    <% end %>
+  <div class="page_width">
+    <div id="utilities">
+      <% if logged_in? %>
+        <%= link_to "Account", account_path,    :title => "Account", :class => "account" %>
+        <%= link_to "Help",    pages_help_path, :title => "Help",    :class => "help" %>
+        <%= link_to "Logout",  logout_path,     :title => "Logout",  :class => "account" %>
+      <% else %>
+        <%= link_to "Login", login_path, :title => "Login", :class => "session" %>
+      <% end %>
+    </div>
+    <h1>
+      <% if logged_in? %>
+        <%= link_to app_name, root_path, :title => "Carpool App: Dashboard" %>
+      <% else %>
+        <%= link_to app_name, root_path, :title => "Carpool App: Home" %>
+      <% end %>
+    </h1>
+    <div id="nav">
+      <% if logged_in? %>
+        <li><%= link_to "Dashboard",            root_path, :title => "Dashboard" %></li>
+        <li><%= link_to "My Commutes",             commutes_path,  :title => "My Commutes" %></li>
+        <li><%= link_to "My Locations",         locations_path, :title => "My Locations" %></li>
+        <li><%#= link_to "People",                users_path,     :title => "People" %></li>
+      <% else %>
+        <li><%= link_to "Home",                 root_path,      :title => "Home" %></li>
+        <li><%= link_to "Feature Tour",         features_path,  :title => "Feature Tour" %></li>
+        <li><%= link_to "Pricing &amp; Signup", signup_path,    :title => "Pricing &amp; Signup" %></li>
+      <% end %>
+    </div>
   </div>
 </div>

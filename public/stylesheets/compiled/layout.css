@@ -6,122 +6,133 @@ div.page_width {
 
 /* line 8, ../../../app/stylesheets/layout.sass */
 body {
-  padding: 20px;
   background-color: #e5e5e5; }
-  /* line 11, ../../../app/stylesheets/layout.sass */
+  /* line 10, ../../../app/stylesheets/layout.sass */
   body #masthead {
-    margin: 0 0 20px;
-    overflow: hidden; }
+    overflow: hidden;
+    background: #404040;
+    border-bottom: 4px solid #6ba41e; }
     /* line 14, ../../../app/stylesheets/layout.sass */
-    body #masthead h1 {
-      float: left;
-      margin: 0;
-      line-height: 26px; }
-      /* line 18, ../../../app/stylesheets/layout.sass */
-      body #masthead h1 a {
-        color: black;
-        text-decoration: none; }
-    /* line 21, ../../../app/stylesheets/layout.sass */
-    body #masthead #nav {
-      display: block;
-      margin: 0 0 0 200px; }
-      /* line 24, ../../../app/stylesheets/layout.sass */
-      body #masthead #nav li {
-        display: block;
-        float: left;
-        list-style: none;
-        margin: 0 5px 0 0;
-        padding: 0; }
-        /* line 30, ../../../app/stylesheets/layout.sass */
-        body #masthead #nav li a {
-          display: block;
-          background: white;
-          line-height: 26px;
-          padding: 0 10px;
-          height: 26px;
-          font-size: 12px;
-          font-weight: bold;
-          border-radius: 5px;
-          -moz-border-radius: 5px;
-          -webkit-border-radius: 5px;
-          text-decoration: none;
-          color: #6ba41e; }
-          /* line 41, ../../../app/stylesheets/layout.sass */
-          body #masthead #nav li a:hover {
-            color: #a1d55b; }
-    /* line 43, ../../../app/stylesheets/layout.sass */
-    body #masthead #utilities {
-      float: right;
+    body #masthead div.page_width {
+      padding: 10px;
       overflow: hidden; }
-      /* line 46, ../../../app/stylesheets/layout.sass */
-      body #masthead #utilities a.account, body #masthead #utilities a.session, body #masthead #utilities a.help {
-        display: block;
+      /* line 17, ../../../app/stylesheets/layout.sass */
+      body #masthead div.page_width h1 {
         float: left;
-        margin: 0 0 0 5px;
-        background: white;
-        line-height: 26px;
-        padding: 0 10px;
-        height: 26px;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        text-decoration: none;
-        font-size: 10px;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: gray; }
-        /* line 60, ../../../app/stylesheets/layout.sass */
-        body #masthead #utilities a.account:hover, body #masthead #utilities a.session:hover, body #masthead #utilities a.help:hover {
-          color: silver; }
-  /* line 62, ../../../app/stylesheets/layout.sass */
+        margin: 0;
+        line-height: 22px; }
+        /* line 21, ../../../app/stylesheets/layout.sass */
+        body #masthead div.page_width h1 a {
+          color: white;
+          text-decoration: none; }
+      /* line 24, ../../../app/stylesheets/layout.sass */
+      body #masthead div.page_width #nav {
+        display: block;
+        margin: 0 0 0 200px; }
+        /* line 27, ../../../app/stylesheets/layout.sass */
+        body #masthead div.page_width #nav li {
+          display: block;
+          float: left;
+          list-style: none;
+          margin: 0 5px 0 0;
+          padding: 0; }
+          /* line 33, ../../../app/stylesheets/layout.sass */
+          body #masthead div.page_width #nav li a {
+            display: block;
+            line-height: 22px;
+            padding: 0 8px;
+            height: 22px;
+            background: url('/images/transparent_backgrounds/white_10.png');
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 2px;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            text-decoration: none;
+            color: white;
+            text-shadow: 1px 1px 0px black;
+            text-shadow: 1px 1px 0px #35520f; }
+            /* line 45, ../../../app/stylesheets/layout.sass */
+            body #masthead div.page_width #nav li a:hover {
+              background: #6ba41e; }
+      /* line 48, ../../../app/stylesheets/layout.sass */
+      body #masthead div.page_width #utilities {
+        float: right;
+        overflow: hidden; }
+        /* line 51, ../../../app/stylesheets/layout.sass */
+        body #masthead div.page_width #utilities a.account, body #masthead div.page_width #utilities a.session, body #masthead div.page_width #utilities a.help {
+          display: block;
+          float: left;
+          margin: 0 0 0 5px;
+          background: url('/images/transparent_backgrounds/white_10.png');
+          line-height: 22px;
+          padding: 0 8px;
+          text-shadow: 1px 1px 0px black;
+          height: 22px;
+          border-radius: 2px;
+          -moz-border-radius: 2px;
+          -webkit-border-radius: 2px;
+          text-decoration: none;
+          font-size: 10px;
+          text-transform: uppercase;
+          font-weight: bold;
+          color: white; }
+          /* line 66, ../../../app/stylesheets/layout.sass */
+          body #masthead div.page_width #utilities a.account:hover, body #masthead div.page_width #utilities a.session:hover, body #masthead div.page_width #utilities a.help:hover {
+            background: #6ba41e;
+            text-shadow: 1px 1px 0px #35520f; }
+  /* line 70, ../../../app/stylesheets/layout.sass */
   body #page_title {
-    border-top-left-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -webkit-border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    -moz-border-radius-topright: 5px;
-    -webkit-border-top-right-radius: 5px;
-    background-color: #6ba41e;
-    padding: 20px 40px;
-    border-bottom: 1px solid #5a8b19; }
-    /* line 67, ../../../app/stylesheets/layout.sass */
+    margin: 0 0 20px; }
+    /* line 72, ../../../app/stylesheets/layout.sass */
     body #page_title h2 {
-      color: white;
-      text-shadow: 2px 2px 0px #5a8b19;
+      color: black;
       font-size: 28px;
       font-weight: bold;
       margin: 0; }
-    /* line 73, ../../../app/stylesheets/layout.sass */
+    /* line 77, ../../../app/stylesheets/layout.sass */
     body #page_title #page_options {
       float: right; }
-  /* line 75, ../../../app/stylesheets/layout.sass */
+  /* line 79, ../../../app/stylesheets/layout.sass */
   body #content {
-    background-color: white;
+    border-top: 4px solid #dfdfdf;
+    background-color: #efefef;
     border-bottom-right-radius: 5px;
     -moz-border-radius-bottomright: 5px;
     -webkit-border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     -moz-border-radius-bottomleft: 5px;
     -webkit-border-bottom-left-radius: 5px;
-    margin: 0 0 20px;
+    padding: 20px 0;
     min-height: 480px; }
-    /* line 80, ../../../app/stylesheets/layout.sass */
+    /* line 85, ../../../app/stylesheets/layout.sass */
     body #content #main {
       margin: 0;
-      padding: 40px 40px 80px; }
-    /* line 84, ../../../app/stylesheets/layout.sass */
+      padding: 0; }
+    /* line 89, ../../../app/stylesheets/layout.sass */
     body #content.with_sidebar_left #main {
-      margin-left: 200px; }
-    /* line 87, ../../../app/stylesheets/layout.sass */
+      margin-left: 200px;
+      padding-left: 20px; }
+    /* line 93, ../../../app/stylesheets/layout.sass */
     body #content.with_sidebar_right #main {
-      margin-right: 200px; }
-  /* line 90, ../../../app/stylesheets/layout.sass */
+      margin-right: 200px;
+      padding-right: 20px; }
+    /* line 96, ../../../app/stylesheets/layout.sass */
+    body #content #sidebar_left {
+      float: left;
+      width: 200px; }
+    /* line 99, ../../../app/stylesheets/layout.sass */
+    body #content #sidebar_right {
+      float: right;
+      width: 200px; }
+  /* line 103, ../../../app/stylesheets/layout.sass */
   body #footer {
     filter: alpha(opacity=50);
     opacity: 0.5;
     -moz-opacity: 0.5;
-    font-size: 12px; }
-    /* line 93, ../../../app/stylesheets/layout.sass */
+    font-size: 12px;
+    padding: 20px; }
+    /* line 107, ../../../app/stylesheets/layout.sass */
     body #footer:hover {
       filter: alpha(opacity=100);
       opacity: 1;

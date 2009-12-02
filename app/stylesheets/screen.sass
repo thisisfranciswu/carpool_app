@@ -3,8 +3,6 @@
 #home_controller.index #page_title
   display: none
 #top
-  border = 1px "solid" !light_grey
-  margin: 0 0 20px
   position: relative
   #pitch
     position: absolute
@@ -29,7 +27,7 @@
         +font_size("xxlarge")
         margin: 0
     div.try
-      width: 454px
+      width: 446px
       padding: 40px 40px 40px 20px
       float: right
       div.leader
@@ -120,16 +118,12 @@
     height: 440px
 
 #features
-  margin: 0 0 20px
-  background-color = !white
-  +rounded_corners("all", 5)
   ul
     overflow: hidden
-    padding: 20px
     li
       display: block
       float: left
-      width: 290px
+      width: 286px
       margin: 0 20px 0 0
       h2
         +font_size("large")
@@ -244,54 +238,59 @@ span.stars_rating
     display: block
     list-style: none
 
-ul.week
-  border = 1px "solid" !light_grey * 0.75 + !white * 0.25
-  li
-    display: block
-    float: left
-    width: 14.285714285714286%
-    list-style: none
-    position: relative
-    a
-      display: block
-      border-right = 1px "solid" !light_grey * 0.75 + !white * 0.25
-      padding: 5px
-      text-align: center
-      text-transform: uppercase
-      line-height: 1
-      font-weight: bold
-      +font_size("small")
-      text-decoration: none
-      background = !white * 0.85 + !light_grey * 0.15
-      &:hover
-        background = !white
-      small
-        display: block
-        +font_size("tiny")
-        font-weight: normal
-    b.pointer
-      display: none
-      width: 0
-      height: 0
-      position: absolute
-      bottom: 0
-      left: 50%
-      margin: 0 0 -10px -10px
-      border: 10px solid transparent
-      border-top = 10px "solid" !main_colour
-      border-bottom: none
-      z-index: 10
-    &:last-child
-      a
-        border: none
-    &.active
-      a
-        background = !main_colour
-        color = !white
-      b.pointer
-        display: block
-
-
+/* Commutes */
+#commutes_controller
+  #content
+    #main
+      ul.week
+        border = 1px "solid" !light_grey * 0.75 + !white * 0.25
+        li
+          display: block
+          float: left
+          width: 14.285714285714286%
+          list-style: none
+          position: relative
+          a
+            display: block
+            border-right = 1px "solid" !light_grey * 0.75 + !white * 0.25
+            padding: 5px
+            text-align: center
+            text-transform: uppercase
+            line-height: 1
+            font-weight: bold
+            +font_size("small")
+            text-decoration: none
+            background = !white
+            &:hover
+              background = !white * 0.85 + !light_grey * 0.15
+            small
+              display: block
+              +font_size("tiny")
+              font-weight: normal
+          b.pointer
+            display: none
+            width: 0
+            height: 0
+            position: absolute
+            bottom: 0
+            left: 50%
+            margin: 0 0 -10px -10px
+            border: 10px solid transparent
+            border-top = 10px "solid" !main_colour
+            border-bottom: none
+            z-index: 10
+          &:last-child
+            a
+              border: none
+          &.active
+            a
+              background = !main_colour
+              color = !white
+            b.pointer
+              display: block
+      #map
+        border = 1px "solid" !light_grey * 0.75 + !white * 0.25
+        border-top: none
 
 
 
