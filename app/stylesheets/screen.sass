@@ -242,56 +242,119 @@ span.stars_rating
 #commutes_controller
   #content
     #main
-      ul.week
-        border = 1px "solid" !light_grey * 0.75 + !white * 0.25
-        li
-          display: block
-          float: left
-          width: 14.285714285714286%
-          list-style: none
-          position: relative
-          a
-            display: block
-            border-right = 1px "solid" !light_grey * 0.75 + !white * 0.25
+      #commutes_map
+        div.header
+          padding: 0
+          div.options
+            overflow: hidden
             padding: 5px
-            text-align: center
-            text-transform: uppercase
-            line-height: 1
-            font-weight: bold
-            +font_size("small")
-            text-decoration: none
-            background = !white
-            &:hover
-              background = !white * 0.85 + !light_grey * 0.15
-            small
+            a
               display: block
+              padding: 0 8px
+              height: 22px
+              line-height: 22px
+              background: url('/images/transparent_backgrounds/main_colour_50.png')
               +font_size("tiny")
-              font-weight: normal
-          b.pointer
-            display: none
-            width: 0
-            height: 0
-            position: absolute
-            bottom: 0
-            left: 50%
-            margin: 0 0 -10px -10px
-            border: 10px solid transparent
-            border-top = 10px "solid" !main_colour
-            border-bottom: none
-            z-index: 10
-          &:last-child
-            a
-              border: none
-          &.active
-            a
-              background = !main_colour
+              text-transform: uppercase
+              +text_shadow(1, 1, 0, !main_colour * 0.85 + !black * 0.15)
               color = !white
-            b.pointer
+              text-decoration: none
+              font-weight: bold
+              &:hover
+                background = !main_colour
+                +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+            a.nav
+              float: left
+              margin: 0 1px 0 0
+              b
+                display: block
+                text-indent: -9000px
+                height: 0
+                width: 0
+                border: 5px solid transparent
+                margin: 6px 2px 0
+              &.previous
+                +rounded_corners("left", 3)
+                b
+                  border-left: none
+                  border-right = 5px "solid" !white
+              &.next
+                +rounded_corners("right", 3)
+                b
+                  border-right: none
+                  border-left = 5px "solid" !white
+              &.today
+                +rounded_corners("all", 3)
+                margin: 0 0 0 4px
+            a.view
+              float: right
+              margin: 0 0 0 1px
+              &.week
+                +rounded_corners("left", 3)
+              &.month
+                +rounded_corners("right", 3)
+            span.displayed
+              margin: 0 0 0 9px
+              +font_size("tiny")
+              text-transform: uppercase
+              line-height: 22px
+              font-weight: bold
+              +text_shadow(1, 1, 0, !main_colour)
+              color = !white
+          ul.week
+            height: 30px
+            li
               display: block
-      #map
-        border = 1px "solid" !light_grey * 0.75 + !white * 0.25
-        border-top: none
-
+              float: left
+              width: 14.285714285714286%
+              list-style: none
+              position: relative
+              a
+                display: block
+                margin-right: 1px
+                padding: 5px 0 0
+                text-align: center
+                text-transform: uppercase
+                line-height: 1
+                height: 25px
+                font-weight: bold
+                +font_size("small")
+                color = !light_grey
+                text-decoration: none
+                background = !white
+                +rounded_corners("top", 3)
+                &:hover
+                  color = !main_colour
+                small
+                  display: block
+                  +font_size("tiny")
+                  font-weight: normal
+              b.pointer
+                display: none
+                width: 0
+                height: 0
+                position: absolute
+                bottom: 0
+                left: 50%
+                margin: 0 0 -10px -10px
+                border: 10px solid transparent
+                border-top = 10px "solid" !main_colour
+                border-bottom: none
+                z-index: 10
+              &:last-child
+                a
+                  margin-right: 0
+              &.active
+                a
+                  background = !main_colour
+                  color = !white
+                b.pointer
+                  display: block
+    #sidebar_right
+      #commutes.panel
+        div.content
+          padding: 0
+      
 
 
 

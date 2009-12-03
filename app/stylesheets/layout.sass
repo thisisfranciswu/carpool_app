@@ -71,14 +71,16 @@ body
     margin: 0 0 20px
     h2
       color = !black
-      +font_size("xxhuge")
+      +font_size("huge")
       font-weight: bold
+      color = !dark_grey
       margin: 0
     #page_options
       float: right
   #content
     border-top = 4px "solid" !light_grey * 0.5 + !white * 0.5
     background-color = !light_grey * 0.25 + !white * 0.75
+    border-bottom = 1px "solid" !light_grey
     +rounded_corners("bottom", 5)
     padding: 20px 0
     min-height: 480px
@@ -101,8 +103,11 @@ body
       width: 200px
 
   #footer
-    +opacity(50)
     +font_size("small")
     padding: 20px
+    border-top = 4px "solid" !light_grey * 0.5 + !white * 0.5
+    p
+      +opacity(50)
     &:hover
-      +opacity(100)
+      p
+        +opacity(100)

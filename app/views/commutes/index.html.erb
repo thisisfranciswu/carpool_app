@@ -1,39 +1,77 @@
 <% render :partial => "shared/init_map" %>
 
 <% @page_title = "My Commutes" %>
+<% @layout = "with_sidebar_right" %>
 
 <% content_for :page_options do %>
   <%= link_to image_tag("icons/plus-circle.png", :alt => "Add a commute") + "Add a commute", "#", :title => "Add a commute", :class => "add button show_modal" %>
 <% end %>
 
-<ul class="week clearfix">
-  <li>
-    <%= link_to "Sun" + content_tag(:small, "Nov 8"), "", :title => "Sunday, November 8, 2009" %>
-    <b class="pointer"><!----></b>
-  </li>
-  <li>
-    <%= link_to "Mon" + content_tag(:small, "Nov 9"), "", :title => "Monday, November 9, 2009" %>
-    <b class="pointer"><!----></b>
-  </li>
-  <li class="active">
-    <%= link_to "Tue" + content_tag(:small, "Nov 10"), "", :title => "Tuesday, November 10, 2009" %>
-    <b class="pointer"><!----></b>
-  </li>
-  <li>
-    <%= link_to "Wed" + content_tag(:small, "Nov 11"), "", :title => "Wednesday, November 11, 2009" %>
-    <b class="pointer"><!----></b>
-  </li>
-  <li>
-    <%= link_to "Thu" + content_tag(:small, "Nov 12"), "", :title => "Thursday, November 12, 2009" %>
-    <b class="pointer"><!----></b>
-  </li>
-  <li>
-    <%= link_to "Fri" + content_tag(:small, "Nov 13"), "", :title => "Friday, November 13, 2009" %>
-    <b class="pointer"><!----></b>
-  </li>
-  <li>
-    <%= link_to "Sat" + content_tag(:small, "Nov 14"), "", :title => "Saturday, November 14, 2009" %>
-    <b class="pointer"><!----></b>
-  </li>
-</ul>
-<div id="map"></div>
+<div id="commutes_map" class="panel with_header">
+  <div class="header options">
+    <div class="options">
+      <%= link_to content_tag(:b, "Previous"), "", :title => "Previous", :class => "nav previous" %>
+      <%= link_to content_tag(:b, "Next"), "", :title => "Next", :class => "nav next" %>
+      <%= link_to "Today", "", :title => "Today", :class => "nav today" %>
+      <span class="displayed">Nov 8 - Nov 14</span>
+      <%= link_to "Month", "", :title => "Month View", :class => "view month" %>
+      <%= link_to "Week", "", :title => "Week View", :class => "view week" %>
+    </div>
+    <ul class="week">
+      <li>
+        <%= link_to "Sun" + content_tag(:small, "Nov 8"), "", :title => "Sunday, November 8, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Mon" + content_tag(:small, "Nov 9"), "", :title => "Monday, November 9, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li class="active">
+        <%= link_to "Tue" + content_tag(:small, "Nov 10"), "", :title => "Tuesday, November 10, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Wed" + content_tag(:small, "Nov 11"), "", :title => "Wednesday, November 11, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Thu" + content_tag(:small, "Nov 12"), "", :title => "Thursday, November 12, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Fri" + content_tag(:small, "Nov 13"), "", :title => "Friday, November 13, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Sat" + content_tag(:small, "Nov 14"), "", :title => "Saturday, November 14, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+    </ul>
+  </div>
+  <div class="content no_padding">
+    <div id="map"></div>
+  </div>
+</div>
+
+<% content_for :sidebar_right do %>
+  <div id="commutes" class="panel">
+    <div class="content">
+      <ul>
+        <li>
+          <span class="number_label"><b>1</b></span>
+          <div class="details">
+            <span class="marker_way_point"><b>A</b></span>
+            <label>Depart from</label>
+            <strong>Location A</strong>
+            <span class="marker_way_point"><b>B</b></span>
+            <label>Arrive to</label>
+            <strong>Location B</strong>
+            <span class="marker_time"></span>
+            <label>Arrive by</label>
+            <strong>Time</strong>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<% end %>

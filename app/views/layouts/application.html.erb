@@ -38,6 +38,9 @@
           <p class="breadcrumbs"><%= yield :breadcrumbs %></p>
         <% end %>
       </div>
+      <% if @content_for_sidebar_right %>
+        <div id="sidebar_right"><%= yield :sidebar_right %></div>
+      <% end %>
       <% if @content_for_sidebar_left %>
         <div id="sidebar_left"><%= yield :sidebar_left %></div>
       <% end %>
@@ -47,12 +50,10 @@
         <%- end -%>
         <%= yield %>
       </div>
-      <% if @content_for_sidebar_right %>
-        <div id="sidebar_right"><%= yield :sidebar_right %></div>
-      <% end %>
     </div>
   </div>
 
+  <%= render :partial => "shared/footer" %>
 
 </body>
 </html>

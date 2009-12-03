@@ -58,66 +58,76 @@ div.panel
   +rounded_corners("all", 3)
   padding: 4px
   margin: 0 0 20px
-  div.border
+  div.header
+    padding: 5px 10px
+    background: url('/images/transparent_backgrounds/main_colour_50.png')
+    border = 1px "solid" !main_colour * 0.5 + !light_grey * 0.5
+    +rounded_corners("top", 2)
+    h2
+      margin: 0
+    span.options
+      float: right
+  div.content
     position: relative
     border = 1px "solid" !light_grey
-    div.header
-      h2
-        margin: 0
-      span.options
-        float: right
-    div.content
-      background = !white
-      padding: 20px
-    div.footer
-
-div.nav
-  div.border
-    div.content
+    background = !white
+    padding: 20px
+    +rounded_corners("all", 2)
+    &.no_padding
       padding: 0
-      ul
-        background = !light_grey * 0.5 + !white * 0.5
-        li
+  div.footer
+  &.with_header
+    div.content
+      border-top: none
+      +rounded_corners("top", 0)
+  &.with_footer
+    div.content
+      border-bottom: none
+      +rounded_corners("bottom", 0)
+div.nav
+  div.content
+    padding: 0
+    ul
+      background = !light_grey * 0.5 + !white * 0.5
+      li
+        display: block
+        list-style: none
+        margin: 0 0 1px 0
+        b.arrow
+          display: none
+        a
           display: block
-          list-style: none
-          margin: 0 0 1px 0
+          padding: 0 10px
+          height: 36px
+          line-height: 36px
+          text-align: right
+          text-decoration: none
+          color = !grey
+          font-weight: bold
+          background = !white
+          &:hover
+            color = !main_colour
+        &:last-child
+          border-bottom: none
+          margin-bottom: 0
+        &.current
+          border: none
+          margin-right: -1px
           b.arrow
-            display: none
-          a
+            border: 18px solid transparent
+            border-right: none
+            border-left = 10px "solid" !main_colour
+            float: right
             display: block
-            padding: 0 10px
-            height: 36px
-            line-height: 36px
-            text-align: right
-            text-decoration: none
-            color = !grey
-            font-weight: bold
-            background = !white
-            &:hover
-              color = !main_colour
-          &:last-child
-            border-bottom: none
-            margin-bottom: 0
-          &.current
-            border: none
-            margin-right: -1px
-            b.arrow
-              border: 18px solid transparent
-              border-right: none
-              border-left = 10px "solid" !main_colour
-              float: right
-              display: block
-              height: 0
-              width: 0
-              position: relative
-              right: -10px
-            a
-              background-color = !main_colour
-              color = !white
-          &:last-child
-            margin: 0
-
-
+            height: 0
+            width: 0
+            position: relative
+            right: -10px
+          a
+            background-color = !main_colour
+            color = !white
+        &:last-child
+          margin: 0
 
 p.leader
   +font_size("xlarge")
@@ -178,12 +188,11 @@ span.marker_time
       margin: 6px 0 0
       line-height: 30px
       height: 30px
-      +rounded_corners("all", 5)
-      +box_shadow(2, 2, 2, !main_colour * 0.85 + !black * 0.15)
+      +box_shadow(2, 2, 2, !light_grey * 0.33 + !white * 0.66)
+      border = 1px "solid" !light_grey * 0.5 + !white * 0.5
       color = !black
       font-weight: bold
       background = !white
-      border: none
       +text_shadow(0, 0, 0, transparent)
       &.cancel
         color = !colour_negative
