@@ -7,8 +7,8 @@
   <%= link_to image_tag("icons/plus-circle.png", :alt => "Add a commute") + "Add a commute", "#", :title => "Add a commute", :class => "add button show_modal" %>
 <% end %>
 
-<div id="commutes_map" class="panel with_header">
-  <div class="header options">
+<% content_for :above_main do %>
+  <div id="commutes_nav" class="panel">
     <div class="options">
       <%= link_to content_tag(:b, "Previous"), "", :title => "Previous", :class => "nav previous" %>
       <%= link_to content_tag(:b, "Next"), "", :title => "Next", :class => "nav next" %>
@@ -17,7 +17,7 @@
       <%= link_to "Month", "", :title => "Month View", :class => "view month" %>
       <%= link_to "Week", "", :title => "Week View", :class => "view week" %>
     </div>
-    <ul class="week">
+    <ul class="week clearfix">
       <li>
         <%= link_to "Sun" + content_tag(:small, "Nov 8"), "", :title => "Sunday, November 8, 2009" %>
         <b class="pointer"><!----></b>
@@ -48,6 +48,9 @@
       </li>
     </ul>
   </div>
+<% end %>
+
+<div id="commutes_map" class="panel with_header">
   <div class="content no_padding">
     <div id="map"></div>
   </div>
@@ -57,20 +60,9 @@
   <div id="commutes" class="panel">
     <div class="content">
       <ul>
-        <li>
-          <span class="commute_number">1</span>
-          <div class="details">
-            <span class="marker_way_point"><b>A</b></span>
-            <label>Depart from</label>
-            <strong>Location A</strong>
-            <span class="marker_way_point"><b>B</b></span>
-            <label>Arrive to</label>
-            <strong>Location B</strong>
-            <span class="marker_time"></span>
-            <label>Arrive by</label>
-            <strong>Time</strong>
-          </div>
-        </li>
+        <% 3.times do %>
+          <%= render :partial => "commute" %>
+        <% end %>
       </ul>
     </div>
   </div>

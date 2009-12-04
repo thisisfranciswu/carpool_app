@@ -240,148 +240,165 @@ span.stars_rating
 
 /* Commutes */
 #commutes_controller
-  #content
-    #main
-      #commutes_map
-        div.header
+  #commutes_nav
+    background: url('/images/transparent_backgrounds/main_colour_50.png')
+    div.options
+      overflow: hidden
+      margin: 0 0 5px
+      a
+        display: block
+        padding: 0 8px
+        height: 22px
+        line-height: 22px
+        background: url('/images/transparent_backgrounds/main_colour_50.png')
+        +font_size("tiny")
+        text-transform: uppercase
+        +text_shadow(1, 1, 0, !main_colour * 0.85 + !black * 0.15)
+        color = !white
+        text-decoration: none
+        font-weight: bold
+        &:hover
+          background = !main_colour
+          +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+      a.nav
+        float: left
+        margin: 0 1px 0 0
+        b
+          display: block
+          text-indent: -9000px
+          height: 0
+          width: 0
+          border: 5px solid transparent
+          margin: 6px 2px 0
+        &.previous
+          +rounded_corners("left", 3)
+          b
+            border-left: none
+            border-right = 5px "solid" !white
+        &.next
+          +rounded_corners("right", 3)
+          b
+            border-right: none
+            border-left = 5px "solid" !white
+        &.today
+          +rounded_corners("all", 3)
+          margin: 0 0 0 4px
+      a.view
+        float: right
+        margin: 0 0 0 1px
+        &.week
+          +rounded_corners("left", 3)
+        &.month
+          +rounded_corners("right", 3)
+      span.displayed
+        margin: 0 0 0 12px
+        +font_size("tiny")
+        text-transform: uppercase
+        line-height: 22px
+        font-weight: bold
+        +text_shadow(1, 1, 0, !main_colour)
+        color = !white
+    ul.week
+      li
+        display: block
+        float: left
+        width: 14.285714285714286%
+        list-style: none
+        position: relative
+        a
+          display: block
+          margin-right: 1px
+          padding: 5px 0
+          text-align: center
+          text-transform: uppercase
+          line-height: 1
+          font-weight: bold
+          +font_size("small")
+          color = !grey
+          text-decoration: none
+          background = !white
+          +rounded_corners("top", 3)
+          &:hover
+            color = !main_colour
+          small
+            display: block
+            +font_size("tiny")
+            font-weight: normal
+        b.pointer
+          display: none
+          width: 0
+          height: 0
+          position: absolute
+          bottom: 0
+          left: 50%
+          margin: 0 0 -10px -10px
+          border: 10px solid transparent
+          border-top = 10px "solid" !main_colour
+          border-bottom: none
+          z-index: 10
+        &:last-child
+          a
+            margin-right: 0
+        &.active
+          a
+            background = !main_colour
+            color = !white
+          b.pointer
+            display: block
+  #commutes_map
+  #commutes.panel
+    div.content
+      padding: 0
+      & > ul
+        &> li
+          display: block
+          margin: 0
           padding: 0
-          div.options
-            overflow: hidden
-            padding: 5px
-            a
-              display: block
-              padding: 0 8px
-              height: 22px
-              line-height: 22px
-              background: url('/images/transparent_backgrounds/main_colour_50.png')
-              +font_size("tiny")
-              text-transform: uppercase
-              +text_shadow(1, 1, 0, !main_colour * 0.85 + !black * 0.15)
-              color = !white
-              text-decoration: none
-              font-weight: bold
-              &:hover
-                background = !main_colour
-                +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
-            a.nav
-              float: left
-              margin: 0 1px 0 0
-              b
-                display: block
-                text-indent: -9000px
-                height: 0
-                width: 0
-                border: 5px solid transparent
-                margin: 6px 2px 0
-              &.previous
-                +rounded_corners("left", 3)
-                b
-                  border-left: none
-                  border-right = 5px "solid" !white
-              &.next
-                +rounded_corners("right", 3)
-                b
-                  border-right: none
-                  border-left = 5px "solid" !white
-              &.today
-                +rounded_corners("all", 3)
-                margin: 0 0 0 4px
-            a.view
-              float: right
-              margin: 0 0 0 1px
-              &.week
-                +rounded_corners("left", 3)
-              &.month
-                +rounded_corners("right", 3)
-            span.displayed
-              margin: 0 0 0 9px
-              +font_size("tiny")
-              text-transform: uppercase
-              line-height: 22px
-              font-weight: bold
-              +text_shadow(1, 1, 0, !main_colour)
-              color = !white
-          ul.week
-            height: 30px
+          position: relative
+          list-style: none
+          span.commute_number
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            width: 20px
+            text-align: center
+            padding-top: 5px
+            background: url('/images/transparent_backgrounds/main_colour_50.png')
+            border = 1px "solid" !main_colour * 0.5 + !light_grey * 0.5
+            font-weight: bold
+            color = !white
+            +font_size("medium")
+            +text_shadow(1, 1, 0, !main_colour * 0.75 + !black * 0.25)
+            border-top: none
+            border-left: none
+          a.go
+            position: absolute
+            top: 0
+            right: -8px
+            width: 16px
+            bottom: 0
+            display: block
+            text-indent: -9000px
+            background: url('/images/icons/navigation.png') no-repeat left center
+          ul.details
+            padding: 5px 10px
+            margin: 0 0 0 20px
+            border-bottom = 1px "solid" !light_grey * 0.75 + !white * 0.25
             li
-              display: block
-              float: left
-              width: 14.285714285714286%
               list-style: none
-              position: relative
-              a
-                display: block
-                margin-right: 1px
-                padding: 5px 0 0
-                text-align: center
-                text-transform: uppercase
-                line-height: 1
-                height: 25px
-                font-weight: bold
-                +font_size("small")
-                color = !light_grey
-                text-decoration: none
-                background = !white
-                +rounded_corners("top", 3)
-                &:hover
-                  color = !main_colour
-                small
-                  display: block
-                  +font_size("tiny")
-                  font-weight: normal
-              b.pointer
-                display: none
-                width: 0
-                height: 0
-                position: absolute
-                bottom: 0
-                left: 50%
-                margin: 0 0 -10px -10px
-                border: 10px solid transparent
-                border-top = 10px "solid" !main_colour
-                border-bottom: none
-                z-index: 10
-              &:last-child
-                a
-                  margin-right: 0
-              &.active
-                a
-                  background = !main_colour
-                  color = !white
-                b.pointer
-                  display: block
-    #sidebar_right
-      #commutes.panel
-        div.content
-          padding: 0
-          ul
-            li
-              display: block
-              margin: 0
+              margin: 0 0 2px
               padding: 0
-              position: relative
-              border-bottom = 1px "solid" !light_grey * 0.75 + !white * 0.25
-              list-style: none
-              span.commute_number
-                position: absolute
-                top: 5px
-                left: 5px
-                font-weight: bold
-                color = !white
-                +font_size("medium")
-                +text_shadow(1, 1, 0, !main_colour * 0.75 + !black * 0.25)
-              div.details
-                border-left = 20px "solid" !main_colour
-                padding: 5px
-                label
-                  float: none
-                  font-size: 12px
-                  line-height: 1
-                  margin: 0 0 5px
-                  text-align: left
-                  color = !grey
+              +font_size("small")
+              span.marker_way_point, span.marker_time
+                float: left
+                margin: 0 3px 0 0
               &:last-child
-                border: none
+                margin: 0
+          &:last-child
+            span.commute_number, ul.details
+              border-bottom: none
 
 
 

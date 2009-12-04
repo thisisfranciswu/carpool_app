@@ -38,6 +38,9 @@
           <p class="breadcrumbs"><%= yield :breadcrumbs %></p>
         <% end %>
       </div>
+      <% if @content_for_above_main %>
+        <div id="above_main"><%= yield :above_main %></div>
+      <% end %>
       <% if @content_for_sidebar_right %>
         <div id="sidebar_right"><%= yield :sidebar_right %></div>
       <% end %>
