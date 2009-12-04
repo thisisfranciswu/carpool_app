@@ -354,10 +354,34 @@ span.stars_rating
       #commutes.panel
         div.content
           padding: 0
-      
-
-
-
+          ul
+            li
+              display: block
+              margin: 0
+              padding: 0
+              position: relative
+              border-bottom = 1px "solid" !light_grey * 0.75 + !white * 0.25
+              list-style: none
+              span.commute_number
+                position: absolute
+                top: 5px
+                left: 5px
+                font-weight: bold
+                color = !white
+                +font_size("medium")
+                +text_shadow(1, 1, 0, !main_colour * 0.75 + !black * 0.25)
+              div.details
+                border-left = 20px "solid" !main_colour
+                padding: 5px
+                label
+                  float: none
+                  font-size: 12px
+                  line-height: 1
+                  margin: 0 0 5px
+                  text-align: left
+                  color = !grey
+              &:last-child
+                border: none
 
 
 
