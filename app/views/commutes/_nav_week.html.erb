@@ -1,0 +1,42 @@
+<% content_for :above_main do %>
+  <div id="commutes_nav" class="panel">
+    <div class="options">
+      <%= link_to content_tag(:b, "Previous"), "", :title => "Previous", :class => "nav previous" %>
+      <%= link_to content_tag(:b, "Next"), "", :title => "Next", :class => "nav next" %>
+      <%= link_to "Today", "", :title => "Today", :class => "nav today" %>
+      <span class="displayed">Nov 8 - Nov 14</span>
+      <%= link_to "Month", "", :title => "Month View", :class => "view month" %>
+      <%= link_to "Week", "", :title => "Week View", :class => "view week" %>
+    </div>
+    <ul class="week clearfix">
+      <li>
+        <%= link_to "Sun" + content_tag(:small, "Nov 8"), "", :title => "Sunday, November 8, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Mon" + content_tag(:small, "Nov 9"), "", :title => "Monday, November 9, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li class="active">
+        <%= link_to "Tue" + content_tag(:small, "Nov 10"), "", :title => "Tuesday, November 10, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Wed" + content_tag(:small, "Nov 11"), "", :title => "Wednesday, November 11, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Thu" + content_tag(:small, "Nov 12"), "", :title => "Thursday, November 12, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Fri" + content_tag(:small, "Nov 13"), "", :title => "Friday, November 13, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+      <li>
+        <%= link_to "Sat" + content_tag(:small, "Nov 14"), "", :title => "Saturday, November 14, 2009" %>
+        <b class="pointer"><!----></b>
+      </li>
+    </ul>
+  </div>
+<% end %>

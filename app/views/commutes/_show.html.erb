@@ -1,0 +1,36 @@
+<div class="details clearfix">
+  <div class="warnings">
+    <%= image_tag "icons/exclamation.png", :alt => "Warning: No Commutes", :class => "commutes_none" %>
+    <%= image_tag "icons/exclamation-red.png", :alt => "Warning: Commute Cancellation", :class => "commutes_cancellation" %>
+  </div>
+  <div class="depart_from">
+    <span class="marker_way_point"><b>A</b></span>
+    [depart_from]
+  </div>
+  <div class="arrive_to">
+    <span class="marker_way_point"><b>B</b></span>
+    [arrive_to]
+  </div>
+  <div class="arrive_for">
+    <span class="marker_time"></span>
+    [arrive_for]
+  </div>
+  <div class="passengers">
+    <span class="marker_passengers"></span>
+    [passengers]
+  </div>
+</div>
+
+<div class="passengers">
+  <h3>Passengers</h3>
+  <ul class="users">
+    <% 3.times do %>
+      <%= render :partial => "users/list_item" %>
+    <% end %>
+  </ul>
+</div>
+
+<div class="driver">
+  <h3>Driver</h3>
+  <%= render :partial => "users/show" %>
+</div>

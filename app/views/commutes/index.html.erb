@@ -7,97 +7,9 @@
   <%= link_to image_tag("icons/plus-circle.png", :alt => "Add a commute") + "Add a commute", "#", :title => "Add a commute", :class => "add button show_modal" %>
 <% end %>
 
-<% content_for :modal_title, "Add a commute" %>
-<% content_for :modal_content do %>
-  <form class="lw120" id="add_a_commute">
-    <div class="complex_field clearfix">
-      <label class="depart_from">
-        <span class="marker_way_point"><b>A</b></span>
-        Depart from
-      </label>
-      <input type="text"/>
-      <button class="find_location">Find it!</button>
-    </div>
-    <div class="complex_field did_you_mean" style="display:none;">
-      <label>Did you mean</label>
-      <div class="location_suggestions">
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-      </div>
-    </div>
-    <div class="complex_field clearfix">
-      <label class="arrive_to">
-        <span class="marker_way_point"><b>B</b></span>
-        Arrive to
-      </label>
-      <input type="text"/>
-      <button class="find_location">Find it!</button>
-    </div>
-    <div class="complex_field did_you_mean" style="display:none;">
-      <label>Did you mean</label>
-      <div class="location_suggestions">
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-      </div>
-    </div>
-    <div class="complex_field clearfix">
-      <label class="arrive_by">
-        <span class="marker_time"><!----></span>
-        Arrive by
-      </label>
-      <input type="text" size="8"/>
-    </div>
-    <p class="indent submit">
-      <button>Save</button>
-      or <%= link_to_function "Cancel", "", :title => "Cancel", :class => "negative modal_close" %>
-    </p>
-  </form>
-<% end %>
+<%= render :partial => "modal_new" %>
 
-<% content_for :above_main do %>
-  <div id="commutes_nav" class="panel">
-    <div class="options">
-      <%= link_to content_tag(:b, "Previous"), "", :title => "Previous", :class => "nav previous" %>
-      <%= link_to content_tag(:b, "Next"), "", :title => "Next", :class => "nav next" %>
-      <%= link_to "Today", "", :title => "Today", :class => "nav today" %>
-      <span class="displayed">Nov 8 - Nov 14</span>
-      <%= link_to "Month", "", :title => "Month View", :class => "view month" %>
-      <%= link_to "Week", "", :title => "Week View", :class => "view week" %>
-    </div>
-    <ul class="week clearfix">
-      <li>
-        <%= link_to "Sun" + content_tag(:small, "Nov 8"), "", :title => "Sunday, November 8, 2009" %>
-        <b class="pointer"><!----></b>
-      </li>
-      <li>
-        <%= link_to "Mon" + content_tag(:small, "Nov 9"), "", :title => "Monday, November 9, 2009" %>
-        <b class="pointer"><!----></b>
-      </li>
-      <li class="active">
-        <%= link_to "Tue" + content_tag(:small, "Nov 10"), "", :title => "Tuesday, November 10, 2009" %>
-        <b class="pointer"><!----></b>
-      </li>
-      <li>
-        <%= link_to "Wed" + content_tag(:small, "Nov 11"), "", :title => "Wednesday, November 11, 2009" %>
-        <b class="pointer"><!----></b>
-      </li>
-      <li>
-        <%= link_to "Thu" + content_tag(:small, "Nov 12"), "", :title => "Thursday, November 12, 2009" %>
-        <b class="pointer"><!----></b>
-      </li>
-      <li>
-        <%= link_to "Fri" + content_tag(:small, "Nov 13"), "", :title => "Friday, November 13, 2009" %>
-        <b class="pointer"><!----></b>
-      </li>
-      <li>
-        <%= link_to "Sat" + content_tag(:small, "Nov 14"), "", :title => "Saturday, November 14, 2009" %>
-        <b class="pointer"><!----></b>
-      </li>
-    </ul>
-  </div>
-<% end %>
+<%= render :partial => "nav_week" %>
 
 <div id="commutes_map" class="panel">
   <div class="content no_padding">

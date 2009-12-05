@@ -5,19 +5,19 @@
   </div>
   <div class="depart_from">
     <span class="marker_way_point"><b>A</b></span>
-    [location_a]
+    [depart_from]
   </div>
   <div class="arrive_to">
     <span class="marker_way_point"><b>B</b></span>
-    [location_a]
+    [arrive_to]
   </div>
   <div class="arrive_for">
     <span class="marker_time"></span>
-    [time]
+    [arrive_for]
   </div>
   <div class="passengers">
     <span class="marker_passengers"></span>
     [passengers]
   </div>
-  <%= link_to content_tag(:b, "Go"), "", :title => "Go", :class => "go" %>
+  <%= link_to content_tag(:b, "Go"), "/commutes/show", :title => "Go", :class => "go" %>
 </li>

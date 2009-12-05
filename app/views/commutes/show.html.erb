@@ -1,0 +1,37 @@
+<% render :partial => "shared/init_map" %>
+
+<% @page_title = "Commute" %>
+<% @layout = "with_sidebar_left" %>
+
+<% content_for :page_options do %>
+  <%= link_to image_tag("icons/cross-circle.png", :alt => "Cancel this commute") + "Cancel this commute", "#", :title => "Cancel this commute", :class => "add button negative show_modal" %>
+<% end %>
+
+<%= render :partial => "modal_delete" %>
+
+<%= render :partial => "nav_week" %>
+
+<div id="commutes_map" class="panel">
+  <div class="content no_padding">
+    <div class="inner_shadow top"><!----></div>
+    <div class="inner_shadow right"><!----></div>
+    <div class="inner_shadow bottom"><!----></div>
+    <div class="inner_shadow left"><!----></div>
+    <div id="map"></div>
+  </div>
+</div>
+
+<% content_for :sidebar_left do %>
+  <div id="commute" class="panel with_header with_footer">
+    <div class="header">
+      <h2>Commute</h2>
+    </div>
+    <div class="content no_padding">
+      <%= render :partial => "show" %>
+    </div>
+    <div class="footer">
+      <%= link_to "Find passengers", "", :title => "Find passengers", :class => "button" %>
+      <%= link_to "Find drivers", "", :title => "Find drivers", :class => "button" %>
+    </div>
+  </div>
+<% end %>

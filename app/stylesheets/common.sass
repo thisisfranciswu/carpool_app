@@ -65,6 +65,11 @@ div.panel
     +rounded_corners("top", 2)
     h2
       margin: 0
+      +font_size("medium")
+      font-weight: bold
+      +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+      color = !white
+      line-height: 1
     span.options
       float: right
   div.content
@@ -75,7 +80,40 @@ div.panel
     +rounded_corners("all", 2)
     &.no_padding
       padding: 0
+    h3
+      background: url('/images/transparent_backgrounds/main_colour_15.png')
+      +font_size("tiny")
+      text-transform: uppercase
+      font-weight: bold
+      line-height: 1
+      border = 1px "solid" !main_colour * 0.25 + !white * 0.75
+      margin: 0
+      color = !dark_grey
+      border-left: none
+      border-right: none
+      padding: 5px 10px
   div.footer
+    background = !light_grey * 0.15 + !white * 0.85
+    border = 1px "solid" !light_grey
+    +rounded_corners("bottom", 3)
+    padding: 5px
+    overflow: hidden
+    a.button
+      float: right
+      +font_size("tiny")
+      font-weight: bold
+      line-height: 16px
+      height: 16px
+      padding: 0 5px
+      text-transform: uppercase
+      color = !white
+      +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+      border = 1px "solid" !main_colour * 0.66 + !black * 0.33
+      border-left: none
+      border-top: none
+      background = !main_colour
+      +box_shadow(1, 1, 0, transparent)
+      +rounded_corners("all", 2)
   &.with_header
     div.content
       border-top: none
@@ -199,8 +237,9 @@ span.marker_passengers
       font-weight: bold
       background = !white
       +text_shadow(0, 0, 0, transparent)
-      &.cancel
-        color = !colour_negative
+      &.negative
+        color = !colour_negative * 0.85 + !black * 0.15
+        border = 1px "solid" !colour_negative * 0.85 + !black * 0.15
       img
         margin: 0 3px 0 0
         position: relative

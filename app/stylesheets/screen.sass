@@ -203,6 +203,7 @@ ul.users
       display: block
       border = 1px "solid" !light_grey * 0.25 + !white * 0.75
       float: left
+      overflow: hidden
     a.name
       +font_size("small")
       font-weight: bold
@@ -220,6 +221,33 @@ ul.users
   > li:first-child
     b.pointer
       display: block
+
+/* User */
+div.user
+  position: relative
+  padding: 5px 10px
+  img.picture
+    width: 38px
+    height: 38px
+    display: block
+    border = 1px "solid" !light_grey * 0.25 + !white * 0.75
+    float: left
+    overflow: hidden
+  a.name
+    +font_size("small")
+    font-weight: bold
+    display: block
+    margin: 0 0 0 45px
+    text-decoration: none
+  span.stars_rating
+    margin: 0 0 3px 45px
+    display: block
+  small
+    display: block
+    +font_size("tiny")
+    color = !grey
+    margin-left: 45px
+
 
 /* Stars Rating (Small) */
 span.stars_rating
@@ -349,6 +377,47 @@ div.did_you_mean
           b.pointer
             display: block
   #commutes_map
+  div.panel
+    ul li, div.details
+      div
+        +font_size("small")
+        margin: 0 0 2px
+        span.marker_way_point, span.marker_time, span.marker_passengers
+          float: left
+          margin: 0 3px 0 0
+        &.arrive_for, &.passengers
+          float: left
+          width: 50%
+          margin: 0
+      div.warnings
+        position: absolute
+        top: 5px
+        right: -8px
+        width: 16px
+      a.go
+        position: absolute
+        top: 50%
+        right: 0
+        bottom: 0
+        display: block
+        padding: 0 10px 0 0
+        b
+          display: block
+          height: 0
+          width: 0
+          text-indent: -9000px
+          border: 5px solid transparent
+          border-left = 5px solid !light_grey * 0.33 + !white * 0.66
+          border-right: none
+          margin: -5px 0 0
+      &:last-child
+        border-bottom: 0
+    ul li
+      &:hover
+        cursor: pointer
+        a.go
+          b
+            border-left-color = !light_grey
   #commutes.panel
     div.content
       padding: 0
@@ -360,45 +429,17 @@ div.did_you_mean
           position: relative
           list-style: none
           border-bottom = 1px "solid" !light_grey * 0.5 + !white * 0.5
-          div.warnings
-            position: absolute
-            top: 5px
-            right: -8px
-            width: 16px
-          a.go
-            position: absolute
-            top: 50%
-            right: 0
-            bottom: 0
-            display: block
-            padding: 0 10px 0 0
-            b
-              display: block
-              height: 0
-              width: 0
-              text-indent: -9000px
-              border: 5px solid transparent
-              border-left = 5px solid !light_grey * 0.33 + !white * 0.66
-              border-right: none
-              margin: -5px 0 0
-          div
-            +font_size("small")
-            margin: 0 0 2px
-            span.marker_way_point, span.marker_time, span.marker_passengers
-              float: left
-              margin: 0 3px 0 0
-            &.arrive_for, &.passengers
-              float: left
-              width: 50%
-              margin: 0
-          &:last-child
-            border-bottom: 0
-          &:hover
-            cursor: pointer
-            a.go
-              b
-                border-left-color = !light_grey
-
+  #commute.panel
+    div.content
+      div.details
+        padding: 5px 10px
+      div.passengers
+        ul.users li
+          margin: 0
+          &:first-child
+            border-top: none
+          b.pointer
+            display: none
 
 
 
