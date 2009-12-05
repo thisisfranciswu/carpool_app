@@ -296,158 +296,154 @@ span.stars_rating {
     list-style: none; }
 
 /* Commutes */
-/* line 243, ../../../app/stylesheets/screen.sass */
-#commutes_controller #commutes_nav {
-  background: url('/images/transparent_backgrounds/main_colour_50.png'); }
-  /* line 245, ../../../app/stylesheets/screen.sass */
-  #commutes_controller #commutes_nav div.options {
-    overflow: hidden;
-    margin: 0 0 5px; }
-    /* line 248, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes_nav div.options a {
-      display: block;
-      padding: 0 8px;
-      height: 22px;
-      line-height: 22px;
-      background: url('/images/transparent_backgrounds/main_colour_50.png');
-      font-size: 10px;
-      text-transform: uppercase;
-      text-shadow: 1px 1px 0px #5a8b19;
-      color: white;
-      text-decoration: none;
-      font-weight: bold; }
-      /* line 260, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes_nav div.options a:hover {
-        background: #6ba41e;
-        text-shadow: 1px 1px 0px #466c13; }
-    /* line 263, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes_nav div.options a.nav {
-      float: left;
-      margin: 0 1px 0 0; }
-      /* line 266, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes_nav div.options a.nav b {
-        display: block;
-        text-indent: -9000px;
-        height: 0;
-        width: 0;
-        border: 5px solid transparent;
-        margin: 6px 2px 0; }
-      /* line 273, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes_nav div.options a.nav.previous {
-        border-bottom-left-radius: 3px;
-        -moz-border-radius-bottomleft: 3px;
-        -webkit-border-bottom-left-radius: 3px;
-        border-top-left-radius: 3px;
-        -moz-border-radius-topleft: 3px;
-        -webkit-border-top-left-radius: 3px; }
-        /* line 275, ../../../app/stylesheets/screen.sass */
-        #commutes_controller #commutes_nav div.options a.nav.previous b {
-          border-left: none;
-          border-right: 5px solid white; }
-      /* line 278, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes_nav div.options a.nav.next {
-        border-top-right-radius: 3px;
-        -moz-border-radius-topright: 3px;
-        -webkit-border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        -moz-border-radius-bottomright: 3px;
-        -webkit-border-bottom-right-radius: 3px; }
-        /* line 280, ../../../app/stylesheets/screen.sass */
-        #commutes_controller #commutes_nav div.options a.nav.next b {
-          border-right: none;
-          border-left: 5px solid white; }
-      /* line 283, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes_nav div.options a.nav.today {
-        border-radius: 3px;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
-        margin: 0 0 0 4px; }
-    /* line 286, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes_nav div.options a.view {
-      float: right;
-      margin: 0 0 0 1px; }
-      /* line 289, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes_nav div.options a.view.week {
-        border-bottom-left-radius: 3px;
-        -moz-border-radius-bottomleft: 3px;
-        -webkit-border-bottom-left-radius: 3px;
-        border-top-left-radius: 3px;
-        -moz-border-radius-topleft: 3px;
-        -webkit-border-top-left-radius: 3px; }
-      /* line 291, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes_nav div.options a.view.month {
-        border-top-right-radius: 3px;
-        -moz-border-radius-topright: 3px;
-        -webkit-border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        -moz-border-radius-bottomright: 3px;
-        -webkit-border-bottom-right-radius: 3px; }
-    /* line 293, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes_nav div.options span.displayed {
-      margin: 0 0 0 12px;
-      font-size: 10px;
-      text-transform: uppercase;
-      line-height: 22px;
-      font-weight: bold;
-      text-shadow: 1px 1px 0px #6ba41e;
-      color: white; }
-  /* line 302, ../../../app/stylesheets/screen.sass */
-  #commutes_controller #commutes_nav ul.week li {
+/* line 244, ../../../app/stylesheets/screen.sass */
+#commutes_controller #commutes_nav div.options {
+  overflow: hidden;
+  margin: 0 0 5px; }
+  /* line 247, ../../../app/stylesheets/screen.sass */
+  #commutes_controller #commutes_nav div.options a {
     display: block;
-    float: left;
-    width: 14.285714285714286%;
-    list-style: none;
-    position: relative; }
-    /* line 308, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes_nav ul.week li a {
-      display: block;
-      margin-right: 1px;
-      padding: 5px 0;
-      text-align: center;
-      text-transform: uppercase;
-      line-height: 1;
-      font-weight: bold;
-      font-size: 12px;
-      color: gray;
-      text-decoration: none;
-      background: white;
-      border-top-left-radius: 3px;
-      -moz-border-radius-topleft: 3px;
-      -webkit-border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-      -moz-border-radius-topright: 3px;
-      -webkit-border-top-right-radius: 3px; }
-      /* line 321, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes_nav ul.week li a:hover {
-        color: #6ba41e; }
-      /* line 323, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes_nav ul.week li a small {
-        display: block;
-        font-size: 10px;
-        font-weight: normal; }
-    /* line 327, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes_nav ul.week li b.pointer {
-      display: none;
-      width: 0;
-      height: 0;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      margin: 0 0 -10px -10px;
-      border: 10px solid transparent;
-      border-top: 10px solid #6ba41e;
-      border-bottom: none;
-      z-index: 10; }
-    /* line 340, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes_nav ul.week li:last-child a {
-      margin-right: 0; }
-    /* line 343, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes_nav ul.week li.active a {
+    padding: 0 8px;
+    height: 22px;
+    line-height: 22px;
+    background: url('/images/transparent_backgrounds/main_colour_50.png');
+    font-size: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #5a8b19;
+    color: white;
+    text-decoration: none;
+    font-weight: bold; }
+    /* line 259, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav div.options a:hover {
       background: #6ba41e;
-      color: white; }
-    /* line 346, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes_nav ul.week li.active b.pointer {
-      display: block; }
+      text-shadow: 1px 1px 0px #466c13; }
+  /* line 262, ../../../app/stylesheets/screen.sass */
+  #commutes_controller #commutes_nav div.options a.nav {
+    float: left;
+    margin: 0 1px 0 0; }
+    /* line 265, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav div.options a.nav b {
+      display: block;
+      text-indent: -9000px;
+      height: 0;
+      width: 0;
+      border: 5px solid transparent;
+      margin: 6px 2px 0; }
+    /* line 272, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav div.options a.nav.previous {
+      border-bottom-left-radius: 2px;
+      -moz-border-radius-bottomleft: 2px;
+      -webkit-border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+      -moz-border-radius-topleft: 2px;
+      -webkit-border-top-left-radius: 2px; }
+      /* line 274, ../../../app/stylesheets/screen.sass */
+      #commutes_controller #commutes_nav div.options a.nav.previous b {
+        border-left: none;
+        border-right: 5px solid white; }
+    /* line 277, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav div.options a.nav.next {
+      border-top-right-radius: 2px;
+      -moz-border-radius-topright: 2px;
+      -webkit-border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      -moz-border-radius-bottomright: 2px;
+      -webkit-border-bottom-right-radius: 2px; }
+      /* line 279, ../../../app/stylesheets/screen.sass */
+      #commutes_controller #commutes_nav div.options a.nav.next b {
+        border-right: none;
+        border-left: 5px solid white; }
+    /* line 282, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav div.options a.nav.today {
+      border-radius: 2px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      margin: 0 0 0 4px; }
+  /* line 285, ../../../app/stylesheets/screen.sass */
+  #commutes_controller #commutes_nav div.options a.view {
+    float: right;
+    margin: 0 0 0 1px; }
+    /* line 288, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav div.options a.view.week {
+      border-bottom-left-radius: 2px;
+      -moz-border-radius-bottomleft: 2px;
+      -webkit-border-bottom-left-radius: 2px;
+      border-top-left-radius: 2px;
+      -moz-border-radius-topleft: 2px;
+      -webkit-border-top-left-radius: 2px; }
+    /* line 290, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav div.options a.view.month {
+      border-top-right-radius: 2px;
+      -moz-border-radius-topright: 2px;
+      -webkit-border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      -moz-border-radius-bottomright: 2px;
+      -webkit-border-bottom-right-radius: 2px; }
+  /* line 292, ../../../app/stylesheets/screen.sass */
+  #commutes_controller #commutes_nav div.options span.displayed {
+    margin: 0 0 0 12px;
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 22px;
+    font-weight: bold; }
+/* line 299, ../../../app/stylesheets/screen.sass */
+#commutes_controller #commutes_nav ul.week li {
+  display: block;
+  float: left;
+  width: 14.285714285714286%;
+  list-style: none;
+  position: relative; }
+  /* line 305, ../../../app/stylesheets/screen.sass */
+  #commutes_controller #commutes_nav ul.week li a {
+    display: block;
+    margin-right: 1px;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 12px;
+    color: gray;
+    text-decoration: none;
+    background: white;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px; }
+    /* line 318, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav ul.week li a:hover {
+      color: #6ba41e; }
+    /* line 320, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav ul.week li a small {
+      display: block;
+      font-size: 10px;
+      font-weight: normal; }
+  /* line 324, ../../../app/stylesheets/screen.sass */
+  #commutes_controller #commutes_nav ul.week li b.pointer {
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 -10px -10px;
+    border: 10px solid transparent;
+    border-top: 10px solid #6ba41e;
+    border-bottom: none;
+    z-index: 10; }
+  /* line 337, ../../../app/stylesheets/screen.sass */
+  #commutes_controller #commutes_nav ul.week li:last-child a {
+    margin-right: 0; }
+  /* line 340, ../../../app/stylesheets/screen.sass */
+  #commutes_controller #commutes_nav ul.week li.active a {
+    background: #6ba41e;
+    color: white;
+    text-shadow: 1px 1px 0px #466c13; }
+    /* line 344, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes_nav ul.week li.active a small {
+      text-shadow: 1px 1px 0px #466c13; }
+  /* line 346, ../../../app/stylesheets/screen.sass */
+  #commutes_controller #commutes_nav ul.week li.active b.pointer {
+    display: block; }
 /* line 350, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes.panel div.content {
   padding: 0; }
@@ -455,55 +451,48 @@ span.stars_rating {
   #commutes_controller #commutes.panel div.content > ul> li {
     display: block;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     position: relative;
-    list-style: none; }
-    /* line 359, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes.panel div.content > ul> li span.commute_number {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      width: 20px;
-      text-align: center;
-      padding-top: 5px;
-      background: url('/images/transparent_backgrounds/main_colour_50.png');
-      border: 1px solid #95b26f;
-      font-weight: bold;
-      color: white;
-      font-size: 14px;
-      text-shadow: 1px 1px 0px #507b16;
-      border-top: none;
-      border-left: none; }
-    /* line 376, ../../../app/stylesheets/screen.sass */
+    list-style: none;
+    border-bottom: 1px solid #dfdfdf;
+    overflow: hidden; }
+    /* line 361, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes.panel div.content > ul> li a.go {
       position: absolute;
-      top: 0;
-      right: -8px;
-      width: 16px;
+      top: 50%;
+      right: 0;
       bottom: 0;
       display: block;
-      text-indent: -9000px;
-      background: url('/images/icons/navigation.png') no-repeat left center; }
-    /* line 385, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes.panel div.content > ul> li ul.details {
-      padding: 5px 10px;
-      margin: 0 0 0 20px;
-      border-bottom: 1px solid #cfcfcf; }
-      /* line 389, ../../../app/stylesheets/screen.sass */
-      #commutes_controller #commutes.panel div.content > ul> li ul.details li {
-        list-style: none;
-        margin: 0 0 2px;
-        padding: 0;
-        font-size: 12px; }
-        /* line 394, ../../../app/stylesheets/screen.sass */
-        #commutes_controller #commutes.panel div.content > ul> li ul.details li span.marker_way_point, #commutes_controller #commutes.panel div.content > ul> li ul.details li span.marker_time {
-          float: left;
-          margin: 0 3px 0 0; }
-        /* line 397, ../../../app/stylesheets/screen.sass */
-        #commutes_controller #commutes.panel div.content > ul> li ul.details li:last-child {
-          margin: 0; }
-    /* line 400, ../../../app/stylesheets/screen.sass */
-    #commutes_controller #commutes.panel div.content > ul> li:last-child span.commute_number, #commutes_controller #commutes.panel div.content > ul> li:last-child ul.details {
-      border-bottom: none; }
+      padding: 0 10px 0 0; }
+      /* line 368, ../../../app/stylesheets/screen.sass */
+      #commutes_controller #commutes.panel div.content > ul> li a.go b {
+        display: block;
+        height: 0;
+        width: 0;
+        text-indent: -9000px;
+        border: 5px solid transparent;
+        border-left: 5px solid #e7e7e7;
+        border-right: none;
+        margin: -5px 0 0; }
+    /* line 377, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes.panel div.content > ul> li div {
+      font-size: 12px;
+      margin: 0 0 2px; }
+      /* line 380, ../../../app/stylesheets/screen.sass */
+      #commutes_controller #commutes.panel div.content > ul> li div span.marker_way_point, #commutes_controller #commutes.panel div.content > ul> li div span.marker_time, #commutes_controller #commutes.panel div.content > ul> li div span.marker_passengers {
+        float: left;
+        margin: 0 3px 0 0; }
+      /* line 383, ../../../app/stylesheets/screen.sass */
+      #commutes_controller #commutes.panel div.content > ul> li div.arrive_for, #commutes_controller #commutes.panel div.content > ul> li div.passengers {
+        float: left;
+        width: 50%;
+        margin: 0; }
+    /* line 387, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes.panel div.content > ul> li:last-child {
+      border-bottom: 0; }
+    /* line 389, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes.panel div.content > ul> li:hover {
+      cursor: pointer; }
+      /* line 392, ../../../app/stylesheets/screen.sass */
+      #commutes_controller #commutes.panel div.content > ul> li:hover a.go b {
+        border-left-color: silver; }

@@ -241,7 +241,6 @@ span.stars_rating
 /* Commutes */
 #commutes_controller
   #commutes_nav
-    background: url('/images/transparent_backgrounds/main_colour_50.png')
     div.options
       overflow: hidden
       margin: 0 0 5px
@@ -271,33 +270,31 @@ span.stars_rating
           border: 5px solid transparent
           margin: 6px 2px 0
         &.previous
-          +rounded_corners("left", 3)
+          +rounded_corners("left", 2)
           b
             border-left: none
             border-right = 5px "solid" !white
         &.next
-          +rounded_corners("right", 3)
+          +rounded_corners("right", 2)
           b
             border-right: none
             border-left = 5px "solid" !white
         &.today
-          +rounded_corners("all", 3)
+          +rounded_corners("all", 2)
           margin: 0 0 0 4px
       a.view
         float: right
         margin: 0 0 0 1px
         &.week
-          +rounded_corners("left", 3)
+          +rounded_corners("left", 2)
         &.month
-          +rounded_corners("right", 3)
+          +rounded_corners("right", 2)
       span.displayed
         margin: 0 0 0 12px
         +font_size("tiny")
         text-transform: uppercase
         line-height: 22px
         font-weight: bold
-        +text_shadow(1, 1, 0, !main_colour)
-        color = !white
     ul.week
       li
         display: block
@@ -317,7 +314,7 @@ span.stars_rating
           color = !grey
           text-decoration: none
           background = !white
-          +rounded_corners("top", 3)
+          +rounded_corners("all", 2)
           &:hover
             color = !main_colour
           small
@@ -343,6 +340,9 @@ span.stars_rating
           a
             background = !main_colour
             color = !white
+            +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+            small
+              +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
           b.pointer
             display: block
   #commutes_map
@@ -353,53 +353,44 @@ span.stars_rating
         &> li
           display: block
           margin: 0
-          padding: 0
+          padding: 5px
           position: relative
           list-style: none
-          span.commute_number
-            display: block
-            position: absolute
-            top: 0
-            left: 0
-            bottom: 0
-            width: 20px
-            text-align: center
-            padding-top: 5px
-            background: url('/images/transparent_backgrounds/main_colour_50.png')
-            border = 1px "solid" !main_colour * 0.5 + !light_grey * 0.5
-            font-weight: bold
-            color = !white
-            +font_size("medium")
-            +text_shadow(1, 1, 0, !main_colour * 0.75 + !black * 0.25)
-            border-top: none
-            border-left: none
+          border-bottom = 1px "solid" !light_grey * 0.5 + !white * 0.5
+          overflow: hidden
           a.go
             position: absolute
-            top: 0
-            right: -8px
-            width: 16px
+            top: 50%
+            right: 0
             bottom: 0
             display: block
-            text-indent: -9000px
-            background: url('/images/icons/navigation.png') no-repeat left center
-          ul.details
-            padding: 5px 10px
-            margin: 0 0 0 20px
-            border-bottom = 1px "solid" !light_grey * 0.75 + !white * 0.25
-            li
-              list-style: none
-              margin: 0 0 2px
-              padding: 0
-              +font_size("small")
-              span.marker_way_point, span.marker_time
-                float: left
-                margin: 0 3px 0 0
-              &:last-child
-                margin: 0
+            padding: 0 10px 0 0
+            b
+              display: block
+              height: 0
+              width: 0
+              text-indent: -9000px
+              border: 5px solid transparent
+              border-left = 5px solid !light_grey * 0.33 + !white * 0.66
+              border-right: none
+              margin: -5px 0 0
+          div
+            +font_size("small")
+            margin: 0 0 2px
+            span.marker_way_point, span.marker_time, span.marker_passengers
+              float: left
+              margin: 0 3px 0 0
+            &.arrive_for, &.passengers
+              float: left
+              width: 50%
+              margin: 0
           &:last-child
-            span.commute_number, ul.details
-              border-bottom: none
-
+            border-bottom: 0
+          &:hover
+            cursor: pointer
+            a.go
+              b
+                border-left-color = !light_grey
 
 
 

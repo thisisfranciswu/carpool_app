@@ -1,7 +1,7 @@
 <% render :partial => "shared/init_map" %>
 
 <% @page_title = "My Commutes" %>
-<% @layout = "with_sidebar_right" %>
+<% @layout = "with_sidebar_left" %>
 
 <% content_for :page_options do %>
   <%= link_to image_tag("icons/plus-circle.png", :alt => "Add a commute") + "Add a commute", "#", :title => "Add a commute", :class => "add button show_modal" %>
@@ -50,18 +50,22 @@
   </div>
 <% end %>
 
-<div id="commutes_map" class="panel with_header">
+<div id="commutes_map" class="panel">
   <div class="content no_padding">
+    <div class="inner_shadow top"><!----></div>
+    <div class="inner_shadow right"><!----></div>
+    <div class="inner_shadow bottom"><!----></div>
+    <div class="inner_shadow left"><!----></div>
     <div id="map"></div>
   </div>
 </div>
 
-<% content_for :sidebar_right do %>
+<% content_for :sidebar_left do %>
   <div id="commutes" class="panel">
     <div class="content">
       <ul>
         <% 3.times do %>
-          <%= render :partial => "commute" %>
+          <%= render :partial => "list_item" %>
         <% end %>
       </ul>
     </div>

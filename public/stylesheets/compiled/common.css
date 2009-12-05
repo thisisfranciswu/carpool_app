@@ -252,7 +252,14 @@ span.marker_time {
   height: 16px;
   width: 16px; }
 
-/* line 186, ../../../app/stylesheets/common.sass */
+/* line 183, ../../../app/stylesheets/common.sass */
+span.marker_passengers {
+  display: inline-block;
+  background: url('/images/icons/user.png');
+  height: 16px;
+  width: 16px; }
+
+/* line 191, ../../../app/stylesheets/common.sass */
 #page_title #page_options a.button {
   font-size: 16px;
   margin: 6px 0 0;
@@ -266,11 +273,44 @@ span.marker_time {
   font-weight: bold;
   background: white;
   text-shadow: 0px 0px 0px transparent; }
-  /* line 197, ../../../app/stylesheets/common.sass */
+  /* line 202, ../../../app/stylesheets/common.sass */
   #page_title #page_options a.button.cancel {
     color: #cc0000; }
-  /* line 199, ../../../app/stylesheets/common.sass */
+  /* line 204, ../../../app/stylesheets/common.sass */
   #page_title #page_options a.button img {
     margin: 0 3px 0 0;
     position: relative;
     top: 2px; }
+
+/* line 209, ../../../app/stylesheets/common.sass */
+div.inner_shadow {
+  position: absolute;
+  z-index: 500; }
+  /* line 212, ../../../app/stylesheets/common.sass */
+  div.inner_shadow.top {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: url('/images/inner_shadow_top.png') repeat-x left top; }
+  /* line 218, ../../../app/stylesheets/common.sass */
+  div.inner_shadow.right {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 5px;
+    background: url('/images/inner_shadow_right.png') repeat-y left top; }
+  /* line 224, ../../../app/stylesheets/common.sass */
+  div.inner_shadow.bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: url('/images/inner_shadow_bottom.png') repeat-x left top; }
+  /* line 230, ../../../app/stylesheets/common.sass */
+  div.inner_shadow.left {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    background: url('/images/inner_shadow_left.png') repeat-y left top; }

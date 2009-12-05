@@ -180,6 +180,11 @@ span.marker_time
   background: url('/images/icons/clock.png')
   height: 16px
   width: 16px
+span.marker_passengers
+  display: inline-block
+  background: url('/images/icons/user.png')
+  height: 16px
+  width: 16px
 
 #page_title
   #page_options
@@ -201,7 +206,33 @@ span.marker_time
         position: relative
         top: 2px
 
-
+div.inner_shadow
+  position: absolute
+  z-index: 500
+  &.top
+    top: 0
+    left: 0
+    right: 0
+    height: 5px
+    background: url('/images/inner_shadow_top.png') repeat-x left top
+  &.right
+    top: 0
+    bottom: 0
+    right: 0
+    width: 5px
+    background: url('/images/inner_shadow_right.png') repeat-y left top
+  &.bottom
+    bottom: 0
+    left: 0
+    right: 0
+    height: 5px
+    background: url('/images/inner_shadow_bottom.png') repeat-x left top
+  &.left
+    top: 0
+    bottom: 0
+    left: 0
+    width: 5px
+    background: url('/images/inner_shadow_left.png') repeat-y left top
 
 
 
