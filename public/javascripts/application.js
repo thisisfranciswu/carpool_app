@@ -33,6 +33,15 @@ $(function(){
     $("div.modal_window").jqmHide();
   });
 
+  // Find Location
+  $("button.find_location").live("click", function() {
+    $(this).parent().next().show();
+    return false;
+  });
+  $("#add_a_location #save_location").live("click", function() {
+    $("div.modal_window").jqmHide();
+  });
+
 });
 
 $().ready(function() {

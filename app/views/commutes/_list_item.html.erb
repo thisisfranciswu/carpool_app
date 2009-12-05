@@ -1,4 +1,8 @@
-<li>
+<li class="clearfix">
+  <div class="warnings">
+    <%= image_tag "icons/exclamation.png", :alt => "Warning: No Commutes", :class => "commutes_none" %>
+    <%= image_tag "icons/exclamation-red.png", :alt => "Warning: Commute Cancellation", :class => "commutes_cancellation" %>
+  </div>
   <div class="depart_from">
     <span class="marker_way_point"><b>A</b></span>
     [location_a]

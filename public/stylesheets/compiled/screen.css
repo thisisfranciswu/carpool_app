@@ -288,19 +288,23 @@ span.stars_rating {
   height: 520px; }
 
 /* line 235, ../../../app/stylesheets/screen.sass */
-#did_you_mean {
-  display: inline-block; }
+div.did_you_mean {
+  display: block; }
   /* line 237, ../../../app/stylesheets/screen.sass */
-  #did_you_mean li {
-    display: block;
-    list-style: none; }
+  div.did_you_mean div.location_suggestions {
+    display: inline-block; }
+    /* line 239, ../../../app/stylesheets/screen.sass */
+    div.did_you_mean div.location_suggestions a {
+      display: block;
+      list-style: none;
+      line-height: 28px; }
 
 /* Commutes */
-/* line 244, ../../../app/stylesheets/screen.sass */
+/* line 247, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes_nav div.options {
   overflow: hidden;
   margin: 0 0 5px; }
-  /* line 247, ../../../app/stylesheets/screen.sass */
+  /* line 250, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a {
     display: block;
     padding: 0 8px;
@@ -313,15 +317,15 @@ span.stars_rating {
     color: white;
     text-decoration: none;
     font-weight: bold; }
-    /* line 259, ../../../app/stylesheets/screen.sass */
+    /* line 262, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a:hover {
       background: #6ba41e;
       text-shadow: 1px 1px 0px #466c13; }
-  /* line 262, ../../../app/stylesheets/screen.sass */
+  /* line 265, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.nav {
     float: left;
     margin: 0 1px 0 0; }
-    /* line 265, ../../../app/stylesheets/screen.sass */
+    /* line 268, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav b {
       display: block;
       text-indent: -9000px;
@@ -329,7 +333,7 @@ span.stars_rating {
       width: 0;
       border: 5px solid transparent;
       margin: 6px 2px 0; }
-    /* line 272, ../../../app/stylesheets/screen.sass */
+    /* line 275, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav.previous {
       border-bottom-left-radius: 2px;
       -moz-border-radius-bottomleft: 2px;
@@ -337,11 +341,11 @@ span.stars_rating {
       border-top-left-radius: 2px;
       -moz-border-radius-topleft: 2px;
       -webkit-border-top-left-radius: 2px; }
-      /* line 274, ../../../app/stylesheets/screen.sass */
+      /* line 277, ../../../app/stylesheets/screen.sass */
       #commutes_controller #commutes_nav div.options a.nav.previous b {
         border-left: none;
         border-right: 5px solid white; }
-    /* line 277, ../../../app/stylesheets/screen.sass */
+    /* line 280, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav.next {
       border-top-right-radius: 2px;
       -moz-border-radius-topright: 2px;
@@ -349,21 +353,21 @@ span.stars_rating {
       border-bottom-right-radius: 2px;
       -moz-border-radius-bottomright: 2px;
       -webkit-border-bottom-right-radius: 2px; }
-      /* line 279, ../../../app/stylesheets/screen.sass */
+      /* line 282, ../../../app/stylesheets/screen.sass */
       #commutes_controller #commutes_nav div.options a.nav.next b {
         border-right: none;
         border-left: 5px solid white; }
-    /* line 282, ../../../app/stylesheets/screen.sass */
+    /* line 285, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav.today {
       border-radius: 2px;
       -moz-border-radius: 2px;
       -webkit-border-radius: 2px;
       margin: 0 0 0 4px; }
-  /* line 285, ../../../app/stylesheets/screen.sass */
+  /* line 288, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.view {
     float: right;
     margin: 0 0 0 1px; }
-    /* line 288, ../../../app/stylesheets/screen.sass */
+    /* line 291, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.view.week {
       border-bottom-left-radius: 2px;
       -moz-border-radius-bottomleft: 2px;
@@ -371,7 +375,7 @@ span.stars_rating {
       border-top-left-radius: 2px;
       -moz-border-radius-topleft: 2px;
       -webkit-border-top-left-radius: 2px; }
-    /* line 290, ../../../app/stylesheets/screen.sass */
+    /* line 293, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.view.month {
       border-top-right-radius: 2px;
       -moz-border-radius-topright: 2px;
@@ -379,21 +383,21 @@ span.stars_rating {
       border-bottom-right-radius: 2px;
       -moz-border-radius-bottomright: 2px;
       -webkit-border-bottom-right-radius: 2px; }
-  /* line 292, ../../../app/stylesheets/screen.sass */
+  /* line 295, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options span.displayed {
     margin: 0 0 0 12px;
     font-size: 10px;
     text-transform: uppercase;
     line-height: 22px;
     font-weight: bold; }
-/* line 299, ../../../app/stylesheets/screen.sass */
+/* line 302, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes_nav ul.week li {
   display: block;
   float: left;
   width: 14.285714285714286%;
   list-style: none;
   position: relative; }
-  /* line 305, ../../../app/stylesheets/screen.sass */
+  /* line 308, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li a {
     display: block;
     margin-right: 1px;
@@ -409,15 +413,15 @@ span.stars_rating {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px; }
-    /* line 318, ../../../app/stylesheets/screen.sass */
+    /* line 321, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav ul.week li a:hover {
       color: #6ba41e; }
-    /* line 320, ../../../app/stylesheets/screen.sass */
+    /* line 323, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav ul.week li a small {
       display: block;
       font-size: 10px;
       font-weight: normal; }
-  /* line 324, ../../../app/stylesheets/screen.sass */
+  /* line 327, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li b.pointer {
     display: none;
     width: 0;
@@ -430,33 +434,38 @@ span.stars_rating {
     border-top: 10px solid #6ba41e;
     border-bottom: none;
     z-index: 10; }
-  /* line 337, ../../../app/stylesheets/screen.sass */
+  /* line 340, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li:last-child a {
     margin-right: 0; }
-  /* line 340, ../../../app/stylesheets/screen.sass */
+  /* line 343, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li.active a {
     background: #6ba41e;
     color: white;
     text-shadow: 1px 1px 0px #466c13; }
-    /* line 344, ../../../app/stylesheets/screen.sass */
+    /* line 347, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav ul.week li.active a small {
       text-shadow: 1px 1px 0px #466c13; }
-  /* line 346, ../../../app/stylesheets/screen.sass */
+  /* line 349, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li.active b.pointer {
     display: block; }
-/* line 350, ../../../app/stylesheets/screen.sass */
+/* line 353, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes.panel div.content {
   padding: 0; }
-  /* line 353, ../../../app/stylesheets/screen.sass */
+  /* line 356, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes.panel div.content > ul> li {
     display: block;
     margin: 0;
     padding: 5px;
     position: relative;
     list-style: none;
-    border-bottom: 1px solid #dfdfdf;
-    overflow: hidden; }
-    /* line 361, ../../../app/stylesheets/screen.sass */
+    border-bottom: 1px solid #dfdfdf; }
+    /* line 363, ../../../app/stylesheets/screen.sass */
+    #commutes_controller #commutes.panel div.content > ul> li div.warnings {
+      position: absolute;
+      top: 5px;
+      right: -8px;
+      width: 16px; }
+    /* line 368, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes.panel div.content > ul> li a.go {
       position: absolute;
       top: 50%;
@@ -464,7 +473,7 @@ span.stars_rating {
       bottom: 0;
       display: block;
       padding: 0 10px 0 0; }
-      /* line 368, ../../../app/stylesheets/screen.sass */
+      /* line 375, ../../../app/stylesheets/screen.sass */
       #commutes_controller #commutes.panel div.content > ul> li a.go b {
         display: block;
         height: 0;
@@ -474,25 +483,25 @@ span.stars_rating {
         border-left: 5px solid #e7e7e7;
         border-right: none;
         margin: -5px 0 0; }
-    /* line 377, ../../../app/stylesheets/screen.sass */
+    /* line 384, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes.panel div.content > ul> li div {
       font-size: 12px;
       margin: 0 0 2px; }
-      /* line 380, ../../../app/stylesheets/screen.sass */
+      /* line 387, ../../../app/stylesheets/screen.sass */
       #commutes_controller #commutes.panel div.content > ul> li div span.marker_way_point, #commutes_controller #commutes.panel div.content > ul> li div span.marker_time, #commutes_controller #commutes.panel div.content > ul> li div span.marker_passengers {
         float: left;
         margin: 0 3px 0 0; }
-      /* line 383, ../../../app/stylesheets/screen.sass */
+      /* line 390, ../../../app/stylesheets/screen.sass */
       #commutes_controller #commutes.panel div.content > ul> li div.arrive_for, #commutes_controller #commutes.panel div.content > ul> li div.passengers {
         float: left;
         width: 50%;
         margin: 0; }
-    /* line 387, ../../../app/stylesheets/screen.sass */
+    /* line 394, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes.panel div.content > ul> li:last-child {
       border-bottom: 0; }
-    /* line 389, ../../../app/stylesheets/screen.sass */
+    /* line 396, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes.panel div.content > ul> li:hover {
       cursor: pointer; }
-      /* line 392, ../../../app/stylesheets/screen.sass */
+      /* line 399, ../../../app/stylesheets/screen.sass */
       #commutes_controller #commutes.panel div.content > ul> li:hover a.go b {
         border-left-color: silver; }

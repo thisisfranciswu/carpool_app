@@ -232,11 +232,14 @@ span.stars_rating
 #map
   height: 520px
 
-#did_you_mean
-  display: inline-block
-  li
-    display: block
-    list-style: none
+div.did_you_mean
+  display: block
+  div.location_suggestions
+    display: inline-block
+    a
+      display: block
+      list-style: none
+      line-height: 28px
 
 /* Commutes */
 #commutes_controller
@@ -357,7 +360,11 @@ span.stars_rating
           position: relative
           list-style: none
           border-bottom = 1px "solid" !light_grey * 0.5 + !white * 0.5
-          overflow: hidden
+          div.warnings
+            position: absolute
+            top: 5px
+            right: -8px
+            width: 16px
           a.go
             position: absolute
             top: 50%
