@@ -1,0 +1,26 @@
+<% content_for :modal_title, "Add a location" %>
+<% content_for :modal_content do %>
+  <form class="lw120" id="add_a_location">
+    <p>
+      <label>Name</label>
+      <input type="text"/>
+    </p>
+    <p>
+      <label>Address</label>
+      <input type="text"/>
+      <button class="find_location">Find it!</button>
+    </p>
+    <div class="complex_field did_you_mean" style="display:none;">
+      <label>Did you mean</label>
+      <div class="location_suggestions">
+        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
+        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
+        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
+      </div>
+    </div>
+    <p class="indent submit">
+      <button id="save_location">Save</button>
+      or <%= link_to_function "Cancel", "", :title => "Cancel", :class => "negative modal_close" %>
+    </p>
+  </form>
+<% end %>

@@ -5,16 +5,20 @@
   <%= render :partial => "nav" %>
 <% end %>
 
-<form class="lw120">
-  <p>
-    <label>Distance Unit</label>
-    <input type="radio"/><label class="inline">Kilometres</label>
-    <input type="radio"/><label class="inline">Miles</label>
-  </p>
-  <p class="indent">
-    <input type="checkbox"/><label class="inline">24-Hour Time</label>
-  </p>
-  <p class="submit indent">
-    <button>Save</button>
-  </p>
-</form>
+<div class="panel">
+  <div class="content">
+    <form class="lw120">
+      <p>
+        <label>Distance Unit</label>
+        <input type="radio"/><label class="inline">Kilometres</label>
+        <input type="radio"/><label class="inline">Miles</label>
+      </p>
+      <p class="indent">
+        <input type="checkbox"/><label class="inline">24-Hour Time</label>
+      </p>
+      <p class="submit indent">
+        <button>Save</button>
+      </p>
+    </form>
+  </div>
+</div>

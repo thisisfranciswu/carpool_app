@@ -7,33 +7,37 @@
 
 <%= link_to_function image_tag("", :alt => "asdf") + content_tag(:span, "Change Picture"), "asdf", :title => "Change Picture", :class => "picture" %>
 
-<form class="lw80">
-  <p>
-    <label>First Name</label>
-    <input type="text"/>
-  </p>
-  <p>
-    <label>Last Name</label>
-    <input type="text"/>
-  </p>
-  <p>
-    <label>Gender</label>
-    <input type="radio"/><label class="inline">Male</label>
-    <input type="radio"/><label class="inline">Female</label>
-  </p>
-  <p>
-    <label>Born</label>
-    <select>
-      <option>15</option>
-    </select>
-    <select>
-      <option>November</option>
-    </select>
-    <select>
-      <option>2000</option>
-    </select>
-  </p>
-  <p class="submit indent">
-    <button>Save</button>
-  </p>
-</form>
+<div class="panel">
+  <div class="content">
+    <form class="lw80">
+      <p>
+        <label>First Name</label>
+        <input type="text"/>
+      </p>
+      <p>
+        <label>Last Name</label>
+        <input type="text"/>
+      </p>
+      <p>
+        <label>Gender</label>
+        <input type="radio"/><label class="inline">Male</label>
+        <input type="radio"/><label class="inline">Female</label>
+      </p>
+      <p>
+        <label>Born</label>
+        <select>
+          <option>15</option>
+        </select>
+        <select>
+          <option>November</option>
+        </select>
+        <select>
+          <option>2000</option>
+        </select>
+      </p>
+      <p class="submit indent">
+        <button>Save</button>
+      </p>
+    </form>
+  </div>
+</div>

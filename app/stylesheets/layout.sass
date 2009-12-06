@@ -101,6 +101,19 @@ body
     #sidebar_right
       float: right
       width: 200px
+    div.sidebar
+      h3
+        background: url('/images/transparent_backgrounds/main_colour_15.png')
+        +font_size("tiny")
+        text-transform: uppercase
+        font-weight: bold
+        line-height: 1
+        border = 1px "solid" !main_colour * 0.25 + !white * 0.75
+        margin: 0
+        color = !dark_grey
+        border-left: none
+        border-right: none
+        padding: 5px 10px
 
   #footer
     +font_size("small")

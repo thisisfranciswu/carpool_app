@@ -9,7 +9,7 @@
   <%= yield :head %>
 </head>
 
-<body id="<%= @controller.controller_name %>_controller" class="<%= @template.instance_variable_get(:@_first_render).name %>" <%= yield :body_tag %>>
+<body id="<%= @controller.controller_name %>_controller" class="<%= @template.instance_variable_get(:@_first_render).name %>">
 
   <% if @content_for_modal_content %>
     <div class="modal_window">
@@ -42,10 +42,10 @@
         <div id="above_main"><%= yield :above_main %></div>
       <% end %>
       <% if @content_for_sidebar_right %>
-        <div id="sidebar_right"><%= yield :sidebar_right %></div>
+        <div id="sidebar_right" class="sidebar"><%= yield :sidebar_right %></div>
       <% end %>
       <% if @content_for_sidebar_left %>
-        <div id="sidebar_left"><%= yield :sidebar_left %></div>
+        <div id="sidebar_left" class="sidebar"><%= yield :sidebar_left %></div>
       <% end %>
       <div id="main">
         <%- flash.each do |name, message| -%>
