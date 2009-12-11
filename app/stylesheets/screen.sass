@@ -441,10 +441,33 @@ div.did_you_mean
           b.pointer
             display: none
 
-
-
-
-
+/* Messages */
+#messages
+  div.content
+    table
+      width: 100%
+      th, td
+        padding: 3px 5px
+        line-height: 1
+      thead
+        tr
+          th
+            background = !light_grey * 0.15 + !white * 0.85
+            +font_size("small")
+            font-weight: bold
+            border-bottom = 1px "solid" !light_grey
+            &.select
+              width: 1px
+      tbody
+        tr
+          td
+            border-bottom = 1px "solid" !light_grey * 0.5 + !white * 0.5
+            &.subject
+              a
+                font-weight: bold
+          &:last-child
+            td
+              border-bottom: none
 
 
 

@@ -38146,6 +38146,7 @@ Rendered locations/_modal_new (1.1ms)
 Rendered shared/_masthead (10.4ms)
 Rendered shared/_footer (1.2ms)
 Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/locations]
+<<<<<<< HEAD
   [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
  FROM sqlite_master
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
@@ -38230,3 +38231,948 @@ ActionView::TemplateError (undefined local variable or method `people_path' for 
 Rendered rescues/_trace (41.4ms)
 Rendered rescues/_request_and_response (1.1ms)
 Rendering rescues/layout (internal_server_error)
+=======
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-06 21:38:52) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (1.3ms)
+Rendered shared/_footer (1.2ms)
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://standoutjobs-development.com/login]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-06 21:39:55) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (1.1ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://standoutjobs-development.com/login]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-06 22:21:52) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.4ms)
+Rendered locations/_modal_new (0.9ms)
+  [4;36;1mUser Load (28.7ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (108.4ms)
+Rendered shared/_footer (1.4ms)
+Completed in 118ms (View: 87, DB: 29) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-06 23:02:45) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.5ms)
+Rendered locations/_modal_new (1.3ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.9ms)
+Rendered shared/_footer (1.1ms)
+Completed in 55ms (View: 52, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-09 00:32:55) [GET]
+  [4;36;1mUser Load (27.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/dashboard
+Rendered shared/_masthead (15.9ms)
+Rendered shared/_footer (13.3ms)
+Completed in 306ms (View: 118, DB: 28) | 200 OK [http://localhost/]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2009-12-09 00:32:56) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.4ms)
+Rendered shared/_footer (1.0ms)
+Completed in 57ms (View: 54, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-12-09 00:32:57) [GET]
+Redirected to http://localhost:3000/
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-09 00:32:57) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Rendered shared/_init_map (19.1ms)
+Rendered users/_list_item (17.8ms)
+Rendered users/_list_item (0.7ms)
+Rendered users/_list_item (0.7ms)
+Rendered users/_list_item (0.7ms)
+Rendered users/_list_item (0.7ms)
+Rendered shared/_masthead (1.4ms)
+Rendered shared/_footer (1.3ms)
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-09 00:32:58) [GET]
+  Parameters: {"1260034478"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-12-09 00:32:58) [GET]
+Redirected to http://localhost:3000/
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/logout]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-09 00:32:58) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Rendered shared/_init_map (0.4ms)
+Rendered users/_list_item (0.5ms)
+Rendered users/_list_item (0.5ms)
+Rendered users/_list_item (0.5ms)
+Rendered users/_list_item (0.5ms)
+Rendered users/_list_item (0.5ms)
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-09 00:32:59) [GET]
+  Parameters: {"1260034478"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-09 00:32:59) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 53ms (View: 51, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-12-09 00:33:03) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"C+Zly/jClGHVO7R0xji+McSaaClS7DcUs1RK/pZDgcg=", "login"=>"thisisfranciswu", "password"=>"lovebuzz"}
+  [4;36;1mUser Load (11.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."login" = 'thisisfranciswu') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 27ms (DB: 11) | 302 Found [http://localhost/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-09 00:33:03) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/dashboard
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (0.9ms)
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-09 00:33:38) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/dashboard
+Rendered shared/_masthead (2.5ms)
+Rendered shared/_footer (0.9ms)
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-09 00:33:39) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create and new):
+  haml (2.2.6) lib/sass/plugin/rails.rb:19:in `process_without_compass'
+  vendor/gems/chriseppstein-compass-0.8.17/lib/compass/app_integration/rails/action_controller.rb:7:in `process'
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-09 00:35:12) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.7ms)
+Rendered shared/_footer (0.9ms)
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-09 00:35:20) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.5ms)
+Rendered shared/_footer (0.9ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-09 00:58:05) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.5ms)
+Rendered locations/_modal_new (10.3ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.5ms)
+Rendered shared/_footer (0.9ms)
+Completed in 46ms (View: 44, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-09 00:58:24) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.4ms)
+Rendered locations/_modal_new (0.9ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (77.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 86ms (View: 84, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-09 02:06:06) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.4ms)
+Rendered locations/_modal_new (1.1ms)
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (17.5ms)
+Rendered shared/_footer (1.1ms)
+Completed in 39ms (View: 37, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-09 08:32:51) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (81.9ms)
+Rendered locations/_modal_new (1.3ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (13.4ms)
+Rendered shared/_footer (1.0ms)
+Completed in 106ms (View: 103, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-09 21:22:21) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.5ms)
+Rendered locations/_modal_new (1.0ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.7ms)
+Rendered shared/_footer (1.0ms)
+Completed in 47ms (View: 45, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-09 21:22:26) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (1.1ms)
+Rendered shared/_footer (1.3ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://standoutjobs-development.com/login]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-09 22:03:36) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.4ms)
+Rendered locations/_modal_new (1.0ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (12.4ms)
+Rendered shared/_footer (1.0ms)
+Completed in 23ms (View: 21, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-09 23:27:35) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (89.4ms)
+Rendered shared/_footer (1.6ms)
+Completed in 99ms (View: 97, DB: 0) | 200 OK [http://standoutjobs-development.com/login]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-09 23:29:15) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.6ms)
+Rendered locations/_modal_new (1.9ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (20.8ms)
+Rendered shared/_footer (1.2ms)
+Completed in 62ms (View: 54, DB: 1) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-10 00:11:57) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.4ms)
+Rendered locations/_modal_new (1.0ms)
+  [4;36;1mUser Load (25.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (34.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 67ms (View: 39, DB: 26) | 200 OK [http://localhost/locations]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-10 00:12:48) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://standoutjobs-development.com/login]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-10 22:46:40) [GET]
+Rendering template within layouts/home
+Rendering home/index
+Rendered shared/_init_map (0.4ms)
+Rendered users/_list_item (0.6ms)
+Rendered users/_list_item (0.6ms)
+Rendered users/_list_item (0.5ms)
+Rendered users/_list_item (0.5ms)
+Rendered users/_list_item (0.5ms)
+Rendered shared/_masthead (0.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-10 22:46:41) [GET]
+  Parameters: {"1260034478"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-12-10 22:46:43) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_masthead (1.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-12-10 22:46:46) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"4dBWNljpYBmpxL0De/zEG7O4UoiWOEgLAEijerknPEg=", "login"=>"thisisfranciswu", "password"=>"lovebuzz"}
+  [4;35;1mUser Load (26.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."login" = 'thisisfranciswu') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 74ms (DB: 26) | 302 Found [http://localhost/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-12-10 22:46:46) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering home/dashboard
+Rendered shared/_masthead (1.2ms)
+Rendered shared/_footer (0.9ms)
+Completed in 86ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CommutesController#index (for 127.0.0.1 at 2009-12-10 22:46:48) [GET]
+Rendering template within layouts/application
+Rendering commutes/index
+Rendered shared/_init_map (0.4ms)
+Rendered commutes/_modal_new (24.9ms)
+Rendered commutes/_nav_week (16.5ms)
+Rendered commutes/_list_item (14.4ms)
+Rendered commutes/_list_item (1.2ms)
+Rendered commutes/_list_item (1.1ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.3ms)
+Rendered shared/_footer (0.9ms)
+Completed in 169ms (View: 166, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing CommutesController#index (for 127.0.0.1 at 2009-12-10 22:48:01) [GET]
+Rendering template within layouts/application
+Rendering commutes/index
+Rendered shared/_init_map (0.4ms)
+Rendered commutes/_modal_new (2.1ms)
+Rendered commutes/_nav_week (4.0ms)
+Rendered commutes/_list_item (1.2ms)
+Rendered commutes/_list_item (1.1ms)
+Rendered commutes/_list_item (1.2ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.4ms)
+Rendered shared/_footer (1.0ms)
+Completed in 36ms (View: 33, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing CommutesController#show (for 127.0.0.1 at 2009-12-10 22:48:16) [GET]
+  Parameters: {"id"=>"show"}
+Rendering template within layouts/application
+Rendering commutes/show
+Rendered shared/_init_map (0.4ms)
+Rendered commutes/_modal_delete (2.6ms)
+Rendered commutes/_nav_week (2.1ms)
+Rendered users/_list_item (0.6ms)
+Rendered users/_list_item (0.6ms)
+Rendered users/_list_item (0.5ms)
+Rendered users/_show (1.0ms)
+Rendered commutes/_show (9.6ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.1ms)
+Rendered shared/_footer (0.9ms)
+Completed in 115ms (View: 113, DB: 0) | 200 OK [http://localhost/commutes/show]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-12-10 22:48:17) [GET]
+  Parameters: {"1260034478"=>nil}
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+  thin (1.2.4) lib/thin/connection.rb:76:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:74:in `catch'
+  thin (1.2.4) lib/thin/connection.rb:74:in `pre_process'
+  thin (1.2.4) lib/thin/connection.rb:57:in `process'
+  thin (1.2.4) lib/thin/connection.rb:42:in `receive_data'
+  eventmachine (0.12.8) lib/eventmachine.rb:1506:in `event_callback'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:550:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `times'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:548:in `eventable_read'
+  (__FORWARDABLE__):3:in `__send__'
+  (__FORWARDABLE__):3:in `eventable_read'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `each'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:369:in `crank_selectables'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:324:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `loop'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:318:in `run'
+  eventmachine (0.12.8) lib/pr_eventmachine.rb:64:in `run_machine'
+  eventmachine (0.12.8) lib/eventmachine.rb:242:in `run'
+  thin (1.2.4) lib/thin/backends/base.rb:57:in `start'
+  thin (1.2.4) lib/thin/server.rb:156:in `start'
+  thin (1.2.4) lib/thin/controllers/controller.rb:80:in `start'
+  thin (1.2.4) lib/thin/runner.rb:174:in `send'
+  thin (1.2.4) lib/thin/runner.rb:174:in `run_command'
+  thin (1.2.4) lib/thin/runner.rb:140:in `run!'
+  thin (1.2.4) bin/thin:6
+  /opt/local/bin/thin:19:in `load'
+  /opt/local/bin/thin:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-10 22:51:19) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (113.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 120ms (View: 117, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-10 23:04:50) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (25.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 35ms (View: 33, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-10 23:04:53) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-10 23:05:39) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:05:47) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 32ms (View: 30, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:13:22) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (53.2ms)
+Rendered shared/_footer (1.0ms)
+Completed in 64ms (View: 61, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:13:42) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.4ms)
+Rendered shared/_footer (1.0ms)
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:14:14) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.4ms)
+Rendered shared/_footer (1.6ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:22:19) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (133.8ms)
+Rendered shared/_footer (1.0ms)
+Completed in 152ms (View: 150, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:23:09) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (52.5ms)
+Rendered shared/_footer (1.1ms)
+Completed in 64ms (View: 61, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:40:56) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (51.9ms)
+Rendered shared/_footer (1.0ms)
+Completed in 75ms (View: 72, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:41:03) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.4ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:55:33) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.6ms)
+Rendered shared/_footer (0.9ms)
+Completed in 21ms (View: 18, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:56:00) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:56:05) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.2ms)
+Rendered shared/_footer (1.0ms)
+Completed in 91ms (View: 89, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:56:19) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.4ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:56:30) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.2ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:56:37) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.0ms)
+Rendered shared/_footer (0.9ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:56:53) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (84.0ms)
+Rendered shared/_footer (0.9ms)
+Completed in 90ms (View: 88, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:57:00) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 17ms (View: 15, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:59:33) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-10 23:59:43) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.0ms)
+Rendered shared/_footer (0.9ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:01:05) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (84.0ms)
+Rendered shared/_footer (0.9ms)
+Completed in 90ms (View: 88, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:01:57) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.2ms)
+Rendered shared/_footer (0.9ms)
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:10:26) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.9ms)
+Rendered shared/_footer (0.9ms)
+Completed in 23ms (View: 20, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:11:24) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.3ms)
+Rendered shared/_footer (0.9ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-11 00:13:06) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (15.0ms)
+Rendered shared/_footer (1.0ms)
+Completed in 23ms (View: 21, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-12-11 00:13:07) [GET]
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.4ms)
+Rendered shared/_footer (1.1ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/users]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-11 00:14:13) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.4ms)
+Rendered locations/_modal_new (1.0ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.5ms)
+Rendered shared/_footer (0.9ms)
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-11 00:14:13) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.9ms)
+Rendered locations/_modal_new (0.9ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.5ms)
+Rendered shared/_footer (0.9ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-11 00:14:15) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.4ms)
+Rendered locations/_modal_new (1.2ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.7ms)
+Rendered shared/_footer (1.0ms)
+Completed in 93ms (View: 91, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing CommutesController#index (for 127.0.0.1 at 2009-12-11 00:14:16) [GET]
+Rendering template within layouts/application
+Rendering commutes/index
+Rendered shared/_init_map (0.4ms)
+Rendered commutes/_modal_new (1.5ms)
+Rendered commutes/_nav_week (2.2ms)
+Rendered commutes/_list_item (1.2ms)
+Rendered commutes/_list_item (1.1ms)
+Rendered commutes/_list_item (1.2ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.1ms)
+Rendered shared/_footer (0.9ms)
+Completed in 26ms (View: 24, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing CommutesController#index (for 127.0.0.1 at 2009-12-11 00:15:18) [GET]
+Rendering template within layouts/application
+Rendering commutes/index
+Rendered shared/_init_map (0.4ms)
+Rendered commutes/_modal_new (1.3ms)
+Rendered commutes/_nav_week (2.6ms)
+Rendered commutes/_list_item (1.1ms)
+Rendered commutes/_list_item (1.1ms)
+Rendered commutes/_list_item (76.4ms)
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 101ms (View: 99, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:15:22) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (9.8ms)
+Rendered shared/_footer (0.9ms)
+Completed in 21ms (View: 19, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:16:18) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (83.5ms)
+Rendered shared/_footer (0.9ms)
+Completed in 95ms (View: 93, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:21:40) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (10.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (111.1ms)
+Rendered shared/_footer (11.7ms)
+Completed in 537ms (View: 524, DB: 11) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:21:52) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.8ms)
+Rendered shared/_footer (1.1ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing CommutesController#index (for 127.0.0.1 at 2009-12-11 00:23:23) [GET]
+Rendering template within layouts/application
+Rendering commutes/index
+Rendered shared/_init_map (12.7ms)
+Rendered commutes/_modal_new (12.2ms)
+Rendered commutes/_nav_week (16.4ms)
+Rendered commutes/_list_item (11.9ms)
+Rendered commutes/_list_item (1.4ms)
+Rendered commutes/_list_item (1.3ms)
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.5ms)
+Rendered shared/_footer (1.3ms)
+Completed in 116ms (View: 113, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing CommutesController#index (for 127.0.0.1 at 2009-12-11 00:23:28) [GET]
+Rendering template within layouts/application
+Rendering commutes/index
+Rendered shared/_init_map (0.5ms)
+Rendered commutes/_modal_new (1.3ms)
+Rendered commutes/_nav_week (3.1ms)
+Rendered commutes/_list_item (1.4ms)
+Rendered commutes/_list_item (1.6ms)
+Rendered commutes/_list_item (1.4ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (11.1ms)
+Rendered shared/_footer (1.0ms)
+Completed in 120ms (View: 117, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:24:03) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (10.5ms)
+Rendered shared/_footer (1.0ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-11 00:30:02) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (13.5ms)
+Rendered shared/_footer (2.0ms)
+Completed in 34ms (View: 31, DB: 0) | 200 OK [http://localhost/messages]
+>>>>>>> 13eda3535fc2f005f8d740de01261a8357a02e8f
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20091115221058)
+Migrating to CreateLocations (20091206222133)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("locations")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_info('index_users_on_login')[0m

@@ -8,6 +8,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :locations
   map.resources :commutes
+  map.resources :messages
 
   map.resource :session
 
