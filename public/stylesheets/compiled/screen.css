@@ -549,3 +549,30 @@ div.did_you_mean {
   /* line 441, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commute.panel div.content div.passengers ul.users li b.pointer {
     display: none; }
+
+/* Messages */
+/* line 447, ../../../app/stylesheets/screen.sass */
+#messages div.content table {
+  width: 100%; }
+  /* line 449, ../../../app/stylesheets/screen.sass */
+  #messages div.content table th, #messages div.content table td {
+    padding: 3px 5px;
+    line-height: 1; }
+  /* line 454, ../../../app/stylesheets/screen.sass */
+  #messages div.content table thead tr th {
+    background: #f4f4f4;
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid silver; }
+    /* line 459, ../../../app/stylesheets/screen.sass */
+    #messages div.content table thead tr th.select {
+      width: 1px; }
+  /* line 463, ../../../app/stylesheets/screen.sass */
+  #messages div.content table tbody tr td {
+    border-bottom: 1px solid #dfdfdf; }
+    /* line 466, ../../../app/stylesheets/screen.sass */
+    #messages div.content table tbody tr td.subject a {
+      font-weight: bold; }
+  /* line 469, ../../../app/stylesheets/screen.sass */
+  #messages div.content table tbody tr:last-child td {
+    border-bottom: none; }

@@ -60,7 +60,7 @@ body {
         float: right;
         overflow: hidden; }
         /* line 51, ../../../app/stylesheets/layout.sass */
-        body #masthead div.page_width #utilities a.account, body #masthead div.page_width #utilities a.session, body #masthead div.page_width #utilities a.help {
+        body #masthead div.page_width #utilities a {
           display: block;
           float: left;
           margin: 0 0 0 5px;
@@ -78,7 +78,7 @@ body {
           font-weight: bold;
           color: white; }
           /* line 66, ../../../app/stylesheets/layout.sass */
-          body #masthead div.page_width #utilities a.account:hover, body #masthead div.page_width #utilities a.session:hover, body #masthead div.page_width #utilities a.help:hover {
+          body #masthead div.page_width #utilities a:hover {
             background: #6ba41e;
             text-shadow: 1px 1px 0px #35520f; }
   /* line 70, ../../../app/stylesheets/layout.sass */
