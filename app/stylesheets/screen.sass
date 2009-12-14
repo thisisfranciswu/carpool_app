@@ -153,13 +153,21 @@
 /* My Account */
 #account_controller
   #main
-    a.picture
+    a.picture, a.logo
       display: block
       float: right
-      width: 78px
-      height: 78px
       border = 1px "solid" !light_grey * 0.25 + !white * 0.75
       position: relative
+      &.picture
+        width: 78px
+        height: 78px
+        img
+          height: 100%
+          width: 100%
+      &.logo
+        width: 158px
+        img
+          width: 100%
       span
         position: absolute
         bottom: 0

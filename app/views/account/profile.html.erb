@@ -7,26 +7,40 @@
 
 <div class="panel">
   <div class="content">
-    <h3>My Organisation</h3>
+    <h3>My Profile</h3>
     <p class="leader">
-      Change how you can access the site
+      Paint us a picture, tell us a little bit about yourself.
     </p>
-    <form class="lw120">
+    <%= link_to_function image_tag("", :alt => "asdf") + content_tag(:span, "Change Picture"), "asdf", :title => "Change Picture", :class => "picture" %>
+    <form class="lw80">
       <p>
-        <label>Email</label>
+        <label>First Name</label>
         <input type="text"/>
       </p>
       <p>
-        <label>Old Password</label>
-        <input type="password"/>
+        <label>Last Name</label>
+        <input type="text"/>
       </p>
       <p>
-        <label>New Password</label>
-        <input type="password"/>
+        <label>Description</label>
+        <textarea cols="30"></textarea>
       </p>
       <p>
-        <label>Confirm Password</label>
-        <input type="password"/>
+        <label>Born</label>
+        <select>
+          <option>15</option>
+        </select>
+        <select>
+          <option>November</option>
+        </select>
+        <select>
+          <option>2000</option>
+        </select>
+      </p>
+      <p>
+        <label>Gender</label>
+        <input type="radio"/><label class="inline">Male</label>
+        <input type="radio"/><label class="inline">Female</label>
       </p>
       <p class="submit indent">
         <button>Save</button>

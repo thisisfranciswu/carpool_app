@@ -197,15 +197,27 @@
 
 /* My Account */
 /* line 156, ../../../app/stylesheets/screen.sass */
-#account_controller #main a.picture {
+#account_controller #main a.picture, #account_controller #main a.logo {
   display: block;
   float: right;
-  width: 78px;
-  height: 78px;
   border: 1px solid #efefef;
   position: relative; }
-  /* line 163, ../../../app/stylesheets/screen.sass */
-  #account_controller #main a.picture span {
+  /* line 161, ../../../app/stylesheets/screen.sass */
+  #account_controller #main a.picture.picture, #account_controller #main a.logo.picture {
+    width: 78px;
+    height: 78px; }
+    /* line 164, ../../../app/stylesheets/screen.sass */
+    #account_controller #main a.picture.picture img, #account_controller #main a.logo.picture img {
+      height: 100%;
+      width: 100%; }
+  /* line 167, ../../../app/stylesheets/screen.sass */
+  #account_controller #main a.picture.logo, #account_controller #main a.logo.logo {
+    width: 158px; }
+    /* line 169, ../../../app/stylesheets/screen.sass */
+    #account_controller #main a.picture.logo img, #account_controller #main a.logo.logo img {
+      width: 100%; }
+  /* line 171, ../../../app/stylesheets/screen.sass */
+  #account_controller #main a.picture span, #account_controller #main a.logo span {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -218,22 +230,22 @@
     background: #6ba41e;
     text-align: center;
     display: none; }
-  /* line 176, ../../../app/stylesheets/screen.sass */
-  #account_controller #main a.picture:hover {
+  /* line 184, ../../../app/stylesheets/screen.sass */
+  #account_controller #main a.picture:hover, #account_controller #main a.logo:hover {
     border-color: #6ba41e; }
-    /* line 178, ../../../app/stylesheets/screen.sass */
-    #account_controller #main a.picture:hover span {
+    /* line 186, ../../../app/stylesheets/screen.sass */
+    #account_controller #main a.picture:hover span, #account_controller #main a.logo:hover span {
       display: block; }
 
 /* Users List */
-/* line 183, ../../../app/stylesheets/screen.sass */
+/* line 191, ../../../app/stylesheets/screen.sass */
 ul.users > li {
   position: relative;
   display: block;
   margin: 1px 0 0 0;
   padding: 5px 10px;
   border-top: 1px solid #efefef; }
-  /* line 189, ../../../app/stylesheets/screen.sass */
+  /* line 197, ../../../app/stylesheets/screen.sass */
   ul.users > li b.pointer {
     display: none;
     position: absolute;
@@ -245,7 +257,7 @@ ul.users > li {
     border-right: 10px solid white;
     border-left: none;
     z-index: 11; }
-  /* line 200, ../../../app/stylesheets/screen.sass */
+  /* line 208, ../../../app/stylesheets/screen.sass */
   ul.users > li img.picture {
     width: 38px;
     height: 38px;
@@ -253,33 +265,33 @@ ul.users > li {
     border: 1px solid #efefef;
     float: left;
     overflow: hidden; }
-  /* line 207, ../../../app/stylesheets/screen.sass */
+  /* line 215, ../../../app/stylesheets/screen.sass */
   ul.users > li a.name {
     font-size: 12px;
     font-weight: bold;
     display: block;
     margin: 0 0 0 45px;
     text-decoration: none; }
-  /* line 213, ../../../app/stylesheets/screen.sass */
+  /* line 221, ../../../app/stylesheets/screen.sass */
   ul.users > li span.stars_rating {
     margin: 0 0 3px 45px;
     display: block; }
-  /* line 216, ../../../app/stylesheets/screen.sass */
+  /* line 224, ../../../app/stylesheets/screen.sass */
   ul.users > li small {
     display: block;
     font-size: 10px;
     color: gray;
     margin-left: 45px; }
-/* line 222, ../../../app/stylesheets/screen.sass */
+/* line 230, ../../../app/stylesheets/screen.sass */
 ul.users > li:first-child b.pointer {
   display: block; }
 
 /* User */
-/* line 226, ../../../app/stylesheets/screen.sass */
+/* line 234, ../../../app/stylesheets/screen.sass */
 div.user {
   position: relative;
   padding: 5px 10px; }
-  /* line 229, ../../../app/stylesheets/screen.sass */
+  /* line 237, ../../../app/stylesheets/screen.sass */
   div.user img.picture {
     width: 38px;
     height: 38px;
@@ -287,18 +299,18 @@ div.user {
     border: 1px solid #efefef;
     float: left;
     overflow: hidden; }
-  /* line 236, ../../../app/stylesheets/screen.sass */
+  /* line 244, ../../../app/stylesheets/screen.sass */
   div.user a.name {
     font-size: 12px;
     font-weight: bold;
     display: block;
     margin: 0 0 0 45px;
     text-decoration: none; }
-  /* line 242, ../../../app/stylesheets/screen.sass */
+  /* line 250, ../../../app/stylesheets/screen.sass */
   div.user span.stars_rating {
     margin: 0 0 3px 45px;
     display: block; }
-  /* line 245, ../../../app/stylesheets/screen.sass */
+  /* line 253, ../../../app/stylesheets/screen.sass */
   div.user small {
     display: block;
     font-size: 10px;
@@ -306,37 +318,37 @@ div.user {
     margin-left: 45px; }
 
 /* Stars Rating (Small) */
-/* line 253, ../../../app/stylesheets/screen.sass */
+/* line 261, ../../../app/stylesheets/screen.sass */
 span.stars_rating {
   display: inline-block; }
-  /* line 255, ../../../app/stylesheets/screen.sass */
+  /* line 263, ../../../app/stylesheets/screen.sass */
   span.stars_rating.small {
     height: 9px;
     width: 49px;
     background: url('/images/stars_rating_small.png') no-repeat; }
 
-/* line 260, ../../../app/stylesheets/screen.sass */
+/* line 268, ../../../app/stylesheets/screen.sass */
 #map {
   height: 520px; }
 
-/* line 263, ../../../app/stylesheets/screen.sass */
+/* line 271, ../../../app/stylesheets/screen.sass */
 div.did_you_mean {
   display: block; }
-  /* line 265, ../../../app/stylesheets/screen.sass */
+  /* line 273, ../../../app/stylesheets/screen.sass */
   div.did_you_mean div.location_suggestions {
     display: inline-block; }
-    /* line 267, ../../../app/stylesheets/screen.sass */
+    /* line 275, ../../../app/stylesheets/screen.sass */
     div.did_you_mean div.location_suggestions a {
       display: block;
       list-style: none;
       line-height: 28px; }
 
 /* Commutes */
-/* line 275, ../../../app/stylesheets/screen.sass */
+/* line 283, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes_nav div.options {
   overflow: hidden;
   margin: 0 0 5px; }
-  /* line 278, ../../../app/stylesheets/screen.sass */
+  /* line 286, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a {
     display: block;
     padding: 0 8px;
@@ -349,15 +361,15 @@ div.did_you_mean {
     color: white;
     text-decoration: none;
     font-weight: bold; }
-    /* line 290, ../../../app/stylesheets/screen.sass */
+    /* line 298, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a:hover {
       background: #6ba41e;
       text-shadow: 1px 1px 0px #466c13; }
-  /* line 293, ../../../app/stylesheets/screen.sass */
+  /* line 301, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.nav {
     float: left;
     margin: 0 1px 0 0; }
-    /* line 296, ../../../app/stylesheets/screen.sass */
+    /* line 304, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav b {
       display: block;
       text-indent: -9000px;
@@ -365,7 +377,7 @@ div.did_you_mean {
       width: 0;
       border: 5px solid transparent;
       margin: 6px 2px 0; }
-    /* line 303, ../../../app/stylesheets/screen.sass */
+    /* line 311, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav.previous {
       border-bottom-left-radius: 2px;
       -moz-border-radius-bottomleft: 2px;
@@ -373,11 +385,11 @@ div.did_you_mean {
       border-top-left-radius: 2px;
       -moz-border-radius-topleft: 2px;
       -webkit-border-top-left-radius: 2px; }
-      /* line 305, ../../../app/stylesheets/screen.sass */
+      /* line 313, ../../../app/stylesheets/screen.sass */
       #commutes_controller #commutes_nav div.options a.nav.previous b {
         border-left: none;
         border-right: 5px solid white; }
-    /* line 308, ../../../app/stylesheets/screen.sass */
+    /* line 316, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav.next {
       border-top-right-radius: 2px;
       -moz-border-radius-topright: 2px;
@@ -385,21 +397,21 @@ div.did_you_mean {
       border-bottom-right-radius: 2px;
       -moz-border-radius-bottomright: 2px;
       -webkit-border-bottom-right-radius: 2px; }
-      /* line 310, ../../../app/stylesheets/screen.sass */
+      /* line 318, ../../../app/stylesheets/screen.sass */
       #commutes_controller #commutes_nav div.options a.nav.next b {
         border-right: none;
         border-left: 5px solid white; }
-    /* line 313, ../../../app/stylesheets/screen.sass */
+    /* line 321, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav.today {
       border-radius: 2px;
       -moz-border-radius: 2px;
       -webkit-border-radius: 2px;
       margin: 0 0 0 4px; }
-  /* line 316, ../../../app/stylesheets/screen.sass */
+  /* line 324, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.view {
     float: right;
     margin: 0 0 0 1px; }
-    /* line 319, ../../../app/stylesheets/screen.sass */
+    /* line 327, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.view.week {
       border-bottom-left-radius: 2px;
       -moz-border-radius-bottomleft: 2px;
@@ -407,7 +419,7 @@ div.did_you_mean {
       border-top-left-radius: 2px;
       -moz-border-radius-topleft: 2px;
       -webkit-border-top-left-radius: 2px; }
-    /* line 321, ../../../app/stylesheets/screen.sass */
+    /* line 329, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.view.month {
       border-top-right-radius: 2px;
       -moz-border-radius-topright: 2px;
@@ -415,21 +427,21 @@ div.did_you_mean {
       border-bottom-right-radius: 2px;
       -moz-border-radius-bottomright: 2px;
       -webkit-border-bottom-right-radius: 2px; }
-  /* line 323, ../../../app/stylesheets/screen.sass */
+  /* line 331, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options span.displayed {
     margin: 0 0 0 12px;
     font-size: 10px;
     text-transform: uppercase;
     line-height: 22px;
     font-weight: bold; }
-/* line 330, ../../../app/stylesheets/screen.sass */
+/* line 338, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes_nav ul.week li {
   display: block;
   float: left;
   width: 14.285714285714286%;
   list-style: none;
   position: relative; }
-  /* line 336, ../../../app/stylesheets/screen.sass */
+  /* line 344, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li a {
     display: block;
     margin-right: 1px;
@@ -445,15 +457,15 @@ div.did_you_mean {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px; }
-    /* line 349, ../../../app/stylesheets/screen.sass */
+    /* line 357, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav ul.week li a:hover {
       color: #6ba41e; }
-    /* line 351, ../../../app/stylesheets/screen.sass */
+    /* line 359, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav ul.week li a small {
       display: block;
       font-size: 10px;
       font-weight: normal; }
-  /* line 355, ../../../app/stylesheets/screen.sass */
+  /* line 363, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li b.pointer {
     display: none;
     width: 0;
@@ -466,40 +478,40 @@ div.did_you_mean {
     border-top: 10px solid #6ba41e;
     border-bottom: none;
     z-index: 10; }
-  /* line 368, ../../../app/stylesheets/screen.sass */
+  /* line 376, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li:last-child a {
     margin-right: 0; }
-  /* line 371, ../../../app/stylesheets/screen.sass */
+  /* line 379, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li.active a {
     background: #6ba41e;
     color: white;
     text-shadow: 1px 1px 0px #466c13; }
-    /* line 375, ../../../app/stylesheets/screen.sass */
+    /* line 383, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav ul.week li.active a small {
       text-shadow: 1px 1px 0px #466c13; }
-  /* line 377, ../../../app/stylesheets/screen.sass */
+  /* line 385, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li.active b.pointer {
     display: block; }
-/* line 382, ../../../app/stylesheets/screen.sass */
+/* line 390, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li div, #commutes_controller div.panel div.details div {
   font-size: 12px;
   margin: 0 0 2px; }
-  /* line 385, ../../../app/stylesheets/screen.sass */
+  /* line 393, ../../../app/stylesheets/screen.sass */
   #commutes_controller div.panel ul li div span.marker_way_point, #commutes_controller div.panel ul li div span.marker_time, #commutes_controller div.panel ul li div span.marker_passengers, #commutes_controller div.panel div.details div span.marker_way_point, #commutes_controller div.panel div.details div span.marker_time, #commutes_controller div.panel div.details div span.marker_passengers {
     float: left;
     margin: 0 3px 0 0; }
-  /* line 388, ../../../app/stylesheets/screen.sass */
+  /* line 396, ../../../app/stylesheets/screen.sass */
   #commutes_controller div.panel ul li div.arrive_for, #commutes_controller div.panel ul li div.passengers, #commutes_controller div.panel div.details div.arrive_for, #commutes_controller div.panel div.details div.passengers {
     float: left;
     width: 50%;
     margin: 0; }
-/* line 392, ../../../app/stylesheets/screen.sass */
+/* line 400, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li div.warnings, #commutes_controller div.panel div.details div.warnings {
   position: absolute;
   top: 5px;
   right: -8px;
   width: 16px; }
-/* line 397, ../../../app/stylesheets/screen.sass */
+/* line 405, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li a.go, #commutes_controller div.panel div.details a.go {
   position: absolute;
   top: 50%;
@@ -507,7 +519,7 @@ div.did_you_mean {
   bottom: 0;
   display: block;
   padding: 0 10px 0 0; }
-  /* line 404, ../../../app/stylesheets/screen.sass */
+  /* line 412, ../../../app/stylesheets/screen.sass */
   #commutes_controller div.panel ul li a.go b, #commutes_controller div.panel div.details a.go b {
     display: block;
     height: 0;
@@ -517,19 +529,19 @@ div.did_you_mean {
     border-left: 5px solid #e7e7e7;
     border-right: none;
     margin: -5px 0 0; }
-/* line 413, ../../../app/stylesheets/screen.sass */
+/* line 421, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li:last-child, #commutes_controller div.panel div.details:last-child {
   border-bottom: 0; }
-/* line 416, ../../../app/stylesheets/screen.sass */
+/* line 424, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li:hover {
   cursor: pointer; }
-  /* line 419, ../../../app/stylesheets/screen.sass */
+  /* line 427, ../../../app/stylesheets/screen.sass */
   #commutes_controller div.panel ul li:hover a.go b {
     border-left-color: silver; }
-/* line 422, ../../../app/stylesheets/screen.sass */
+/* line 430, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes.panel div.content {
   padding: 0; }
-  /* line 425, ../../../app/stylesheets/screen.sass */
+  /* line 433, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes.panel div.content > ul> li {
     display: block;
     margin: 0;
@@ -537,42 +549,42 @@ div.did_you_mean {
     position: relative;
     list-style: none;
     border-bottom: 1px solid #dfdfdf; }
-/* line 434, ../../../app/stylesheets/screen.sass */
+/* line 442, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commute.panel div.content div.details {
   padding: 5px 10px; }
-/* line 437, ../../../app/stylesheets/screen.sass */
+/* line 445, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commute.panel div.content div.passengers ul.users li {
   margin: 0; }
-  /* line 439, ../../../app/stylesheets/screen.sass */
+  /* line 447, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commute.panel div.content div.passengers ul.users li:first-child {
     border-top: none; }
-  /* line 441, ../../../app/stylesheets/screen.sass */
+  /* line 449, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commute.panel div.content div.passengers ul.users li b.pointer {
     display: none; }
 
 /* Messages */
-/* line 447, ../../../app/stylesheets/screen.sass */
+/* line 455, ../../../app/stylesheets/screen.sass */
 #messages div.content table {
   width: 100%; }
-  /* line 449, ../../../app/stylesheets/screen.sass */
+  /* line 457, ../../../app/stylesheets/screen.sass */
   #messages div.content table th, #messages div.content table td {
     padding: 3px 5px;
     line-height: 1; }
-  /* line 454, ../../../app/stylesheets/screen.sass */
+  /* line 462, ../../../app/stylesheets/screen.sass */
   #messages div.content table thead tr th {
     background: #f4f4f4;
     font-size: 12px;
     font-weight: bold;
     border-bottom: 1px solid silver; }
-    /* line 459, ../../../app/stylesheets/screen.sass */
+    /* line 467, ../../../app/stylesheets/screen.sass */
     #messages div.content table thead tr th.select {
       width: 1px; }
-  /* line 463, ../../../app/stylesheets/screen.sass */
+  /* line 471, ../../../app/stylesheets/screen.sass */
   #messages div.content table tbody tr td {
     border-bottom: 1px solid #dfdfdf; }
-    /* line 466, ../../../app/stylesheets/screen.sass */
+    /* line 474, ../../../app/stylesheets/screen.sass */
     #messages div.content table tbody tr td.subject a {
       font-weight: bold; }
-  /* line 469, ../../../app/stylesheets/screen.sass */
+  /* line 477, ../../../app/stylesheets/screen.sass */
   #messages div.content table tbody tr:last-child td {
     border-bottom: none; }
