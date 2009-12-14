@@ -7,6 +7,9 @@ class AccountController < ApplicationController
   def profile
   end
 
+  def organisation
+  end
+
   def email_and_password
   end
 

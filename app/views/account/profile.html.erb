@@ -1,39 +1,32 @@
-<% @page_title = "My Profile" %>
+<% @page_title = "My Account" %>
 <% @layout = "with_sidebar_left" %>
 
 <% content_for :sidebar_left do %>
   <%= render :partial => "nav" %>
 <% end %>
 
-<%= link_to_function image_tag("", :alt => "asdf") + content_tag(:span, "Change Picture"), "asdf", :title => "Change Picture", :class => "picture" %>
-
 <div class="panel">
   <div class="content">
-    <form class="lw80">
+    <h3>My Organisation</h3>
+    <p class="leader">
+      Change how you can access the site
+    </p>
+    <form class="lw120">
       <p>
-        <label>First Name</label>
+        <label>Email</label>
         <input type="text"/>
       </p>
       <p>
-        <label>Last Name</label>
-        <input type="text"/>
+        <label>Old Password</label>
+        <input type="password"/>
       </p>
       <p>
-        <label>Gender</label>
-        <input type="radio"/><label class="inline">Male</label>
-        <input type="radio"/><label class="inline">Female</label>
+        <label>New Password</label>
+        <input type="password"/>
       </p>
       <p>
-        <label>Born</label>
-        <select>
-          <option>15</option>
-        </select>
-        <select>
-          <option>November</option>
-        </select>
-        <select>
-          <option>2000</option>
-        </select>
+        <label>Confirm Password</label>
+        <input type="password"/>
       </p>
       <p class="submit indent">
         <button>Save</button>

@@ -21,6 +21,7 @@ ActionController::Routing::Routes.draw do |map|
   map.with_options :controller => "account" do |account|
     account.account                        "account/",                       :action => "index"
     account.account_profile                "account/profile",                :action => "profile"
+    account.account_organisation           "account/organisation",           :action => "organisation"
     account.account_email_and_password     "account/email_and_password",     :action => "email_and_password"
     account.account_carpooling_preferences "account/carpooling_preferences", :action => "carpooling_preferences"
     account.account_system_preferences     "account/system_preferences",     :action => "system_preferences"
