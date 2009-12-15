@@ -45,18 +45,19 @@ h2 {
 
 /* line 34, ../../../app/stylesheets/common.sass */
 h3 {
-  font-size: 26px;
-  margin: 0 0 0.25em; }
+  font-size: 20px;
+  margin: 0 0 0.25em;
+  font-weight: bold; }
 
-/* line 37, ../../../app/stylesheets/common.sass */
+/* line 38, ../../../app/stylesheets/common.sass */
 h4 {
   font-size: 18px;
   margin: 0 0 0.5em; }
 
-/* line 42, ../../../app/stylesheets/common.sass */
+/* line 43, ../../../app/stylesheets/common.sass */
 .clearfix {
   display: inline-block; }
-  /* line 44, ../../../app/stylesheets/common.sass */
+  /* line 45, ../../../app/stylesheets/common.sass */
   .clearfix:after {
     content: ".";
     display: block;
@@ -65,15 +66,15 @@ h4 {
     line-height: 0;
     height: 0; }
 
-/* line 51, ../../../app/stylesheets/common.sass */
+/* line 52, ../../../app/stylesheets/common.sass */
 html[xmlns] .clearfix {
   display: block; }
 
-/* line 53, ../../../app/stylesheets/common.sass */
+/* line 54, ../../../app/stylesheets/common.sass */
 * html .clearfix {
   height: 1%; }
 
-/* line 56, ../../../app/stylesheets/common.sass */
+/* line 57, ../../../app/stylesheets/common.sass */
 div.panel {
   background: url('/images/transparent_backgrounds/black_05.png');
   border-radius: 3px;
@@ -81,7 +82,7 @@ div.panel {
   -webkit-border-radius: 3px;
   padding: 4px;
   margin: 0 0 20px; }
-  /* line 61, ../../../app/stylesheets/common.sass */
+  /* line 62, ../../../app/stylesheets/common.sass */
   div.panel div.header {
     padding: 5px 10px;
     background: url('/images/transparent_backgrounds/main_colour_50.png');
@@ -92,7 +93,7 @@ div.panel {
     border-top-right-radius: 2px;
     -moz-border-radius-topright: 2px;
     -webkit-border-top-right-radius: 2px; }
-    /* line 66, ../../../app/stylesheets/common.sass */
+    /* line 67, ../../../app/stylesheets/common.sass */
     div.panel div.header h2 {
       margin: 0;
       font-size: 14px;
@@ -100,10 +101,10 @@ div.panel {
       text-shadow: 1px 1px 0px #466c13;
       color: white;
       line-height: 1; }
-    /* line 73, ../../../app/stylesheets/common.sass */
+    /* line 74, ../../../app/stylesheets/common.sass */
     div.panel div.header span.options {
       float: right; }
-  /* line 75, ../../../app/stylesheets/common.sass */
+  /* line 76, ../../../app/stylesheets/common.sass */
   div.panel div.content {
     position: relative;
     border: 1px solid silver;
@@ -112,10 +113,10 @@ div.panel {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px; }
-    /* line 81, ../../../app/stylesheets/common.sass */
+    /* line 82, ../../../app/stylesheets/common.sass */
     div.panel div.content.no_padding {
       padding: 0; }
-  /* line 83, ../../../app/stylesheets/common.sass */
+  /* line 84, ../../../app/stylesheets/common.sass */
   div.panel div.footer {
     background: #f4f4f4;
     border: 1px solid silver;
@@ -127,7 +128,7 @@ div.panel {
     -webkit-border-bottom-left-radius: 3px;
     padding: 5px;
     overflow: hidden; }
-    /* line 89, ../../../app/stylesheets/common.sass */
+    /* line 90, ../../../app/stylesheets/common.sass */
     div.panel div.footer a.button {
       float: right;
       font-size: 10px;
@@ -148,7 +149,7 @@ div.panel {
       border-radius: 2px;
       -moz-border-radius: 2px;
       -webkit-border-radius: 2px; }
-  /* line 106, ../../../app/stylesheets/common.sass */
+  /* line 107, ../../../app/stylesheets/common.sass */
   div.panel.with_header div.content {
     border-top: none;
     border-top-left-radius: 0px;
@@ -157,7 +158,7 @@ div.panel {
     border-top-right-radius: 0px;
     -moz-border-radius-topright: 0px;
     -webkit-border-top-right-radius: 0px; }
-  /* line 110, ../../../app/stylesheets/common.sass */
+  /* line 111, ../../../app/stylesheets/common.sass */
   div.panel.with_footer div.content {
     border-bottom: none;
     border-bottom-right-radius: 0px;
@@ -167,21 +168,21 @@ div.panel {
     -moz-border-radius-bottomleft: 0px;
     -webkit-border-bottom-left-radius: 0px; }
 
-/* line 114, ../../../app/stylesheets/common.sass */
+/* line 115, ../../../app/stylesheets/common.sass */
 div.nav div.content {
   padding: 0; }
-  /* line 116, ../../../app/stylesheets/common.sass */
+  /* line 117, ../../../app/stylesheets/common.sass */
   div.nav div.content ul {
     background: #dfdfdf; }
-    /* line 118, ../../../app/stylesheets/common.sass */
+    /* line 119, ../../../app/stylesheets/common.sass */
     div.nav div.content ul li {
       display: block;
       list-style: none;
       margin: 0 0 1px 0; }
-      /* line 122, ../../../app/stylesheets/common.sass */
+      /* line 123, ../../../app/stylesheets/common.sass */
       div.nav div.content ul li b.arrow {
         display: none; }
-      /* line 124, ../../../app/stylesheets/common.sass */
+      /* line 125, ../../../app/stylesheets/common.sass */
       div.nav div.content ul li a {
         display: block;
         padding: 0 10px;
@@ -192,18 +193,18 @@ div.nav div.content {
         color: gray;
         font-weight: bold;
         background: white; }
-        /* line 134, ../../../app/stylesheets/common.sass */
+        /* line 135, ../../../app/stylesheets/common.sass */
         div.nav div.content ul li a:hover {
           color: #6ba41e; }
-      /* line 136, ../../../app/stylesheets/common.sass */
+      /* line 137, ../../../app/stylesheets/common.sass */
       div.nav div.content ul li:last-child {
         border-bottom: none;
         margin-bottom: 0; }
-      /* line 139, ../../../app/stylesheets/common.sass */
+      /* line 140, ../../../app/stylesheets/common.sass */
       div.nav div.content ul li.current {
         border: none;
         margin-right: -1px; }
-        /* line 142, ../../../app/stylesheets/common.sass */
+        /* line 143, ../../../app/stylesheets/common.sass */
         div.nav div.content ul li.current b.arrow {
           border: 18px solid transparent;
           border-right: none;
@@ -214,21 +215,21 @@ div.nav div.content {
           width: 0;
           position: relative;
           right: -10px; }
-        /* line 152, ../../../app/stylesheets/common.sass */
+        /* line 153, ../../../app/stylesheets/common.sass */
         div.nav div.content ul li.current a {
           background-color: #6ba41e;
           color: white; }
-      /* line 155, ../../../app/stylesheets/common.sass */
+      /* line 156, ../../../app/stylesheets/common.sass */
       div.nav div.content ul li:last-child {
         margin: 0; }
 
-/* line 158, ../../../app/stylesheets/common.sass */
+/* line 159, ../../../app/stylesheets/common.sass */
 p.leader {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 0 30px;
   color: gray; }
 
-/* line 162, ../../../app/stylesheets/common.sass */
+/* line 163, ../../../app/stylesheets/common.sass */
 p.breadcrumbs {
   font-size: 12px;
   color: gray;
@@ -236,7 +237,7 @@ p.breadcrumbs {
   margin: 0 0 10px;
   border-bottom: 1px solid #dfdfdf; }
 
-/* line 169, ../../../app/stylesheets/common.sass */
+/* line 170, ../../../app/stylesheets/common.sass */
 p.flash {
   margin: 0 0 20px;
   border-radius: 3px;
@@ -247,16 +248,16 @@ p.flash {
   padding: 0 0 0 21px;
   background-repeat: no-repeat;
   background-position: left top; }
-  /* line 177, ../../../app/stylesheets/common.sass */
+  /* line 178, ../../../app/stylesheets/common.sass */
   p.flash.error {
     color: #860000;
     background-image: url('/images/icons/exclamation-red.png'); }
-  /* line 180, ../../../app/stylesheets/common.sass */
+  /* line 181, ../../../app/stylesheets/common.sass */
   p.flash.notice {
     color: #008600;
     background-image: url('/images/icons/information.png'); }
 
-/* line 184, ../../../app/stylesheets/common.sass */
+/* line 185, ../../../app/stylesheets/common.sass */
 span.marker_way_point {
   display: inline-block;
   background: white;
@@ -267,7 +268,7 @@ span.marker_way_point {
   padding: 1px;
   height: 12px;
   width: 12px; }
-  /* line 192, ../../../app/stylesheets/common.sass */
+  /* line 193, ../../../app/stylesheets/common.sass */
   span.marker_way_point b {
     color: white;
     background: #6ba41e;
@@ -283,21 +284,21 @@ span.marker_way_point {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px; }
 
-/* line 204, ../../../app/stylesheets/common.sass */
+/* line 205, ../../../app/stylesheets/common.sass */
 span.marker_time {
   display: inline-block;
   background: url('/images/icons/clock.png');
   height: 16px;
   width: 16px; }
 
-/* line 209, ../../../app/stylesheets/common.sass */
+/* line 210, ../../../app/stylesheets/common.sass */
 span.marker_passengers {
   display: inline-block;
   background: url('/images/icons/user.png');
   height: 16px;
   width: 16px; }
 
-/* line 217, ../../../app/stylesheets/common.sass */
+/* line 218, ../../../app/stylesheets/common.sass */
 #page_title #page_options a.button {
   font-size: 16px;
   margin: 6px 0 0;
@@ -311,42 +312,42 @@ span.marker_passengers {
   font-weight: bold;
   background: white;
   text-shadow: 0px 0px 0px transparent; }
-  /* line 228, ../../../app/stylesheets/common.sass */
+  /* line 229, ../../../app/stylesheets/common.sass */
   #page_title #page_options a.button.negative {
     color: #ad0000;
     border: 1px solid #ad0000; }
-  /* line 231, ../../../app/stylesheets/common.sass */
+  /* line 232, ../../../app/stylesheets/common.sass */
   #page_title #page_options a.button img {
     margin: 0 3px 0 0;
     position: relative;
     top: 2px; }
 
-/* line 236, ../../../app/stylesheets/common.sass */
+/* line 237, ../../../app/stylesheets/common.sass */
 div.inner_shadow {
   position: absolute;
   z-index: 500; }
-  /* line 239, ../../../app/stylesheets/common.sass */
+  /* line 240, ../../../app/stylesheets/common.sass */
   div.inner_shadow.top {
     top: 0;
     left: 0;
     right: 0;
     height: 5px;
     background: url('/images/inner_shadow_top.png') repeat-x left top; }
-  /* line 245, ../../../app/stylesheets/common.sass */
+  /* line 246, ../../../app/stylesheets/common.sass */
   div.inner_shadow.right {
     top: 0;
     bottom: 0;
     right: 0;
     width: 5px;
     background: url('/images/inner_shadow_right.png') repeat-y left top; }
-  /* line 251, ../../../app/stylesheets/common.sass */
+  /* line 252, ../../../app/stylesheets/common.sass */
   div.inner_shadow.bottom {
     bottom: 0;
     left: 0;
     right: 0;
     height: 5px;
     background: url('/images/inner_shadow_bottom.png') repeat-x left top; }
-  /* line 257, ../../../app/stylesheets/common.sass */
+  /* line 258, ../../../app/stylesheets/common.sass */
   div.inner_shadow.left {
     top: 0;
     bottom: 0;

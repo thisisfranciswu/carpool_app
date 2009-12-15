@@ -1,0 +1,13 @@
+<% content_for :modal_title, "Update Logo" %>
+<% content_for :modal_content do %>
+  <form class="lw40" id="udpate_logo">
+    <p>
+      <label>File</label>
+      <input type="file"/>
+    </p>
+    <p class="indent submit">
+      <button id="save_logo">Upload and Save</button>
+      or <%= link_to_function "Cancel", "", :title => "Cancel", :class => "negative modal_close" %>
+    </p>
+  </form>
+<% end %>
