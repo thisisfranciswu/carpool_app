@@ -16,4 +16,7 @@ class AccountController < ApplicationController
   def carpooling_preferences
   end
 
+  def upgrade_cancel
+  end
+
 end

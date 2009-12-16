@@ -25,6 +25,7 @@ ActionController::Routing::Routes.draw do |map|
     account.account_email_and_password     "account/email_and_password",     :action => "email_and_password"
     account.account_carpooling_preferences "account/carpooling_preferences", :action => "carpooling_preferences"
     account.account_system_preferences     "account/system_preferences",     :action => "system_preferences"
+    account.upgrade_cancel                 "account/upgrade_cancel",         :action => "upgrade_cancel"
   end
   map.with_options :controller => "pages" do |pages|
     pages.pages_about   "/about",   :action => "about"

@@ -156,6 +156,18 @@
 
 /* My Account */
 #account_controller
+  ul.nav
+    li.upgrade_cancel
+      a
+        span
+          +opacity(50)
+      a:hover
+        span
+          +opacity(100)
+      &.current
+        a
+          span
+            +opacity(100)
   #main
     a.picture, a.logo
       display: block

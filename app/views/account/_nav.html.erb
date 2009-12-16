@@ -16,6 +16,13 @@
       <li class="<%= 'current' if @controller.action_name == 'system_preferences' %>">
         <b class="arrow"><!----></b><%= link_to "System Preferences",     account_system_preferences_path,     :title => "System Preferences" %>
       </li>
+      <li class="<%= 'current' if @controller.action_name == 'system_preferences' %>">
+        <b class="arrow"><!----></b><%= link_to "System Preferences",     account_system_preferences_path,     :title => "System Preferences" %>
+      </li>
+      <li class="upgrade_cancel <%= 'current' if @controller.action_name == 'upgrade_cancel' %>">
+        <b class="arrow"><!----></b>
+        <%= link_to content_tag(:span, "Upgrade or Cancel"),              upgrade_cancel_path,                 :title => "Upgrade or Cancel" %>
+      </li>
     </ul>
   </div>
 </div>

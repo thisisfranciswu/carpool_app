@@ -1,0 +1,70 @@
+<% @page_title = "My Account" %>
+<% @layout = "with_sidebar_left" %>
+
+<% content_for :sidebar_left do %>
+  <%= render :partial => "nav" %>
+<% end %>
+
+<div class="panel">
+  <div class="content">
+    <h3>Upgrade or Cancel</h3>
+    <p class="leader">
+      Upgrade or cancel your account. It should always be this simple.
+    </p>
+    <form class="lw120">
+      <p>
+        <label>I am a</label>
+        <input type="radio"/><label class="inline">Driver</label>
+        <input type="radio"/><label class="inline">Passenger</label>
+        <input type="radio"/><label class="inline">Both</label>
+      </p>
+      <p class="for_passenger">
+        <label>I can walk up to</label>
+        <select>
+          <option>15</option>
+        </select>
+        <label class="inline">minutes</label>
+      </p>
+      <p class="for_driver">
+        <label>I drive a</label>
+        <select>
+          <option>2003</option>
+        </select>
+        <select>
+          <option>Toyota</option>
+        </select>
+        <select>
+          <option>Echo</option>
+        </select>
+      </p>
+      <p class="for_driver">
+        <label>It&#39;s a</label>
+        <select>
+          <option>white</option>
+        </select>
+        <select>
+          <option>Sedan</option>
+        </select>
+      </p>
+      <p class="for_driver">
+        <label>I can carry up to</label>
+        <select>2</select>
+        <label class="inline">passengers</label>
+      </p>
+      <p class="for_driver">
+        <label>I can drive an extra</label>
+        <select>
+          <option>20</option>
+        </select>
+        <label class="inline">minutes</label>
+      </p>
+      <p class="indent">
+        <input type="checkbox"/>
+        <label class="inline">Non-smoking</label>
+      </p>
+      <p class="submit indent">
+        <button>Save</button>
+      </p>
+    </form>
+  </div>
+</div>
