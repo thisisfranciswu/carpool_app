@@ -99,35 +99,29 @@ body {
     border-top: 4px solid #dfdfdf;
     background-color: #efefef;
     border-bottom: 1px solid silver;
-    border-bottom-right-radius: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    -webkit-border-bottom-left-radius: 5px;
     padding: 20px 0;
     min-height: 480px; }
-    /* line 87, ../../../app/stylesheets/layout.sass */
+    /* line 86, ../../../app/stylesheets/layout.sass */
     body #content #main {
       margin: 0;
       padding: 0; }
-    /* line 91, ../../../app/stylesheets/layout.sass */
+    /* line 90, ../../../app/stylesheets/layout.sass */
     body #content.with_sidebar_left #main {
       margin-left: 200px;
       padding-left: 20px; }
-    /* line 95, ../../../app/stylesheets/layout.sass */
+    /* line 94, ../../../app/stylesheets/layout.sass */
     body #content.with_sidebar_right #main {
       margin-right: 200px;
       padding-right: 20px; }
-    /* line 98, ../../../app/stylesheets/layout.sass */
+    /* line 97, ../../../app/stylesheets/layout.sass */
     body #content #sidebar_left {
       float: left;
       width: 200px; }
-    /* line 101, ../../../app/stylesheets/layout.sass */
+    /* line 100, ../../../app/stylesheets/layout.sass */
     body #content #sidebar_right {
       float: right;
       width: 200px; }
-    /* line 105, ../../../app/stylesheets/layout.sass */
+    /* line 104, ../../../app/stylesheets/layout.sass */
     body #content div.sidebar h3 {
       background: url('/images/transparent_backgrounds/main_colour_15.png');
       font-size: 10px;
@@ -140,17 +134,17 @@ body {
       border-left: none;
       border-right: none;
       padding: 5px 10px; }
-  /* line 118, ../../../app/stylesheets/layout.sass */
+  /* line 117, ../../../app/stylesheets/layout.sass */
   body #footer {
     font-size: 12px;
     padding: 20px;
     border-top: 4px solid #dfdfdf; }
-    /* line 122, ../../../app/stylesheets/layout.sass */
+    /* line 121, ../../../app/stylesheets/layout.sass */
     body #footer p {
       filter: alpha(opacity=50);
       opacity: 0.5;
       -moz-opacity: 0.5; }
-    /* line 125, ../../../app/stylesheets/layout.sass */
+    /* line 124, ../../../app/stylesheets/layout.sass */
     body #footer:hover p {
       filter: alpha(opacity=100);
       opacity: 1;

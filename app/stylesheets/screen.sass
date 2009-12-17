@@ -467,12 +467,34 @@ div.did_you_mean
 
 /* Messages */
 #messages
+  div.options
+    padding: 0 0 4px
+    overflow: hidden
+    a.button
+      float: left
+      +box_shadow(0, 0, 0, transparent)
+      display: block
+      +font_size("small")
+      height: 22px
+      line-height: 22px
+      +text_shadow(1, 1, 0, !white)
+      border = 1px solid !light_grey
+      background = !light_grey * 0.1 + !white * 0.9
+      color = !dark_grey
+      margin: 0 1px 0 0
+      &:first-child
+        +rounded_corners("right", 0)
+      &:last-child
+        +rounded_corners("left", 0)
+      &:hover
+        background = !white
   div.content
     table
       width: 100%
       th, td
         padding: 3px 5px
         line-height: 1
+        +font_size("small")
       thead
         tr
           th
