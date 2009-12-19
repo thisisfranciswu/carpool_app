@@ -40991,3 +40991,140 @@ Rendered commutes/_list_item (1.0ms)
 Rendered shared/_masthead (8.5ms)
 Rendered shared/_footer (0.8ms)
 Completed in 68ms (View: 66, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-19 01:17:57) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.6ms)
+Rendered shared/_footer (0.8ms)
+Completed in 84ms (View: 82, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing GroupsController#index (for 127.0.0.1 at 2009-12-19 01:17:59) [GET]
+Rendering template within layouts/application
+Rendering groups/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.2ms)
+Rendered shared/_footer (0.8ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/groups]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-19 01:18:01) [GET]
+Rendering template within layouts/application
+Rendering locations/index
+Rendered shared/_init_map (0.3ms)
+Rendered locations/_modal_new (0.8ms)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.2ms)
+Rendered shared/_footer (0.8ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/locations]
+
+
+Processing CommutesController#index (for 127.0.0.1 at 2009-12-19 01:18:04) [GET]
+Rendering template within layouts/application
+Rendering commutes/index
+Rendered shared/_init_map (0.3ms)
+Rendered commutes/_modal_new (1.2ms)
+Rendered commutes/_nav_week (2.3ms)
+Rendered commutes/_list_item (1.0ms)
+Rendered commutes/_list_item (0.9ms)
+Rendered commutes/_list_item (0.9ms)
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.3ms)
+Rendered shared/_footer (0.8ms)
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-19 01:18:08) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.1ms)
+Rendered shared/_footer (0.8ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing CommutesController#index (for 127.0.0.1 at 2009-12-19 01:20:24) [GET]
+Rendering template within layouts/application
+Rendering commutes/index
+Rendered shared/_init_map (0.3ms)
+Rendered commutes/_modal_new (1.1ms)
+Rendered commutes/_nav_week (1.7ms)
+Rendered commutes/_list_item (1.1ms)
+Rendered commutes/_list_item (1.0ms)
+Rendered commutes/_list_item (0.9ms)
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (76.2ms)
+Rendered shared/_footer (0.8ms)
+Completed in 90ms (View: 88, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-19 01:20:28) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.6ms)
+Rendered shared/_footer (0.8ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-19 01:20:49) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.5ms)
+Rendered shared/_footer (0.8ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-19 01:21:31) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.6ms)
+Rendered shared/_footer (0.8ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing CommutesController#index (for 127.0.0.1 at 2009-12-19 01:22:11) [GET]
+Rendering template within layouts/application
+Rendering commutes/index
+Rendered shared/_init_map (0.3ms)
+Rendered commutes/_modal_new (1.2ms)
+Rendered commutes/_nav_week (1.8ms)
+Rendered commutes/_list_item (68.4ms)
+Rendered commutes/_list_item (1.0ms)
+Rendered commutes/_list_item (0.9ms)
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.7ms)
+Rendered shared/_footer (0.8ms)
+Completed in 90ms (View: 88, DB: 0) | 200 OK [http://localhost/commutes]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-19 01:22:16) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.4ms)
+Rendered shared/_footer (0.8ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-19 01:22:49) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (67.6ms)
+Rendered shared/_footer (0.8ms)
+Completed in 78ms (View: 76, DB: 0) | 200 OK [http://localhost/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2009-12-19 01:23:57) [GET]
+Rendering template within layouts/application
+Rendering messages/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered shared/_masthead (8.9ms)
+Rendered shared/_footer (0.8ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/messages]

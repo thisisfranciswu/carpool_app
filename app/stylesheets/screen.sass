@@ -293,57 +293,60 @@ div.did_you_mean
       list-style: none
       line-height: 28px
 
+div.options
+  overflow: hidden
+  margin: 0 0 4px
+  a
+    display: block
+    padding: 0 8px
+    height: 22px
+    line-height: 22px
+    background: url('/images/transparent_backgrounds/main_colour_50.png')
+    +font_size("tiny")
+    text-transform: uppercase
+    +text_shadow(1, 1, 0, !main_colour * 0.85 + !black * 0.15)
+    color = !white
+    text-decoration: none
+    font-weight: bold
+    &:hover
+      background = !main_colour
+      +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+
 /* Commutes */
 #commutes_controller
   #commutes_nav
     div.options
-      overflow: hidden
-      margin: 0 0 5px
       a
-        display: block
-        padding: 0 8px
-        height: 22px
-        line-height: 22px
-        background: url('/images/transparent_backgrounds/main_colour_50.png')
-        +font_size("tiny")
-        text-transform: uppercase
-        +text_shadow(1, 1, 0, !main_colour * 0.85 + !black * 0.15)
-        color = !white
-        text-decoration: none
-        font-weight: bold
-        &:hover
-          background = !main_colour
-          +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
-      a.nav
-        float: left
-        margin: 0 1px 0 0
-        b
-          display: block
-          text-indent: -9000px
-          height: 0
-          width: 0
-          border: 5px solid transparent
-          margin: 6px 2px 0
-        &.previous
-          +rounded_corners("left", 2)
+        &.nav
+          float: left
+          margin: 0 1px 0 0
           b
-            border-left: none
-            border-right = 5px "solid" !white
-        &.next
-          +rounded_corners("right", 2)
-          b
-            border-right: none
-            border-left = 5px "solid" !white
-        &.today
-          +rounded_corners("all", 2)
-          margin: 0 0 0 4px
-      a.view
-        float: right
-        margin: 0 0 0 1px
-        &.week
-          +rounded_corners("left", 2)
-        &.month
-          +rounded_corners("right", 2)
+            display: block
+            text-indent: -9000px
+            height: 0
+            width: 0
+            border: 5px solid transparent
+            margin: 6px 2px 0
+          &.previous
+            +rounded_corners("left", 2)
+            b
+              border-left: none
+              border-right = 5px "solid" !white
+          &.next
+            +rounded_corners("right", 2)
+            b
+              border-right: none
+              border-left = 5px "solid" !white
+          &.today
+            +rounded_corners("all", 2)
+            margin: 0 0 0 4px
+        &.view
+          float: right
+          margin: 0 0 0 1px
+          &.week
+            +rounded_corners("left", 2)
+          &.month
+            +rounded_corners("right", 2)
       span.displayed
         margin: 0 0 0 12px
         +font_size("tiny")
@@ -468,26 +471,14 @@ div.did_you_mean
 /* Messages */
 #messages
   div.options
-    padding: 0 0 4px
-    overflow: hidden
-    a.button
+    a
       float: left
-      +box_shadow(0, 0, 0, transparent)
-      display: block
-      +font_size("small")
-      height: 22px
-      line-height: 22px
-      +text_shadow(1, 1, 0, !white)
-      border = 1px solid !light_grey
-      background = !light_grey * 0.1 + !white * 0.9
-      color = !dark_grey
       margin: 0 1px 0 0
       &:first-child
-        +rounded_corners("right", 0)
+        +rounded_corners("left", 3)
       &:last-child
-        +rounded_corners("left", 0)
-      &:hover
-        background = !white
+        margin: 0
+        +rounded_corners("right", 3)
   div.content
     table
       width: 100%
