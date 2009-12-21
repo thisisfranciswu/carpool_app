@@ -2,7 +2,7 @@
   <div class="page_width">
     <div id="utilities">
       <% if logged_in? %>
-        <%= link_to "Inbox",   messages_path,   :title => "Messages Inbox", :class => "messages" %>
+        <%= link_to content_tag(:span, content_tag(:b, "2"), :class => "notification small") + "Inbox",   messages_path,   :title => "Messages Inbox", :class => "messages" %>
         <%= link_to "Account", account_path,    :title => "Account",        :class => "account" %>
         <%= link_to "Help",    pages_help_path, :title => "Help",           :class => "help" %>
         <%= link_to "Logout",  logout_path,     :title => "Logout",         :class => "account" %>

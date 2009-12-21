@@ -5,6 +5,10 @@
   <%= link_to image_tag("icons/mail--plus.png", :alt => "Compose a Message") + "Compose a Message", "#", :title => "Compose a Message", :class => "add button show_modal" %>
 <% end %>
 
+<% content_for :sidebar_left do %>
+  <%= render :partial => "nav" %>
+<% end %>
+
 <div id="messages" class="panel with_footer">
   <div class="options">
     <%= link_to "Archive", "", :title => "Archive" %>
@@ -38,11 +42,3 @@
     asdf
   </div>
 </div>
-
-<% content_for :sidebar_left do %>
-  <div class="panel">
-    <div class="content">
-      <p>asdf</p>
-    </div>
-  </div>
-<% end %>

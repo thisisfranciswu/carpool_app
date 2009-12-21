@@ -1,0 +1,17 @@
+<div class="nav panel">
+  <div class="content">
+    <ul>
+      <li class="<%= 'current' if @controller.action_name == 'index' %>">
+        <b class="arrow"><!----></b>
+        <span class="notification"><b>2</b></span>
+        <%= link_to "Inbox", account_path, :title => "Inbox" %>
+      </li>
+      <li class="<%= 'current' if @controller.action_name == 'archived' %>">
+        <b class="arrow"><!----></b><%= link_to "Archived", account_path, :title => "Archived" %>
+      </li>
+      <li class="<%= 'current' if @controller.action_name == 'deleted' %>">
+        <b class="arrow"><!----></b><%= link_to "Deleted", account_path, :title => "Deleted" %>
+      </li>
+    </ul>
+  </div>
+</div>

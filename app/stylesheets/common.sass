@@ -111,6 +111,7 @@ div.panel
     div.content
       border-bottom: none
       +rounded_corners("bottom", 0)
+
 div.nav
   div.content
     padding: 0
@@ -134,6 +135,9 @@ div.nav
           background = !white
           &:hover
             color = !main_colour
+        span.notification
+          float: right
+          margin: 6px 0 0 5px
         &:last-child
           border-bottom: none
           margin-bottom: 0
@@ -262,8 +266,32 @@ div.inner_shadow
     width: 5px
     background: url('/images/inner_shadow_left.png') repeat-y left top
 
-
-
+span.notification
+  display: inline-block
+  padding: 2px
+  background: url('/images/transparent_backgrounds/black_10.png')
+  +rounded_corners("all", 100)
+  b
+    display: block
+    text-align: center
+    padding: 0
+    color = !white
+    background = !colour_negative
+    font-weight: bold
+    +rounded_corners("all", 100)
+    +text_shadow(1, 1, 0, !colour_negative * 0.66 + !black * 0.33)
+    height: 16px
+    min-width: 16px
+    line-height: 16px
+    +font_size("small")
+    border = 2px solid !white
+  &.small
+    b
+      height: 12px
+      min-width: 12px
+      line-height: 12px
+      +font_size("tiny")
+      border-width: 1px
 
 
 
