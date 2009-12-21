@@ -23,7 +23,7 @@
         <li><%= link_to "My Commutes",  commutes_path,  :title => "My Commutes" %></li>
         <li><%= link_to "My Locations", locations_path, :title => "My Locations" %></li>
         <li><%= link_to "Users",        users_path,     :title => "Users" %></li>
-        <li><%= link_to "My Group",     groups_path,    :title => "My Group" %></li>
+        <li><%= link_to "My Group",     group_path(1),  :title => "My Group" %></li>
       <% else %>
         <li><%= link_to "Home",                 root_path,     :title => "Home" %></li>
         <li><%= link_to "Feature Tour",         features_path, :title => "Feature Tour" %></li>
