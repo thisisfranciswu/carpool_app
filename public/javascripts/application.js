@@ -24,17 +24,20 @@ $(function(){
     return false;
   });
 
-  // Add a location
-  $("#add_a_location #find_location").live("click", function() {
-    $("#did_you_mean").show();
-    return false;
-  });
-  $("#add_a_location #save_location").live("click", function() {
-    $("div.modal_window").jqmHide();
-  });
-
   // Find Location
   $("button.find_location").live("click", function() {
+    JSON_url = "http://maps.google.com/maps/geo?q=" + $("#address").val() +
+               "&key=ABQIAAAAQEr9TuV_HM_RESkrFixrbBQ2zmKkM91hfvLpqxmsruD80EpYvxRJ04C0a46ORhfmQMz7blpad7gahA" +
+               "&sensor=false" + "&output=json" + "&callback=?";
+    var possible_location = [];
+    $.getJSON(JSON_url, function(data) {
+      jQuery.each(data.Placemark, function (i, location) {
+        possible_location[i] = [];
+        possible_location[i]["address"] = location["address"];
+        alert(possible_location[i]["address"]);
+      });
+    });
+
     $(this).parent().next().show();
     return false;
   });
