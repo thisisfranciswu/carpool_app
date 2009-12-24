@@ -350,22 +350,45 @@ span.stars_rating {
   height: 520px; }
 
 /* line 287, ../../../app/stylesheets/screen.sass */
-div.did_you_mean {
+div.location_finder {
   display: block; }
   /* line 289, ../../../app/stylesheets/screen.sass */
-  div.did_you_mean div.location_suggestions {
-    display: inline-block; }
-    /* line 291, ../../../app/stylesheets/screen.sass */
-    div.did_you_mean div.location_suggestions a {
+  div.location_finder span.value {
+    color: #404040; }
+  /* line 291, ../../../app/stylesheets/screen.sass */
+  div.location_finder div.location_search {
+    display: block;
+    margin: 0 0 0 130px; }
+  /* line 294, ../../../app/stylesheets/screen.sass */
+  div.location_finder div.location_select {
+    display: block;
+    margin: 0 0 0 130px; }
+    /* line 297, ../../../app/stylesheets/screen.sass */
+    div.location_finder div.location_select label {
+      display: block;
+      float: none;
+      width: auto;
+      margin: 0;
+      text-align: left;
+      color: #404040; }
+    /* line 304, ../../../app/stylesheets/screen.sass */
+    div.location_finder div.location_select a {
       display: block;
       list-style: none;
       line-height: 28px; }
+    /* line 308, ../../../app/stylesheets/screen.sass */
+    div.location_finder div.location_select p.try_again {
+      line-height: 28px;
+      margin: 0; }
+      /* line 311, ../../../app/stylesheets/screen.sass */
+      div.location_finder div.location_select p.try_again a {
+        display: inline; }
 
-/* line 296, ../../../app/stylesheets/screen.sass */
+/* line 314, ../../../app/stylesheets/screen.sass */
 div.options {
   overflow: hidden;
   margin: 0 0 4px; }
-  /* line 299, ../../../app/stylesheets/screen.sass */
+  /* line 317, ../../../app/stylesheets/screen.sass */
   div.options a {
     display: block;
     padding: 0 8px;
@@ -378,17 +401,17 @@ div.options {
     color: white;
     text-decoration: none;
     font-weight: bold; }
-    /* line 311, ../../../app/stylesheets/screen.sass */
+    /* line 329, ../../../app/stylesheets/screen.sass */
     div.options a:hover {
       background: #6ba41e;
       text-shadow: 1px 1px 0px #466c13; }
 
 /* Commutes */
-/* line 320, ../../../app/stylesheets/screen.sass */
+/* line 338, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes_nav div.options a.nav {
   float: left;
   margin: 0 1px 0 0; }
-  /* line 323, ../../../app/stylesheets/screen.sass */
+  /* line 341, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.nav b {
     display: block;
     text-indent: -9000px;
@@ -396,7 +419,7 @@ div.options {
     width: 0;
     border: 5px solid transparent;
     margin: 6px 2px 0; }
-  /* line 330, ../../../app/stylesheets/screen.sass */
+  /* line 348, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.nav.previous {
     border-bottom-left-radius: 2px;
     -moz-border-radius-bottomleft: 2px;
@@ -404,11 +427,11 @@ div.options {
     border-top-left-radius: 2px;
     -moz-border-radius-topleft: 2px;
     -webkit-border-top-left-radius: 2px; }
-    /* line 332, ../../../app/stylesheets/screen.sass */
+    /* line 350, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav.previous b {
       border-left: none;
       border-right: 5px solid white; }
-  /* line 335, ../../../app/stylesheets/screen.sass */
+  /* line 353, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.nav.next {
     border-top-right-radius: 2px;
     -moz-border-radius-topright: 2px;
@@ -416,21 +439,21 @@ div.options {
     border-bottom-right-radius: 2px;
     -moz-border-radius-bottomright: 2px;
     -webkit-border-bottom-right-radius: 2px; }
-    /* line 337, ../../../app/stylesheets/screen.sass */
+    /* line 355, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav div.options a.nav.next b {
       border-right: none;
       border-left: 5px solid white; }
-  /* line 340, ../../../app/stylesheets/screen.sass */
+  /* line 358, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.nav.today {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
     margin: 0 0 0 4px; }
-/* line 343, ../../../app/stylesheets/screen.sass */
+/* line 361, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes_nav div.options a.view {
   float: right;
   margin: 0 0 0 1px; }
-  /* line 346, ../../../app/stylesheets/screen.sass */
+  /* line 364, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.view.week {
     border-bottom-left-radius: 2px;
     -moz-border-radius-bottomleft: 2px;
@@ -438,7 +461,7 @@ div.options {
     border-top-left-radius: 2px;
     -moz-border-radius-topleft: 2px;
     -webkit-border-top-left-radius: 2px; }
-  /* line 348, ../../../app/stylesheets/screen.sass */
+  /* line 366, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav div.options a.view.month {
     border-top-right-radius: 2px;
     -moz-border-radius-topright: 2px;
@@ -446,21 +469,21 @@ div.options {
     border-bottom-right-radius: 2px;
     -moz-border-radius-bottomright: 2px;
     -webkit-border-bottom-right-radius: 2px; }
-/* line 350, ../../../app/stylesheets/screen.sass */
+/* line 368, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes_nav div.options span.displayed {
   margin: 0 0 0 12px;
   font-size: 10px;
   text-transform: uppercase;
   line-height: 22px;
   font-weight: bold; }
-/* line 357, ../../../app/stylesheets/screen.sass */
+/* line 375, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes_nav ul.week li {
   display: block;
   float: left;
   width: 14.285714285714286%;
   list-style: none;
   position: relative; }
-  /* line 363, ../../../app/stylesheets/screen.sass */
+  /* line 381, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li a {
     display: block;
     margin-right: 1px;
@@ -476,15 +499,15 @@ div.options {
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px; }
-    /* line 376, ../../../app/stylesheets/screen.sass */
+    /* line 394, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav ul.week li a:hover {
       color: #6ba41e; }
-    /* line 378, ../../../app/stylesheets/screen.sass */
+    /* line 396, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav ul.week li a small {
       display: block;
       font-size: 10px;
       font-weight: normal; }
-  /* line 382, ../../../app/stylesheets/screen.sass */
+  /* line 400, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li b.pointer {
     display: none;
     width: 0;
@@ -497,40 +520,40 @@ div.options {
     border-top: 10px solid #6ba41e;
     border-bottom: none;
     z-index: 10; }
-  /* line 395, ../../../app/stylesheets/screen.sass */
+  /* line 413, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li:last-child a {
     margin-right: 0; }
-  /* line 398, ../../../app/stylesheets/screen.sass */
+  /* line 416, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li.active a {
     background: #6ba41e;
     color: white;
     text-shadow: 1px 1px 0px #466c13; }
-    /* line 402, ../../../app/stylesheets/screen.sass */
+    /* line 420, ../../../app/stylesheets/screen.sass */
     #commutes_controller #commutes_nav ul.week li.active a small {
       text-shadow: 1px 1px 0px #466c13; }
-  /* line 404, ../../../app/stylesheets/screen.sass */
+  /* line 422, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes_nav ul.week li.active b.pointer {
     display: block; }
-/* line 409, ../../../app/stylesheets/screen.sass */
+/* line 427, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li div, #commutes_controller div.panel div.details div {
   font-size: 12px;
   margin: 0 0 2px; }
-  /* line 412, ../../../app/stylesheets/screen.sass */
+  /* line 430, ../../../app/stylesheets/screen.sass */
   #commutes_controller div.panel ul li div span.marker_way_point, #commutes_controller div.panel ul li div span.marker_time, #commutes_controller div.panel ul li div span.marker_passengers, #commutes_controller div.panel div.details div span.marker_way_point, #commutes_controller div.panel div.details div span.marker_time, #commutes_controller div.panel div.details div span.marker_passengers {
     float: left;
     margin: 0 3px 0 0; }
-  /* line 415, ../../../app/stylesheets/screen.sass */
+  /* line 433, ../../../app/stylesheets/screen.sass */
   #commutes_controller div.panel ul li div.arrive_for, #commutes_controller div.panel ul li div.passengers, #commutes_controller div.panel div.details div.arrive_for, #commutes_controller div.panel div.details div.passengers {
     float: left;
     width: 50%;
     margin: 0; }
-/* line 419, ../../../app/stylesheets/screen.sass */
+/* line 437, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li div.warnings, #commutes_controller div.panel div.details div.warnings {
   position: absolute;
   top: 5px;
   right: -8px;
   width: 16px; }
-/* line 424, ../../../app/stylesheets/screen.sass */
+/* line 442, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li a.go, #commutes_controller div.panel div.details a.go {
   position: absolute;
   top: 50%;
@@ -538,7 +561,7 @@ div.options {
   bottom: 0;
   display: block;
   padding: 0 10px 0 0; }
-  /* line 431, ../../../app/stylesheets/screen.sass */
+  /* line 449, ../../../app/stylesheets/screen.sass */
   #commutes_controller div.panel ul li a.go b, #commutes_controller div.panel div.details a.go b {
     display: block;
     height: 0;
@@ -548,19 +571,19 @@ div.options {
     border-left: 5px solid #e7e7e7;
     border-right: none;
     margin: -5px 0 0; }
-/* line 440, ../../../app/stylesheets/screen.sass */
+/* line 458, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li:last-child, #commutes_controller div.panel div.details:last-child {
   border-bottom: 0; }
-/* line 443, ../../../app/stylesheets/screen.sass */
+/* line 461, ../../../app/stylesheets/screen.sass */
 #commutes_controller div.panel ul li:hover {
   cursor: pointer; }
-  /* line 446, ../../../app/stylesheets/screen.sass */
+  /* line 464, ../../../app/stylesheets/screen.sass */
   #commutes_controller div.panel ul li:hover a.go b {
     border-left-color: silver; }
-/* line 449, ../../../app/stylesheets/screen.sass */
+/* line 467, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commutes.panel div.content {
   padding: 0; }
-  /* line 452, ../../../app/stylesheets/screen.sass */
+  /* line 470, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commutes.panel div.content > ul> li {
     display: block;
     margin: 0;
@@ -568,25 +591,25 @@ div.options {
     position: relative;
     list-style: none;
     border-bottom: 1px solid #dfdfdf; }
-/* line 461, ../../../app/stylesheets/screen.sass */
+/* line 479, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commute.panel div.content div.details {
   padding: 5px 10px; }
-/* line 464, ../../../app/stylesheets/screen.sass */
+/* line 482, ../../../app/stylesheets/screen.sass */
 #commutes_controller #commute.panel div.content div.passengers ul.users li {
   margin: 0; }
-  /* line 466, ../../../app/stylesheets/screen.sass */
+  /* line 484, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commute.panel div.content div.passengers ul.users li:first-child {
     border-top: none; }
-  /* line 468, ../../../app/stylesheets/screen.sass */
+  /* line 486, ../../../app/stylesheets/screen.sass */
   #commutes_controller #commute.panel div.content div.passengers ul.users li b.pointer {
     display: none; }
 
 /* Messages */
-/* line 474, ../../../app/stylesheets/screen.sass */
+/* line 492, ../../../app/stylesheets/screen.sass */
 #messages div.options a {
   float: left;
   margin: 0 1px 0 0; }
-  /* line 477, ../../../app/stylesheets/screen.sass */
+  /* line 495, ../../../app/stylesheets/screen.sass */
   #messages div.options a:first-child {
     border-bottom-left-radius: 3px;
     -moz-border-radius-bottomleft: 3px;
@@ -594,7 +617,7 @@ div.options {
     border-top-left-radius: 3px;
     -moz-border-radius-topleft: 3px;
     -webkit-border-top-left-radius: 3px; }
-  /* line 479, ../../../app/stylesheets/screen.sass */
+  /* line 497, ../../../app/stylesheets/screen.sass */
   #messages div.options a:last-child {
     margin: 0;
     border-top-right-radius: 3px;
@@ -603,29 +626,29 @@ div.options {
     border-bottom-right-radius: 3px;
     -moz-border-radius-bottomright: 3px;
     -webkit-border-bottom-right-radius: 3px; }
-/* line 483, ../../../app/stylesheets/screen.sass */
+/* line 501, ../../../app/stylesheets/screen.sass */
 #messages div.content table {
   width: 100%; }
-  /* line 485, ../../../app/stylesheets/screen.sass */
+  /* line 503, ../../../app/stylesheets/screen.sass */
   #messages div.content table th, #messages div.content table td {
     padding: 3px 5px;
     line-height: 1;
     font-size: 12px; }
-  /* line 491, ../../../app/stylesheets/screen.sass */
+  /* line 509, ../../../app/stylesheets/screen.sass */
   #messages div.content table thead tr th {
     background: #f4f4f4;
     font-size: 12px;
     font-weight: bold;
     border-bottom: 1px solid silver; }
-    /* line 496, ../../../app/stylesheets/screen.sass */
+    /* line 514, ../../../app/stylesheets/screen.sass */
     #messages div.content table thead tr th.select {
       width: 1px; }
-  /* line 500, ../../../app/stylesheets/screen.sass */
+  /* line 518, ../../../app/stylesheets/screen.sass */
   #messages div.content table tbody tr td {
     border-bottom: 1px solid #dfdfdf; }
-    /* line 503, ../../../app/stylesheets/screen.sass */
+    /* line 521, ../../../app/stylesheets/screen.sass */
     #messages div.content table tbody tr td.subject a {
       font-weight: bold; }
-  /* line 506, ../../../app/stylesheets/screen.sass */
+  /* line 524, ../../../app/stylesheets/screen.sass */
   #messages div.content table tbody tr:last-child td {
     border-bottom: none; }

@@ -3,24 +3,37 @@
   <form class="lw120" id="add_a_location">
     <p>
       <label>Name</label>
-      <input type="text"/>
+      <input type="text" size="30"/>
+      <label class="description">Give this location a name for easy reference</label>
     </p>
-    <p>
+    <div class="complex_field location_finder">
       <label>Address</label>
-      <input type="text" id="address"/>
-      <button class="find_location">Find it!</button>
-    </p>
-    <div class="complex_field did_you_mean" style="display:none;">
-      <label>Did you mean</label>
-      <div class="location_suggestions">
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
+      <div class="location_address" style="display:none;">
+        <span class="value"></span>
+        <label class="description"><%= link_to "Find another location", "#", :title => "Find another location" %></label>
+      </div>
+      <input type="hidden" id="address"/>
+      <div class="location_search">
+        <input type="text" id="address_query" size="30"/>
+        <button>Find it!</button>
+        <span class="cancel" style="display:none;">
+          or <%= link_to_function "Cancel", "#", :title => "Cancel", :class => "negative" %>
+        </span>
+      </div>
+      <div class="location_select" style="display:none;">
+        <label>Did you mean the following?</label>
+        <div class="location_suggestions">
+          <%#= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
+        </div>
+        <p class="try_again">
+          Not what you were looking for?
+          <%= link_to "Try refining your search", "#", :title => "Refine your search" %>
+        </p>
       </div>
     </div>
     <p class="indent submit">
       <button id="save_location">Save</button>
-      or <%= link_to_function "Cancel", "", :title => "Cancel", :class => "negative modal_close" %>
+      or <%= link_to_function "Cancel", "#", :title => "Cancel", :class => "negative modal_close" %>
     </p>
   </form>
 <% end %>

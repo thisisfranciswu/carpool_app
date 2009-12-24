@@ -25,22 +25,51 @@ $(function(){
   });
 
   // Find Location
-  $("button.find_location").live("click", function() {
-    JSON_url = "http://maps.google.com/maps/geo?q=" + $("#address").val() +
+  $("div.location_finder button").live("click", function() {
+    $("div.location_search").hide();
+    $("div.location_select").show();
+    $("div.location_suggestions").html("");
+    JSON_url = "http://maps.google.com/maps/geo?q=" + $("#address_query").val() +
                "&key=ABQIAAAAQEr9TuV_HM_RESkrFixrbBQ2zmKkM91hfvLpqxmsruD80EpYvxRJ04C0a46ORhfmQMz7blpad7gahA" +
                "&sensor=false" + "&output=json" + "&callback=?";
-    var possible_location = [];
     $.getJSON(JSON_url, function(data) {
       jQuery.each(data.Placemark, function (i, location) {
-        possible_location[i] = [];
-        possible_location[i]["address"] = location["address"];
-        alert(possible_location[i]["address"]);
+        if (location["AddressDetails"]["Accuracy"] > 6) {
+          $("div.location_suggestions").append("<a href='#' title='Select this address' class='select_location'>" + location["address"] + "</a>");
+        }
       });
     });
-
-    $(this).parent().next().show();
     return false;
   });
+  // Select Location
+  $("div.location_finder div.location_suggestions a").live("click", function() {
+    address = $(this).html();
+    $("div.location_select").hide();
+    $("div.location_address").show();
+    $("div.location_address span.value").html(address);
+    $("#address").val(address);
+    return false;
+  });
+  // Try again
+  $("div.location_finder p.try_again a").live("click", function() {
+    $("div.location_select").hide();
+    $("div.location_search").show();
+    return false;
+  });
+  // Find another
+  $("div.location_address label.description a").live("click", function() {
+    $("div.location_address").hide();
+    $("div.location_search").show();
+    $("div.location_search span.cancel").show();
+    return false;
+  });
+  // Cancel find another
+  $("div.location_search span.cancel a").live("click", function() {
+    $("div.location_search").hide();
+    $("div.location_search span.cancel").hide();
+    $("div.location_address").show();
+  });
+  // Save and close modal window
   $("#add_a_location #save_location").live("click", function() {
     $("div.modal_window").jqmHide();
   });

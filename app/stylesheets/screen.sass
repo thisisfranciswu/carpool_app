@@ -284,14 +284,32 @@ span.stars_rating
 #map
   height: 520px
 
-div.did_you_mean
+div.location_finder
   display: block
-  div.location_suggestions
-    display: inline-block
+  span.value
+    color = !dark_grey
+  div.location_search
+    display: block
+    margin: 0 0 0 130px
+  div.location_select
+    display: block
+    margin: 0 0 0 130px
+    label
+      display: block
+      float: none
+      width: auto
+      margin: 0
+      text-align: left
+      color = !dark_grey
     a
       display: block
       list-style: none
       line-height: 28px
+    p.try_again
+      line-height: 28px
+      margin: 0
+      a
+        display: inline
 
 div.options
   overflow: hidden

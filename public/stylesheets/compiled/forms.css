@@ -29,7 +29,7 @@ form label {
   form label.description {
     line-height: 1;
     margin: 3px 0 0;
-    font-size: 10px;
+    font-size: 12px;
     float: none;
     text-align: left; }
   /* line 31, ../../../app/stylesheets/forms.sass */
