@@ -40,6 +40,15 @@ form
       width: auto
       margin: 0
       display: inline
+  span.err_msg
+    line-height: 1
+    margin: 3px 0 0
+    +font_size("small")
+    float: none
+    text-align: left
+    color = !colour_negative
+    display: none
+    width: auto
   input[type=text], input[type=password]
     font-family: helvetica, arial, sans-serif
     background = !white
@@ -58,6 +67,9 @@ form
     border-top = 1px "solid" !white * 0.75 + !black * 0.25
     border-left = 1px "solid" !white * 0.75 + !black * 0.25
     margin: 0
+  .err
+    span.err_msg
+      display: block
   &.lw40
     label
       width: 40px

@@ -1,36 +1,56 @@
 <% content_for :modal_title, "Add a commute" %>
 <% content_for :modal_content do %>
   <form class="lw120" id="commute_new">
-    <div class="complex_field clearfix">
+    <div class="location_finder complex_field">
       <label class="depart_from">
         <span class="marker_way_point"><b>A</b></span>
         Depart from
       </label>
-      <input type="text"/>
-      <button class="find_location">Find it!</button>
-    </div>
-    <div class="complex_field did_you_mean" style="display:none;">
-      <label>Did you mean</label>
-      <div class="location_suggestions">
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
+      <div class="location_address" style="display:none;">
+        <span class="value"></span>
+        <label class="description"><%= link_to "Find another location", "", :title => "Find another location" %></label>
+        <input type="hidden"/>
+      </div>
+      <div class="location_search">
+        <input type="text" size="30" class="address_query"/>
+        <button>Find it!</button>
+        <span class="cancel" style="display:none;">
+          or <%= link_to_function "Cancel", "", :title => "Cancel", :class => "negative" %>
+        </span>
+      </div>
+      <div class="location_select" style="display:none;">
+        <label>Did you mean the following?</label>
+        <div class="location_suggestions"></div>
+        <p class="try_again">
+          Not what you were looking for?
+          <%= link_to "Try refining your search", "", :title => "Refine your search" %>
+        </p>
       </div>
     </div>
-    <div class="complex_field clearfix">
+    <div class="location_finder complex_field">
       <label class="arrive_to">
         <span class="marker_way_point"><b>B</b></span>
         Arrive to
       </label>
-      <input type="text"/>
-      <button class="find_location">Find it!</button>
-    </div>
-    <div class="complex_field did_you_mean" style="display:none;">
-      <label>Did you mean</label>
-      <div class="location_suggestions">
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
-        <%= link_to "123 Something Street, Montreal, QC, Canada", "", :title => "Select this location" %>
+      <div class="location_address" style="display:none;">
+        <span class="value"></span>
+        <label class="description"><%= link_to "Find another location", "", :title => "Find another location" %></label>
+        <input type="hidden"/>
+      </div>
+      <div class="location_search">
+        <input type="text" size="30" class="address_query"/>
+        <button>Find it!</button>
+        <span class="cancel" style="display:none;">
+          or <%= link_to_function "Cancel", "", :title => "Cancel", :class => "negative" %>
+        </span>
+      </div>
+      <div class="location_select" style="display:none;">
+        <label>Did you mean the following?</label>
+        <div class="location_suggestions"></div>
+        <p class="try_again">
+          Not what you were looking for?
+          <%= link_to "Try refining your search", "", :title => "Refine your search" %>
+        </p>
       </div>
     </div>
     <div class="complex_field clearfix">
@@ -51,7 +71,7 @@
     </p>
     <p class="indent submit">
       <button>Save</button>
-      or <%= link_to_function "Cancel", "", :title => "Cancel", :class => "negative modal_close" %>
+      or <%= link_to "Cancel", "", :title => "Cancel", :class => "negative modal_close" %>
     </p>
   </form>
 <% end %>

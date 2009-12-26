@@ -47,6 +47,16 @@ form label {
     margin: 0;
     display: inline; }
 /* line 43, ../../../app/stylesheets/forms.sass */
+form span.err_msg {
+  line-height: 1;
+  margin: 3px 0 0;
+  font-size: 12px;
+  float: none;
+  text-align: left;
+  color: #cc0000;
+  display: none;
+  width: auto; }
+/* line 52, ../../../app/stylesheets/forms.sass */
 form input[type=text], form input[type=password] {
   font-family: helvetica, arial, sans-serif;
   background: white;
@@ -56,10 +66,10 @@ form input[type=text], form input[type=password] {
   border: 1px solid #e5e5e5;
   border-top: 1px solid #bfbfbf;
   border-left: 1px solid #bfbfbf; }
-  /* line 52, ../../../app/stylesheets/forms.sass */
+  /* line 61, ../../../app/stylesheets/forms.sass */
   form input[type=text].is_blank, form input[type=password].is_blank {
     color: silver; }
-/* line 54, ../../../app/stylesheets/forms.sass */
+/* line 63, ../../../app/stylesheets/forms.sass */
 form textarea {
   padding: 5px 3px;
   font-size: 14px;
@@ -67,49 +77,52 @@ form textarea {
   border-top: 1px solid #bfbfbf;
   border-left: 1px solid #bfbfbf;
   margin: 0; }
-/* line 62, ../../../app/stylesheets/forms.sass */
+/* line 71, ../../../app/stylesheets/forms.sass */
+form .err span.err_msg {
+  display: block; }
+/* line 74, ../../../app/stylesheets/forms.sass */
 form.lw40 label {
   width: 40px; }
-  /* line 64, ../../../app/stylesheets/forms.sass */
+  /* line 76, ../../../app/stylesheets/forms.sass */
   form.lw40 label.description {
     width: auto;
     margin-left: 50px; }
-/* line 67, ../../../app/stylesheets/forms.sass */
+/* line 79, ../../../app/stylesheets/forms.sass */
 form.lw40 p.indent {
   margin-left: 50px; }
-/* line 70, ../../../app/stylesheets/forms.sass */
+/* line 82, ../../../app/stylesheets/forms.sass */
 form.lw80 label {
   width: 80px; }
-  /* line 72, ../../../app/stylesheets/forms.sass */
+  /* line 84, ../../../app/stylesheets/forms.sass */
   form.lw80 label.description {
     width: auto;
     margin-left: 90px; }
-/* line 75, ../../../app/stylesheets/forms.sass */
+/* line 87, ../../../app/stylesheets/forms.sass */
 form.lw80 p.indent {
   margin-left: 90px; }
-/* line 78, ../../../app/stylesheets/forms.sass */
+/* line 90, ../../../app/stylesheets/forms.sass */
 form.lw120 label {
   width: 120px; }
-  /* line 80, ../../../app/stylesheets/forms.sass */
+  /* line 92, ../../../app/stylesheets/forms.sass */
   form.lw120 label.description {
     width: auto;
     margin-left: 130px; }
-/* line 83, ../../../app/stylesheets/forms.sass */
+/* line 95, ../../../app/stylesheets/forms.sass */
 form.lw120 p.indent {
   margin-left: 130px; }
-/* line 86, ../../../app/stylesheets/forms.sass */
+/* line 98, ../../../app/stylesheets/forms.sass */
 form.lw160 label {
   width: 160px; }
-  /* line 88, ../../../app/stylesheets/forms.sass */
+  /* line 100, ../../../app/stylesheets/forms.sass */
   form.lw160 label.description {
     width: auto;
     margin-left: 170px; }
-/* line 91, ../../../app/stylesheets/forms.sass */
+/* line 103, ../../../app/stylesheets/forms.sass */
 form.lw160 p.indent {
   margin-left: 170px; }
 
 /* Buttons */
-/* line 96, ../../../app/stylesheets/forms.sass */
+/* line 108, ../../../app/stylesheets/forms.sass */
 a.button {
   display: inline-block;
   border-radius: 3px;
