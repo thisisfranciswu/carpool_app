@@ -371,56 +371,80 @@ div.options
         text-transform: uppercase
         line-height: 22px
         font-weight: bold
-    ul.week
-      li
-        display: block
-        float: left
-        width: 14.285714285714286%
-        list-style: none
-        position: relative
-        a
+    ul
+      &.daynames
+        li
           display: block
-          margin-right: 1px
-          padding: 5px 0
-          text-align: center
-          text-transform: uppercase
-          line-height: 1
-          font-weight: bold
-          +font_size("small")
-          color = !grey
-          text-decoration: none
-          background = !white
-          +rounded_corners("all", 2)
-          &:hover
-            color = !main_colour
-          small
+          float: left
+          width: 14.285714285714286%
+          list-style: none
+          position: relative
+      &.view_week
+        li
+          a
             display: block
-            +font_size("tiny")
-            font-weight: normal
-        b.pointer
-          display: none
-          width: 0
-          height: 0
-          position: absolute
-          bottom: 0
-          left: 50%
-          margin: 0 0 -10px -10px
-          border: 10px solid transparent
-          border-top = 10px "solid" !main_colour
-          border-bottom: none
-          z-index: 10
-        &:last-child
-          a
-            margin-right: 0
-        &.active
-          a
+            margin-right: 1px
+            padding: 5px 0
+            text-align: center
+            text-transform: uppercase
+            line-height: 1
+            font-weight: bold
+            +font_size("small")
+            color = !grey
+            text-decoration: none
+            background = !white
+            +rounded_corners("all", 2)
+            &:hover
+              color = !main_colour
+            small
+              display: block
+              +font_size("tiny")
+              font-weight: normal
+          b.pointer
+            display: none
+            width: 0
+            height: 0
+            position: absolute
+            bottom: 0
+            left: 50%
+            margin: 0 0 -10px -10px
+            border: 10px solid transparent
+            border-top = 10px "solid" !main_colour
+            border-bottom: none
+            z-index: 10
+          &:last-child
+            a
+              margin-right: 0
+          &.active
+            a
+              background = !main_colour
+              color = !white
+              +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+              small
+                +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
+            b.pointer
+              display: block
+      &.view_month
+        li
+          label
+            display: block
+            margin-right: 1px
+            padding: 5px 0
+            text-align: center
+            text-transform: uppercase
+            line-height: 1
+            font-weight: bold
+            +font_size("small")
+            text-decoration: none
             background = !main_colour
             color = !white
             +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
-            small
-              +text_shadow(1, 1, 0, !main_colour * 0.66 + !black * 0.33)
-          b.pointer
-            display: block
+            +rounded_corners("all", 2)
+          &:last-child
+            label
+              margin-right: 0
+
+
   #commutes_map
   div.panel
     ul li, div.details

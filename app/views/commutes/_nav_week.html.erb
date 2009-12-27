@@ -1,14 +1,7 @@
 <% content_for :above_main do %>
   <div id="commutes_nav" class="panel">
-    <div class="options">
-      <%= link_to content_tag(:b, "Previous"), "", :title => "Previous", :class => "nav previous" %>
-      <%= link_to content_tag(:b, "Next"), "", :title => "Next", :class => "nav next" %>
-      <%= link_to "Today", "", :title => "Today", :class => "nav today" %>
-      <span class="displayed">Nov 8 - Nov 14</span>
-      <%= link_to "Month", "", :title => "Month View", :class => "view month" %>
-      <%= link_to "Week", "", :title => "Week View", :class => "view week" %>
-    </div>
-    <ul class="week clearfix">
+    <%= render :partial => "options" %>
+    <ul class="view_week daynames clearfix">
       <li>
         <%= link_to "Sunday" + content_tag(:small, "Nov 8"), "", :title => "Sunday, November 8, 2009" %>
         <b class="pointer"><!----></b>
