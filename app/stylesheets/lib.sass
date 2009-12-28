@@ -37,9 +37,12 @@
 
 // Opacity
 =opacity(!opacity)
-  filter = "alpha(opacity=" + !opacity + ")"
   opacity = !opacity / 100
   -moz-opacity = !opacity / 100
+  -webkit-opacity = !opacity / 100
+  -khtml-opacity = !opacity / 100
+  filter = "alpha(opacity=" + !opacity + ")"
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + !opacity + ")"
 
 // Rounded Corners
 =rounded_corners(!corner, !radius)
