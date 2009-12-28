@@ -3,6 +3,6 @@
   <%= link_to content_tag(:b, "Next"), "", :title => "Next", :class => "nav next" %>
   <%= link_to "Today", "", :title => "Today", :class => "nav today" %>
   <span class="displayed">Nov 8 - Nov 14</span>
-  <%= link_to "Month", "", :title => "Month View", :class => "view month" %>
-  <%= link_to "Week", "", :title => "Week View", :class => "view week" %>
+  <%= link_to "Month", "?view=month", :title => "Month View", :class => "view month #{ params[:view] == 'month' ? 'active' : '' }" %>
+  <%= link_to "Week", "?view=week", :title => "Week View", :class => "view week #{ params[:view] == 'week' ? 'active' : '' }" %>
 </div>

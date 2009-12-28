@@ -59,7 +59,7 @@ div.panel
   +rounded_corners("all", 3)
   padding: 4px
   margin: 0 0 20px
-  div.header
+  > div.header
     padding: 5px 10px
     background: url('/images/transparent_backgrounds/main_colour_50.png')
     border = 1px "solid" !main_colour * 0.5 + !light_grey * 0.5
@@ -73,7 +73,7 @@ div.panel
       line-height: 1
     span.options
       float: right
-  div.content
+  > div.content
     position: relative
     border = 1px "solid" !light_grey
     background = !white
@@ -81,7 +81,7 @@ div.panel
     +rounded_corners("all", 2)
     &.no_padding
       padding: 0
-  div.footer
+  > div.footer
     background = !light_grey * 0.15 + !white * 0.85
     border = 1px "solid" !light_grey
     +rounded_corners("bottom", 3)

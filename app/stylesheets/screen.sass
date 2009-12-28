@@ -365,6 +365,10 @@ div.options
             +rounded_corners("left", 2)
           &.month
             +rounded_corners("right", 2)
+          &.active
+            background = !white
+            color = !black
+            +text_shadow(0, 0, 0, transparent)
       span.displayed
         margin: 0 0 0 12px
         +font_size("tiny")
@@ -376,9 +380,11 @@ div.options
         li
           display: block
           float: left
-          width: 14.285714285714286%
+          width: 135px
           list-style: none
           position: relative
+          &:first-child
+            width: 132px
       &.view_week
         li
           a
@@ -426,6 +432,7 @@ div.options
               display: block
       &.view_month
         li
+          margin: 0 0 1px
           label
             display: block
             margin-right: 1px
@@ -443,7 +450,43 @@ div.options
           &:last-child
             label
               margin-right: 0
-
+      &.month_row
+        margin: 0 0 1px
+        li
+          display: block
+          float: left
+          width: 134px
+          list-style: none
+          position: relative
+          margin: 0 1px 0 0
+          label
+            +rounded_corners("top", 2)
+            display: block
+            padding: 3px 5px
+            line-height: 1
+            +font_size("tiny")
+            font-weight: bold
+            color = !grey
+            background: url('/images/transparent_backgrounds/main_colour_10.png')
+            text-align: right
+          &:first-child
+            width: 131px
+          &:last-child
+            margin-right: 0
+            width: 135px
+          div.content
+            padding: 2px
+            +rounded_corners("bottom", 2)
+            background = !white
+            div.commute
+              padding: 3px
+              +rounded_corners("all", 2)
+              background = !light_grey * 0.25 + !white * 0.75
+              margin: 0 0 5px
+              &:last-child
+                margin: 0
+        &:last-child
+          margin: 0
 
   #commutes_map
   div.panel

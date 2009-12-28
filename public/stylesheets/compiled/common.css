@@ -83,7 +83,7 @@ div.panel {
   padding: 4px;
   margin: 0 0 20px; }
   /* line 62, ../../../app/stylesheets/common.sass */
-  div.panel div.header {
+  div.panel > div.header {
     padding: 5px 10px;
     background: url('/images/transparent_backgrounds/main_colour_50.png');
     border: 1px solid #95b26f;
@@ -94,7 +94,7 @@ div.panel {
     -moz-border-radius-topright: 2px;
     -webkit-border-top-right-radius: 2px; }
     /* line 67, ../../../app/stylesheets/common.sass */
-    div.panel div.header h2 {
+    div.panel > div.header h2 {
       margin: 0;
       font-size: 14px;
       font-weight: bold;
@@ -102,10 +102,10 @@ div.panel {
       color: white;
       line-height: 1; }
     /* line 74, ../../../app/stylesheets/common.sass */
-    div.panel div.header span.options {
+    div.panel > div.header span.options {
       float: right; }
   /* line 76, ../../../app/stylesheets/common.sass */
-  div.panel div.content {
+  div.panel > div.content {
     position: relative;
     border: 1px solid silver;
     background: white;
@@ -114,10 +114,10 @@ div.panel {
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px; }
     /* line 82, ../../../app/stylesheets/common.sass */
-    div.panel div.content.no_padding {
+    div.panel > div.content.no_padding {
       padding: 0; }
   /* line 84, ../../../app/stylesheets/common.sass */
-  div.panel div.footer {
+  div.panel > div.footer {
     background: #f4f4f4;
     border: 1px solid silver;
     border-bottom-right-radius: 3px;
@@ -129,7 +129,7 @@ div.panel {
     padding: 5px;
     overflow: hidden; }
     /* line 90, ../../../app/stylesheets/common.sass */
-    div.panel div.footer a.button {
+    div.panel > div.footer a.button {
       float: right;
       font-size: 10px;
       font-weight: bold;
