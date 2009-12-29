@@ -145,11 +145,17 @@ body {
     border-top: 4px solid #dfdfdf; }
     /* line 124, ../../../app/stylesheets/layout.sass */
     body #footer p {
-      filter: alpha(opacity=50);
       opacity: 0.5;
-      -moz-opacity: 0.5; }
+      -moz-opacity: 0.5;
+      -webkit-opacity: 0.5;
+      -khtml-opacity: 0.5;
+      filter: alpha(opacity=50);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + !opacity + ")"; }
     /* line 127, ../../../app/stylesheets/layout.sass */
     body #footer:hover p {
-      filter: alpha(opacity=100);
       opacity: 1;
-      -moz-opacity: 1; }
+      -moz-opacity: 1;
+      -webkit-opacity: 1;
+      -khtml-opacity: 1;
+      filter: alpha(opacity=100);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + !opacity + ")"; }
