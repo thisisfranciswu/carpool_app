@@ -1,9 +1,12 @@
 <% content_for :head do %>
-<script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAQEr9TuV_HM_RESkrFixrbBQ2zmKkM91hfvLpqxmsruD80EpYvxRJ04C0a46ORhfmQMz7blpad7gahA"></script>
+  <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAAQEr9TuV_HM_RESkrFixrbBQ2zmKkM91hfvLpqxmsruD80EpYvxRJ04C0a46ORhfmQMz7blpad7gahA"></script>
   <script type="text/javascript">
     google.load("maps", "2");
+    var map;
     function initialize() {
-      var map = new google.maps.Map2(document.getElementById("map"));
+      map = new google.maps.Map2(document.getElementById("map"));
+      map.addControl(new GLargeMapControl());
+      map.addControl(new GMapTypeControl());
       map.setCenter(new google.maps.LatLng(37.4419, -122.1419), 13);
     }
     google.setOnLoadCallback(initialize);

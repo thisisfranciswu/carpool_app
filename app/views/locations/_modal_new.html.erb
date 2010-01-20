@@ -11,7 +11,9 @@
       <div class="location_address" style="display:none;">
         <span class="value"></span>
         <label class="description"><%= link_to "Find another location", "", :title => "Find another location" %></label>
-        <input type="hidden"/>
+        <input type="hidden" id="location_address"/>
+        <input type="hidden" id="location_lat"/>
+        <input type="hidden" id="location_lng"/>
       </div>
       <div class="location_search">
         <input type="text" size="30" class="address_query"/>

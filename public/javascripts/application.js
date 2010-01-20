@@ -32,12 +32,16 @@ $(function(){
                "&key=ABQIAAAAQEr9TuV_HM_RESkrFixrbBQ2zmKkM91hfvLpqxmsruD80EpYvxRJ04C0a46ORhfmQMz7blpad7gahA" +
                "&sensor=false" + "&output=json" + "&callback=?";
     $.getJSON(JSON_url, function(data) {
+      location_suggestions_count = 0;
+      location_latlng = []
       if (data.Status["code"] == 200) {
-        location_suggestions_count = 0;
         jQuery.each(data.Placemark, function (i, location) {
           if (location["AddressDetails"]["Accuracy"] > 6) {
-            location_suggestions.append("<a href='' title='Select this address' class='select_location'>" + location["address"] + "</a>");
+            location_suggestions.append("<a href='' rel='" + i + "' title='Select this address' class='select_location'>" + location["address"] + "</a>");
             location_suggestions_count++;
+            location_latlng[i] = []
+            location_latlng[i]["lat"] = location["Point"]["coordinates"][0];
+            location_latlng[i]["lng"] = location["Point"]["coordinates"][1];
           }
         });
         if (location_suggestions_count > 0) {
@@ -60,7 +64,10 @@ $(function(){
     location_select.hide();
     location_address.show();
     location_address.find("span.value").html(address);
-    location_address.find("input[type=hidden]").val(address);
+    location_address.find("#location_address").val(address);
+    i = parseInt($(this).attr("rel"));
+    location_address.find("#location_lat").val(location_latlng[i]["lat"]);
+    location_address.find("#location_lng").val(location_latlng[i]["lng"]);
     return false;
   });
   // Try again
@@ -86,7 +93,12 @@ $(function(){
   });
   // Save and close modal window
   $("#add_a_location #save_location").live("click", function() {
+    alert($("#location_lat").val() + "," + $("#location_lng").val());
+//    var point = new GLatLng($("#location_lat").val(), $("#location_lng").val());
+    var point = new GLatLng(37.4419, -122.1419);
+    map.addOverlay(point);
     $("div.modal_window").jqmHide();
+    return false;
   });
 
 });
@@ -102,4 +114,12 @@ function init_location_finder(e) {
   location_suggestions = this_location_finder.find("div.location_suggestions");
   location_address = this_location_finder.find("div.location_address");
   address_query = this_location_finder.find("input.address_query");
+}
+
+function createMarker(point,html) {
+  var marker = new GMarker(point);
+  GEvent.addListener(marker, "click", function() {
+    marker.openInfoWindowHtml(html);
+  });
+  return marker;
 }
